@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@elevenlabs/n8n-nodes-elevenlabs": "^0.2.3"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+output/
+.env
+.DS_Store
+*.log
+n8n_data/
+.gemini/

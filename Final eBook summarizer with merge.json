@@ -1,0 +1,1213 @@
+{
+  "name": "Final eBook summarizer with merge",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        22480,
+        7424
+      ],
+      "id": "81d33d48-eced-448a-8a96-2b79801e09e8",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "https://docs.google.com/spreadsheets/d/10GQLAP4CuBuXM2SvUBf7ULV4tVhhCXNQx4MBLivXg8s/edit?gid=801323258#gid=801323258",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 801323258,
+          "mode": "list",
+          "cachedResultName": "Grade 9 Computer",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/10GQLAP4CuBuXM2SvUBf7ULV4tVhhCXNQx4MBLivXg8s/edit#gid=801323258"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        22704,
+        7424
+      ],
+      "id": "f9e99c95-9b7d-4753-b02c-92fb58f9563d",
+      "name": "Get row(s) in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "nLICTtXf6UpwL0qu",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json['Chapter Summary In English'] }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "notEmpty",
+                      "singleValue": true
+                    },
+                    "id": "aff25c64-f6a2-4da1-96f5-68dc44be1878"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "17016061-caf6-43a7-b1b8-58739f596a89",
+                    "leftValue": "={{ $json['Audio Status (EN)'] }}",
+                    "rightValue": "pending",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  },
+                  {
+                    "id": "or_condition_en",
+                    "leftValue": "={{ !!(($json['Audio Status (EN)'] == 'pending' && $json['Chapter Summary In English']) || ($json['Audio Status (NE)'] == 'pending' && $json['Chapter Summary In Nepali'])) }}",
+                    "rightValue": true,
+                    "operator": {
+                      "type": "boolean",
+                      "operation": "true"
+                    }
+                  }
+                ],
+                "combinator": "or"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "ff36c068-b32f-4234-967f-3bdfc93039c7",
+                    "leftValue": "={{ $json['Chapter Summary In Nepali'] }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "notEmpty",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "c4bc157f-e0fd-4c34-afcf-94d34d23624b",
+                    "leftValue": "={{ $json['Audio Status (NE)'] }}",
+                    "rightValue": "pending",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {
+          "allMatchingOutputs": true
+        }
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        22928,
+        7392
+      ],
+      "id": "1321203b-6a22-4d97-b56c-35451f2bdce3",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "resource": "speech",
+        "voice": {
+          "__rl": true,
+          "value": "cgSgspJ2msm6clMCkdW9",
+          "mode": "id"
+        },
+        "text": "={{ $json['Chapter Summary In English'] }}",
+        "additionalOptions": {
+          "model": {
+            "__rl": true,
+            "value": "eleven_v3",
+            "mode": "list",
+            "cachedResultName": "Eleven v3 (alpha)"
+          }
+        },
+        "requestOptions": {}
+      },
+      "type": "@elevenlabs/n8n-nodes-elevenlabs.elevenLabs",
+      "typeVersion": 1,
+      "position": [
+        23376,
+        7168
+      ],
+      "id": "b70fe063-cde2-43d0-b1b7-817f0b74c1f2",
+      "name": "Convert text to speech",
+      "credentials": {
+        "elevenLabsApi": {
+          "id": "blUQEuqRO5bpDfio",
+          "name": "ElevenLabs account"
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "inputDataFieldName": "merged_audio",
+        "name": "={{ $json['Topic Names'] }}_en.mp3",
+        "driveId": {
+          "__rl": true,
+          "value": "https://drive.google.com/drive/u/1/folders/1DyZeLC6KAt0tElaPyHsWHCprC7lc3-MQ",
+          "mode": "url"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "https://drive.google.com/drive/u/1/folders/1DyZeLC6KAt0tElaPyHsWHCprC7lc3-MQ",
+          "mode": "url"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        24272,
+        7136
+      ],
+      "id": "42dbbdbd-4ef5-446e-a398-51be93b1b58b",
+      "name": "Upload file",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "j5aD6crRyRLM7Zhp",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "speech",
+        "voice": {
+          "__rl": true,
+          "value": "cgSgspJ2msm6clMCkdW9",
+          "mode": "id"
+        },
+        "text": "={{ $json['Chapter Summary In Nepali'] }}",
+        "additionalOptions": {
+          "model": {
+            "__rl": true,
+            "value": "eleven_v3",
+            "mode": "list",
+            "cachedResultName": "Eleven v3 (alpha)"
+          }
+        },
+        "requestOptions": {}
+      },
+      "type": "@elevenlabs/n8n-nodes-elevenlabs.elevenLabs",
+      "typeVersion": 1,
+      "position": [
+        23376,
+        7568
+      ],
+      "id": "e6fc7059-be93-4e45-a502-40b81ad656be",
+      "name": "Convert text to speech1",
+      "credentials": {
+        "elevenLabsApi": {
+          "id": "blUQEuqRO5bpDfio",
+          "name": "ElevenLabs account"
+        }
+      },
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "ed038292-57d2-4e6c-8be8-972e9f75e375",
+              "leftValue": false,
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "exists",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "c54d30d3-7b3c-41e8-b454-4282c0605806",
+              "leftValue": "",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        24048,
+        7136
+      ],
+      "id": "c0e7810e-1260-4aae-a967-114fc0c374e3",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "mode": "url",
+          "value": "https://docs.google.com/spreadsheets/d/10GQLAP4CuBuXM2SvUBf7ULV4tVhhCXNQx4MBLivXg8s/edit?gid=801323258#gid=801323258",
+          "__regex": "https:\\/\\/(?:drive|docs)\\.google\\.com(?:\\/.*|)\\/d\\/([0-9a-zA-Z\\-_]+)(?:\\/.*|)"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Grade 9 Computer",
+          "mode": "name"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "row_number": 0,
+            "Audio Status (EN)": "failed",
+            "Topic Names": "={{ $json['Topic Names'] }}",
+            "Remarks": "={{ $json.error?.message || \"Unknown Error/Credit Limit Reached\" }}"
+          },
+          "matchingColumns": [
+            "Topic Names"
+          ],
+          "schema": [
+            {
+              "id": "S.N.",
+              "displayName": "S.N.",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Book Name",
+              "displayName": "Book Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Topic Names",
+              "displayName": "Topic Names",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Page Count",
+              "displayName": "Page Count",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Chapter Summary In English",
+              "displayName": "Chapter Summary In English",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Chapter Summary In Nepali",
+              "displayName": "Chapter Summary In Nepali",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Audio Status (EN)",
+              "displayName": "Audio Status (EN)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Audio URL (EN)",
+              "displayName": "Audio URL (EN)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Audio Status (NE)",
+              "displayName": "Audio Status (NE)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Audio URL (NE)",
+              "displayName": "Audio URL (NE)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Remarks",
+              "displayName": "Remarks",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        23600,
+        7328
+      ],
+      "id": "c7305b29-a0ea-4b9d-8c86-80e3619a92d5",
+      "name": "Update row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "nLICTtXf6UpwL0qu",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "amount": 2
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        23152,
+        7232
+      ],
+      "id": "f42000c5-15cf-4be6-be75-0de9034be1f1",
+      "name": "Wait",
+      "webhookId": "8a150a87-8745-442f-a15f-50bada9bcdc7"
+    },
+    {
+      "parameters": {
+        "amount": 2
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        23152,
+        7648
+      ],
+      "id": "9175f3f1-3532-4cc5-b2ab-12b02579a3c0",
+      "name": "Wait1",
+      "webhookId": "58dbafbc-e10b-4605-881b-daba20666ce0"
+    },
+    {
+      "parameters": {
+        "inputDataFieldName": "merged_audio",
+        "name": "={{ $json['Topic Names'] }}_np.mp3",
+        "driveId": {
+          "__rl": true,
+          "value": "https://drive.google.com/drive/u/0/folders/1lYiHfNbh9O1SVJrR6NvVzn_f4TrcWDyz",
+          "mode": "url"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "https://drive.google.com/drive/u/0/folders/1lYiHfNbh9O1SVJrR6NvVzn_f4TrcWDyz",
+          "mode": "url"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        24272,
+        7648
+      ],
+      "id": "a631a327-ece4-41be-89e5-cd5ca90ade9f",
+      "name": "Upload file1",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "j5aD6crRyRLM7Zhp",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "ed038292-57d2-4e6c-8be8-972e9f75e375",
+              "leftValue": "",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        24048,
+        7648
+      ],
+      "id": "ae2d4a48-0bb7-4e7d-9ab1-cdcc7a5258a6",
+      "name": "If1"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "10GQLAP4CuBuXM2SvUBf7ULV4tVhhCXNQx4MBLivXg8s",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 801323258,
+          "mode": "list",
+          "cachedResultName": "Grade 9 Computer",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/10GQLAP4CuBuXM2SvUBf7ULV4tVhhCXNQx4MBLivXg8s/edit#gid=801323258"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Audio Status (NE)": "generated",
+            "Audio URL (NE)": "={{ $(\"Upload file1\").item.json.webViewLink }}",
+            "Topic Names": "={{ $('Get row(s) in sheet').item.json['Topic Names'] }}"
+          },
+          "matchingColumns": [
+            "Topic Names"
+          ],
+          "schema": [
+            {
+              "id": "S.N.",
+              "displayName": "S.N.",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Book Name",
+              "displayName": "Book Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Topic Names",
+              "displayName": "Topic Names",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Page Count",
+              "displayName": "Page Count",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Chapter Summary In English",
+              "displayName": "Chapter Summary In English",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Chapter Summary In Nepali",
+              "displayName": "Chapter Summary In Nepali",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Audio Status (EN)",
+              "displayName": "Audio Status (EN)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Audio URL (EN)",
+              "displayName": "Audio URL (EN)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Audio Status (NE)",
+              "displayName": "Audio Status (NE)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Audio URL (NE)",
+              "displayName": "Audio URL (NE)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "ElevenLabs Voice (EN)",
+              "displayName": "ElevenLabs Voice (EN)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "ElevenLabs Voice (NE)",
+              "displayName": "ElevenLabs Voice (NE)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Error Message",
+              "displayName": "Error Message",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Updated At",
+              "displayName": "Updated At",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        24496,
+        7648
+      ],
+      "id": "16b771e0-da1e-483e-818d-d8762f14dca0",
+      "name": "Update row in sheet3",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "nLICTtXf6UpwL0qu",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "10GQLAP4CuBuXM2SvUBf7ULV4tVhhCXNQx4MBLivXg8s",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 801323258,
+          "mode": "list",
+          "cachedResultName": "Grade 9 Computer",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/10GQLAP4CuBuXM2SvUBf7ULV4tVhhCXNQx4MBLivXg8s/edit#gid=801323258"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Audio URL (EN)": "={{ $(\"Upload file\").item.json.webViewLink }}",
+            "Audio Status (EN)": "generated",
+            "Topic Names": "={{ $('Get row(s) in sheet').item.json['Topic Names'] }}"
+          },
+          "matchingColumns": [
+            "Topic Names"
+          ],
+          "schema": [
+            {
+              "id": "S.N.",
+              "displayName": "S.N.",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Book Name",
+              "displayName": "Book Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Topic Names",
+              "displayName": "Topic Names",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Page Count",
+              "displayName": "Page Count",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Chapter Summary In English",
+              "displayName": "Chapter Summary In English",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Chapter Summary In Nepali",
+              "displayName": "Chapter Summary In Nepali",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Audio Status (EN)",
+              "displayName": "Audio Status (EN)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Audio URL (EN)",
+              "displayName": "Audio URL (EN)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Audio Status (NE)",
+              "displayName": "Audio Status (NE)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Audio URL (NE)",
+              "displayName": "Audio URL (NE)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "ElevenLabs Voice (EN)",
+              "displayName": "ElevenLabs Voice (EN)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "ElevenLabs Voice (NE)",
+              "displayName": "ElevenLabs Voice (NE)",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Error Message",
+              "displayName": "Error Message",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Updated At",
+              "displayName": "Updated At",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        24496,
+        7136
+      ],
+      "id": "1502ae24-9819-4db1-ace2-9599a97ab49a",
+      "name": "Update row in sheet2",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "nLICTtXf6UpwL0qu",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "## eBook Summarizer Automation (TTS using Eleven labs)\n\nAdd the summarized text (English and Nepali) on the [Sheet](https://docs.google.com/spreadsheets/d/10GQLAP4CuBuXM2SvUBf7ULV4tVhhCXNQx4MBLivXg8s/edit?gid=801323258#gid=801323258), and change the Audio status to pending.\n\nExecute the Workflow! That's it!\n\nFlow:\nFetch Summarized text -> Switch passes it to Elevenlabs (IF Success )-> Upload the file to drive and change the status from pending the generated along with the generated audio link attached. \n(IF failed) -> Mark as failed and outputs the error message to the remarks column on sheets.\n\n## Attach Header and footer Audio sample across every generated audio #DONE",
+        "height": 304,
+        "width": 902
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        22464,
+        6832
+      ],
+      "typeVersion": 1,
+      "id": "6c462a7a-5e3e-441d-a599-60559b98d64f",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [
+        23600,
+        7136
+      ],
+      "id": "c507506d-00db-48b8-a7f0-df531a83ec17",
+      "name": "Merge EN"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [
+        23600,
+        7648
+      ],
+      "id": "4c0fbe0d-9713-4548-8f00-61b0ddead6dc",
+      "name": "Merge NE"
+    },
+    {
+      "parameters": {
+        "jsCode": "\nconst fs = require('fs');\nconst { execSync } = require('child_process');\n\n/* V9: Force new binary key 'merged_audio' */\n\nconst debugFile = '/tmp/n8n_debug_en_v9.txt';\nconst log = (msg) => {\n    try { fs.appendFileSync(debugFile, msg + '\\n'); } catch(e) {}\n    console.log(msg);\n};\n\ntry { fs.unlinkSync(debugFile); } catch(e) {}\nlog(\"--- V9 START (en) ---\");\n\nfor (let i = 0; i < items.length; i++) {\n    const item = items[i];\n    \n    // Find Header\n    let binaryKey = 'data';\n    if (item.binary && !item.binary[binaryKey]) {\n        binaryKey = Object.keys(item.binary)[0];\n    }\n    \n    if (!item.binary || !binaryKey) {\n        log(`Item ${i}: No binary found.`);\n        continue;\n    }\n    \n    // 1. GET DATA BUFFER SAFELY\n    let buffer;\n    try {\n        buffer = await this.helpers.getBinaryDataBuffer(i, binaryKey);\n        log(`Buffer loaded. Size: ${buffer.length} bytes`);\n    } catch (err) {\n        log(`Failed: ${err.message}`);\n        continue;\n    }\n\n    // 2. Write Temp Input\n    const uniqueId = Math.random().toString(36).substring(7);\n    const tempInput = `/tmp/input_${uniqueId}.mp3`;\n    const tempOutput = `/tmp/output_${uniqueId}.mp3`;\n    const introPath = '/home/node/.n8n/intro_en.mp3';\n    const outroPath = '/home/node/.n8n/outro_en.mp3';\n    \n    try {\n         fs.writeFileSync(tempInput, buffer);\n         \n         const hasIntro = fs.existsSync(introPath);\n         const hasOutro = fs.existsSync(outroPath);\n         \n         let cmd = 'ffmpeg -y ';\n         let filter = [];\n         let inputs = [];\n         let idx = 0;\n    \n         if (hasIntro) {\n            inputs.push(`-i \"${introPath}\"`);\n            filter.push(`[${idx}:a]`);\n            idx++;\n         }\n    \n         inputs.push(`-i \"${tempInput}\"`);\n         filter.push(`[${idx}:a]`);\n         idx++;\n    \n         if (hasOutro) {\n            inputs.push(`-i \"${outroPath}\"`);\n            filter.push(`[${idx}:a]`);\n            idx++;\n         }\n         \n         // Even if no intro/outro, we act as a \"pass-through\" but explicit write to guarantee key exists\n         // But optimization: if no intro/outro, just copy buffer to new key?\n         // Let's run ffmpeg always to be safe on format regularizing.\n         \n         const filterStr = filter.join('') + `concat=n=${idx}:v=0:a=1[out]`;\n         cmd += inputs.join(' ') + ` -filter_complex \"${filterStr}\" -map \"[out]\" \"${tempOutput}\"`;\n         \n         execSync(cmd + ' 2>&1', { encoding: 'utf8' });\n         \n         if (fs.existsSync(tempOutput)) {\n             const newBuf = fs.readFileSync(tempOutput);\n             log(`Merged created. New size: ${newBuf.length}`);\n             \n             // Update Item - CRITICAL: USE NEW KEY\n             item.binary['merged_audio'] = await this.helpers.prepareBinaryData(newBuf, `merged_en.mp3`, 'audio/mp3');\n             \n             fs.unlinkSync(tempOutput);\n         }\n         fs.unlinkSync(tempInput);\n         \n    } catch (err) {\n        log(\"Error: \" + err.message);\n    }\n}\n\nreturn items;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        23824,
+        7136
+      ],
+      "id": "cb9958ef-4912-4d55-9ab7-851044305700",
+      "name": "FFmpeg Merge EN"
+    },
+    {
+      "parameters": {
+        "jsCode": "\nconst fs = require('fs');\nconst { execSync } = require('child_process');\n\n/* V9: Force new binary key 'merged_audio' */\n\nconst debugFile = '/tmp/n8n_debug_ne_v9.txt';\nconst log = (msg) => {\n    try { fs.appendFileSync(debugFile, msg + '\\n'); } catch(e) {}\n    console.log(msg);\n};\n\ntry { fs.unlinkSync(debugFile); } catch(e) {}\nlog(\"--- V9 START (ne) ---\");\n\nfor (let i = 0; i < items.length; i++) {\n    const item = items[i];\n    \n    // Find Header\n    let binaryKey = 'data';\n    if (item.binary && !item.binary[binaryKey]) {\n        binaryKey = Object.keys(item.binary)[0];\n    }\n    \n    if (!item.binary || !binaryKey) {\n        log(`Item ${i}: No binary found.`);\n        continue;\n    }\n    \n    // 1. GET DATA BUFFER SAFELY\n    let buffer;\n    try {\n        buffer = await this.helpers.getBinaryDataBuffer(i, binaryKey);\n        log(`Buffer loaded. Size: ${buffer.length} bytes`);\n    } catch (err) {\n        log(`Failed: ${err.message}`);\n        continue;\n    }\n\n    // 2. Write Temp Input\n    const uniqueId = Math.random().toString(36).substring(7);\n    const tempInput = `/tmp/input_${uniqueId}.mp3`;\n    const tempOutput = `/tmp/output_${uniqueId}.mp3`;\n    const introPath = '/home/node/.n8n/intro_ne.mp3';\n    const outroPath = '/home/node/.n8n/outro_ne.mp3';\n    \n    try {\n         fs.writeFileSync(tempInput, buffer);\n         \n         const hasIntro = fs.existsSync(introPath);\n         const hasOutro = fs.existsSync(outroPath);\n         \n         let cmd = 'ffmpeg -y ';\n         let filter = [];\n         let inputs = [];\n         let idx = 0;\n    \n         if (hasIntro) {\n            inputs.push(`-i \"${introPath}\"`);\n            filter.push(`[${idx}:a]`);\n            idx++;\n         }\n    \n         inputs.push(`-i \"${tempInput}\"`);\n         filter.push(`[${idx}:a]`);\n         idx++;\n    \n         if (hasOutro) {\n            inputs.push(`-i \"${outroPath}\"`);\n            filter.push(`[${idx}:a]`);\n            idx++;\n         }\n         \n         // Even if no intro/outro, we act as a \"pass-through\" but explicit write to guarantee key exists\n         // But optimization: if no intro/outro, just copy buffer to new key?\n         // Let's run ffmpeg always to be safe on format regularizing.\n         \n         const filterStr = filter.join('') + `concat=n=${idx}:v=0:a=1[out]`;\n         cmd += inputs.join(' ') + ` -filter_complex \"${filterStr}\" -map \"[out]\" \"${tempOutput}\"`;\n         \n         execSync(cmd + ' 2>&1', { encoding: 'utf8' });\n         \n         if (fs.existsSync(tempOutput)) {\n             const newBuf = fs.readFileSync(tempOutput);\n             log(`Merged created. New size: ${newBuf.length}`);\n             \n             // Update Item - CRITICAL: USE NEW KEY\n             item.binary['merged_audio'] = await this.helpers.prepareBinaryData(newBuf, `merged_ne.mp3`, 'audio/mp3');\n             \n             fs.unlinkSync(tempOutput);\n         }\n         fs.unlinkSync(tempInput);\n         \n    } catch (err) {\n        log(\"Error: \" + err.message);\n    }\n}\n\nreturn items;\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        23824,
+        7648
+      ],
+      "id": "a55bc1e3-032c-473a-a91a-ca1bbe70aceb",
+      "name": "FFmpeg Merge NE"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [],
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert text to speech": {
+      "main": [
+        [
+          {
+            "node": "Merge EN",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Update row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload file": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert text to speech1": {
+      "main": [
+        [
+          {
+            "node": "Merge NE",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Upload file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Convert text to speech",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge EN",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Wait1": {
+      "main": [
+        [
+          {
+            "node": "Convert text to speech1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge NE",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Upload file1": {
+      "main": [
+        [
+          {
+            "node": "Update row in sheet3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If1": {
+      "main": [
+        [
+          {
+            "node": "Upload file1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge EN": {
+      "main": [
+        [
+          {
+            "node": "FFmpeg Merge EN",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge NE": {
+      "main": [
+        [
+          {
+            "node": "FFmpeg Merge NE",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FFmpeg Merge EN": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FFmpeg Merge NE": {
+      "main": [
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "d7a31d5a-092e-43b2-9182-ff6b694085da",
+  "meta": {
+    "instanceId": "e99e8e6de866aee981c7c7a80b2b601f446cc5a08cea38a7fb17d28650d84bec"
+  },
+  "id": "Rm51j9YhefLVGNUnvezGc",
+  "tags": []
+}

@@ -1,0 +1,358 @@
+{
+  "name": "eBook Ingestion",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## eBook Ingestion Overall steps:\n1. Download the book\n2. Convert the PDF to HTML (IDR)\n2.1\n3. Generate Thumbs (Acrobat 300px)\n4. Extract the compressed file.\n6. Cleanup \n6.1 Delete files:\n- search\n- index\n- config\n- annotations\n- thumbnails\n\n1-many folder is the asset folder\n1-many HTML is the HTML page\nFont\n\nB. Book to thumbnails \n- All pages image extraction (300px per page)\n- All extracted images naming - From ascending order 1-All [000-000] (All)\n\nHTML, 1-many asset folder renaming (000-000)\n\nC. Classification\n- How to extract Chapter information from the PDF?\n- Create Chapter folder - Eg. Chapter 1 Basic of Sciences (1-25) Maybe Extract from Sheets?\n- Page 1-25 asset folder, HTML, Thumbnails & Font folder.\n\nD. Preprocessing the book\n\nE. Content upload (Seeding) After filling in the details\n\nF. Asset upload using book ID from publishing.\n\nG. Cleanup at publishing after assets have been uploaded.\n- Update chapter name\n- Skip page number\n- Update page numbers according to the book\n- First chapter feature by looking at the book/ page numbers at the footer (Left right alignment)\n- Cover page upload (600px)\n- QC from publishing \n\nH. Pull book to BO and link to platform. Update sheet!",
+        "height": 976,
+        "width": 528
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -3120,
+        -2496
+      ],
+      "typeVersion": 1,
+      "id": "b385755e-86f8-45f7-8d33-ad823a8fda88",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## Starting steps:\n1. Download the book\n2. Convert the PDF to HTML (IDR)\n2.1\n3. Generate Thumbs (Acrobat 300px)\n4. Extract the compressed file.\n6. Cleanup \n6.1 Delete files:\n- search\n- index\n- config\n- annotations\n- thumbnails\n\n1-many folder is the asset folder\n1-many HTML is the HTML page\nFont\n\nB. Book to thumbnails \n- All pages image extraction (300px per page)\n- All extracted images naming - From ascending order 1-All [000-000] (All)\n\nHTML, 1-many asset folder renaming (000-000)\n\nC. Classification\n- How to extract Chapter information from the PDF?\n- Create Chapter folder - Eg. Chapter 1 Basic of Sciences (1-25) Maybe Extract from Sheets?\n- Page 1-25 asset folder, HTML, Thumbnails & Font folder.\n",
+        "height": 608,
+        "width": 1264
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -3872,
+        -1312
+      ],
+      "typeVersion": 1,
+      "id": "4eee8c13-8aed-4fd6-98dd-9874ca8c611f",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "executeOnce": "={{ true }}",
+        "command": "=# 1. Setup paths\nBASE_DIR=\"/data/output\"\nARCHIVE_DIR=\"$BASE_DIR/archive\"\nTIMESTAMP=$(date +%Y-%m-%d_%H-%M)\n\nmkdir -p \"$ARCHIVE_DIR\"\n\n# 2. Find newest zip\ncd \"$BASE_DIR\"\nLATEST_ZIP=$(ls -t *.zip 2>/dev/null | head -1)\n\nif [ -z \"$LATEST_ZIP\" ]; then\n  echo '{\"error\": \"No zip file found\"}'\n  exit 1\nfi\n\nFOLDER_NAME=\"${LATEST_ZIP%.*}\"\nTARGET_DIR=\"$BASE_DIR/$FOLDER_NAME\"\n\n# Avoid overwrite\nif [ -d \"$TARGET_DIR\" ]; then\n  TARGET_DIR=\"${TARGET_DIR}_$TIMESTAMP\"\nfi\n\nmkdir -p \"$TARGET_DIR\"\n\n# 3. Unzip and Cleanup\nunzip -qo \"$LATEST_ZIP\" -d \"$TARGET_DIR\" > /dev/null 2>&1\n\ncd \"$TARGET_DIR\"\nrm -rf search* index* config* annotations* thumbnails* > /dev/null 2>&1\n\n# 4. RENAME FOLDERS & HTML (Removed 000 padding)\n# Handles 001 -> 1, 025 -> 25, etc.\nfor f in [0-9] [0-9][0-9] [0-9][0-9][0-9]; do\n  # Rename Folders\n  if [ -d \"$f\" ]; then\n    # Strip leading zeros\n    new_d=$(echo \"$f\" | sed 's/^0*//')\n    [ -z \"$new_d\" ] && new_d=\"0\" # handle case if folder was named 000\n    [ \"$f\" != \"$new_d\" ] && mv \"$f\" \"$new_d\" > /dev/null 2>&1\n  fi\n  \n  # Rename HTML Files\n  html_file=\"$f.html\"\n  if [ -f \"$html_file\" ]; then\n    new_f=$(echo \"$f\" | sed 's/^0*//').html\n    [ \"$html_file\" != \"$new_f\" ] && mv \"$html_file\" \"$new_f\" > /dev/null 2>&1\n  fi\ndone\n\n# 5. Handle PDF\nPDF_MATCH=\"$BASE_DIR/$FOLDER_NAME.pdf\"\n[ ! -f \"$PDF_MATCH\" ] && PDF_MATCH=\"$BASE_DIR/$FOLDER_NAME.PDF\"\nif [ -f \"$PDF_MATCH\" ]; then\n  mv \"$PDF_MATCH\" \"$TARGET_DIR/\" > /dev/null 2>&1\nfi\n\n# 6. Archive Zip\nmv \"$BASE_DIR/$LATEST_ZIP\" \"$ARCHIVE_DIR/\" > /dev/null 2>&1\n\n# 7. RETURN ONLY JSON\necho \"{\\\"folderName\\\":\\\"$FOLDER_NAME\\\", \\\"targetDir\\\":\\\"$TARGET_DIR\\\"}\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -4032,
+        -592
+      ],
+      "id": "a52fdef3-1b51-4889-8dc3-d68d2ba34ca4",
+      "name": "Execute Command1"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -4336,
+        -592
+      ],
+      "id": "aa1d0ac8-393b-4a08-b728-33a96b795720",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1wGwlYuG4gzmG2BpI3lK-CINW2tVLKfay6ndNQvTaPh8",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "name"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "BookName",
+              "lookupValue": "={{ JSON.parse($node[\"Execute Command1\"].json.stdout).folderName }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -3568,
+        -592
+      ],
+      "id": "f0883335-0776-44eb-a56c-5d52713d1fa8",
+      "name": "Get row(s) in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "nLICTtXf6UpwL0qu",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "command": "=# 1. Grab directory\nTARGET_DIR=\"{{ JSON.parse($node[\"Execute Command1\"].json.stdout).targetDir }}\"\n\n# 2. Find PDF\nPDF_FILE=$(find \"$TARGET_DIR\" -maxdepth 1 -name \"*.pdf\" -o -name \"*.PDF\" | head -1)\n\nif [ -z \"$PDF_FILE\" ]; then\n  echo \"{\\\"status\\\": \\\"error\\\", \\\"msg\\\": \\\"No PDF found\\\"}\"\n  exit 1\nfi\n\n# 3. Enter directory and use local names\ncd \"$TARGET_DIR\"\ncp \"$PDF_FILE\" ./input.pdf\n\n# 4. Run pdftoppm (Removed -pad 3)\n/usr/bin/pdftoppm -jpeg -r 300 -jpegopt quality=95 input.pdf page\n\n# 5. Cleanup and Rename\nrm -f input.pdf\n\nif ls page-*.jpg >/dev/null 2>&1; then\n  for thumb in page-*.jpg; do\n    # Strip 'page-' prefix\n    raw_name=\"${thumb#page-}\"\n    # Strip leading zeros from the number (001.jpg -> 1.jpg)\n    new_name=$(echo \"$raw_name\" | sed 's/^0*//')\n    # If the file was 000.jpg, sed makes it empty, so we fix that:\n    [ \"$new_name\" == \".jpg\" ] && new_name=\"0.jpg\"\n    \n    mv \"$thumb\" \"$new_name\" > /dev/null 2>&1\n  done\n  echo \"{\\\"status\\\": \\\"success\\\", \\\"msg\\\": \\\"Thumbnails generated without padding\\\"}\"\nelse\n  echo \"{\\\"status\\\": \\\"error\\\", \\\"msg\\\": \\\"No JPEGs created\\\"}\"\n  exit 1\nfi"
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -3824,
+        -592
+      ],
+      "id": "231a8d74-bc93-4c05-8056-addb8756628d",
+      "name": "Execute Command2"
+    },
+    {
+      "parameters": {
+        "command": "=# 1. Variables\nBOOK_ID=\"{{ JSON.parse($node[\"Execute Command1\"].json.stdout).folderName }}\"\nTITLE=\"{{ $json[\"ChapterTitle\"] }}\"\nSTART={{ $json[\"StartPage\"] }}\nEND={{ $json[\"EndPage\"] }}\n\nBOOK_PATH=\"/data/output/$BOOK_ID\"\nCHAPTER_PATH=\"$BOOK_PATH/$TITLE\"\n\n# 2. Create Chapter Folder\nmkdir -p \"$CHAPTER_PATH\"\n\n# 3. Move unique assets (HTML, JPG, Asset Folders)\nfor i in $(seq $START $END); do\n  [ -f \"$BOOK_PATH/$i.html\" ] && mv \"$BOOK_PATH/$i.html\" \"$CHAPTER_PATH/\"\n  [ -f \"$BOOK_PATH/$i.jpg\" ] && mv \"$BOOK_PATH/$i.jpg\" \"$CHAPTER_PATH/\"\n  [ -d \"$BOOK_PATH/$i\" ] && mv \"$BOOK_PATH/$i\" \"$CHAPTER_PATH/\"\ndone\n\n# 4. Handle Fonts (Copy, don't move, to avoid breaking other chapters)\nif [ -d \"$BOOK_PATH/fonts\" ]; then\n  cp -r \"$BOOK_PATH/fonts\" \"$CHAPTER_PATH/\"\nfi\n\n# 5. Handle PDF (Copy from root to chapter)\nPDF_NAME=\"$BOOK_ID.pdf\"\nif [ -f \"$BOOK_PATH/$PDF_NAME\" ]; then\n  cp \"$BOOK_PATH/$PDF_NAME\" \"$CHAPTER_PATH/\"\nfi\n\necho \"{\\\"status\\\": \\\"success\\\", \\\"chapter\\\": \\\"$TITLE\\\"}\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -3312,
+        -592
+      ],
+      "id": "c9de988f-f79d-489b-9c43-f6b52ffcdfce",
+      "name": "Execute Command3",
+      "executeOnce": false
+    },
+    {
+      "parameters": {
+        "executeOnce": "={{ true }}",
+        "command": "=# 1. Setup paths\nBASE_DIR=\"/data/output\"\nARCHIVE_DIR=\"$BASE_DIR/archive\"\nTIMESTAMP=$(date +%Y-%m-%d_%H-%M)\n\n# 2. Ensure archive folder exists\nmkdir -p \"$ARCHIVE_DIR\"\n\n# 3. Find the newest zip file\ncd \"$BASE_DIR\"\nLATEST_ZIP=$(ls -t *.zip 2>/dev/null | head -1)\n\nif [ -z \"$LATEST_ZIP\" ]; then\n  echo \"No zip file found\"\n  exit 1\nfi\n\n# 4. Create a folder name\nFOLDER_NAME=\"${LATEST_ZIP%.*}\"\n\n# SAFETY CHECK: If folder exists, add timestamp to avoid overwriting\nif [ -d \"$FOLDER_NAME\" ]; then\n  TARGET_DIR=\"$BASE_DIR/${FOLDER_NAME}_$TIMESTAMP\"\nelse\n  TARGET_DIR=\"$BASE_DIR/$FOLDER_NAME\"\nfi\n\nmkdir -p \"$TARGET_DIR\"\n\n# 5. Unzip into target\nunzip -qo \"$LATEST_ZIP\" -d \"$TARGET_DIR\"\n\n# 6. Cleanup & Rename inside the new folder\ncd \"$TARGET_DIR\"\nrm -rf search* index* config* annotations* thumbnails*\n\n# Rename Folders (1 -> 001)\nfor d in [0-9] [0-9][0-9]; do\n  if [ -d \"$d\" ]; then\n    mv \"$d\" \"$(printf \"%03d\" \"$d\")\"\n  fi\ndone\n\n# Rename HTML Files (1.html -> 001.html)\nfor f in [0-9].html [0-9][0-9].html; do\n  if [ -f \"$f\" ]; then\n    base=\"${f%.html}\"\n    mv \"$f\" \"$(printf \"%03d\" \"$base\").html\"\n  fi\ndone\n\n# 7. Move original zip to archive (Safely)\n# If zip exists in archive, rename the new one with a timestamp\nif [ -f \"$ARCHIVE_DIR/$LATEST_ZIP\" ]; then\n  mv \"$BASE_DIR/$LATEST_ZIP\" \"$ARCHIVE_DIR/${LATEST_ZIP%.*}_$TIMESTAMP.zip\"\nelse\n  mv \"$BASE_DIR/$LATEST_ZIP\" \"$ARCHIVE_DIR/\"\nfi\n\n# ... (after unzip and folder renaming) ...\n\n# NEW PDF LOGIC:\n# Find the PDF in the base directory that matches the zip name\nPDF_MATCH=\"$BASE_DIR/$FOLDER_NAME.pdf\"\n\nif [ -f \"$PDF_MATCH\" ]; then\n  echo \"Matching PDF found. Moving into workspace...\"\n  mv \"$PDF_MATCH\" \"$TARGET_DIR/\"\nelse\n  # Check for lowercase .pdf just in case\n  PDF_MATCH_LOWER=\"$BASE_DIR/$FOLDER_NAME.PDF\"\n  if [ -f \"$PDF_MATCH_LOWER\" ]; then\n    mv \"$PDF_MATCH_LOWER\" \"$TARGET_DIR/\"\n  fi\nfi\n\n# ... (continue to zip move/archive logic) ...\n\n# Clear any previous text so only the JSON remains\nclear > /dev/null\necho \"{\\\"folderName\\\":\\\"$FOLDER_NAME\\\", \\\"targetDir\\\":\\\"$TARGET_DIR\\\"}\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -4224,
+        -240
+      ],
+      "id": "4416ec7a-46dd-44fe-959e-2632dbe05b6e",
+      "name": "Execute Command"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1wGwlYuG4gzmG2BpI3lK-CINW2tVLKfay6ndNQvTaPh8",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "name"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "BookName",
+              "lookupValue": "={{ $node[\"Execute Command\"].json.folderName }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -3776,
+        -224
+      ],
+      "id": "3865a8a5-688e-4c3d-8d39-9488ca3b83f8",
+      "name": "Get row(s) in sheet1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "nLICTtXf6UpwL0qu",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "command": "=set -e\n\n# 1. Grab directory\nTARGET_DIR=\"{{ JSON.parse($node[\"Execute Command\"].json.stdout.match(/\\{.*\\}/)[0]).targetDir }}\"\n\n# 2. Find PDF\nPDF_FILE=$(find \"$TARGET_DIR\" -maxdepth 1 -name \"*.pdf\" -o -name \"*.PDF\" | head -1)\n\nif [ -z \"$PDF_FILE\" ]; then\n  echo \"No PDF found in $TARGET_DIR\"\n  exit 1\nfi\n\n# 3. Generate Thumbnails using the absolute path we verified\n/usr/bin/pdftoppm -jpeg -scale-to 300 -sep \"-\" -pad 3 \"$PDF_FILE\" \"$TARGET_DIR/page\"\n\n# 4. Rename\ncd \"$TARGET_DIR\"\nfor thumb in page-*.jpg; do\n  [ -f \"$thumb\" ] && mv \"$thumb\" \"${thumb#page-}\"\ndone\n\necho \"Success: Thumbnails generated in $TARGET_DIR\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -4016,
+        -240
+      ],
+      "id": "c9b3c938-31fb-489b-9dbe-b012cc95526b",
+      "name": "Execute Command4"
+    },
+    {
+      "parameters": {
+        "command": "=# Variables from the Google Sheet row\nBOOK=\"{{ $node[\"Execute Command\"].json.folderName }}\"\nTITLE=\"{{ $json[\"ChapterTitle\"] }}\"\nSTART={{ $json[\"StartPage\"] }}\nEND={{ $json[\"EndPage\"] }}\n\n# 1. Path setup\nBOOK_PATH=\"/data/output/$BOOK\"\nCHAPTER_PATH=\"$BOOK_PATH/$TITLE\"\n\n# 2. Create Chapter Folder\nmkdir -p \"$CHAPTER_PATH\"\n\n# 3. Move the pages in the range\n# seq handles the 1 to 1 or 1 to 25 range perfectly\nfor i in $(seq $START $END); do\n  PADDED=$(printf \"%03d\" $i)\n  \n  # Move HTML, Thumbnail, and the IDR asset folder\n  mv \"$BOOK_PATH/$PADDED.html\" \"$CHAPTER_PATH/\" 2>/dev/null\n  mv \"$BOOK_PATH/$PADDED.jpg\" \"$CHAPTER_PATH/\" 2>/dev/null\n  mv \"$BOOK_PATH/$PADDED\" \"$CHAPTER_PATH/\" 2>/dev/null\ndone\n\n# 4. Copy the fonts folder so the chapter is self-contained\ncp -r \"$BOOK_PATH/fonts\" \"$CHAPTER_PATH/\" 2>/dev/null"
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -3568,
+        -224
+      ],
+      "id": "ada0d9ab-c923-4f0f-acce-36b2d927ca3c",
+      "name": "Execute Command5"
+    },
+    {
+      "parameters": {
+        "command": "=# 1. Variables\nBOOK_ID=\"{{ JSON.parse($node[\"Execute Command1\"].json.stdout).folderName }}\"\nBOOK_PATH=\"/data/output/$BOOK_ID\"\n\n# 2. Cleanup\nif [ -d \"$BOOK_PATH\" ]; then\n  # Delete only the PDF sitting in the root (not inside chapters)\n  find \"$BOOK_PATH\" -maxdepth 1 \\( -name \"*.pdf\" -o -name \"*.PDF\" \\) -delete\nfi\n\necho \"{\\\"status\\\": \\\"complete\\\", \\\"msg\\\": \\\"Root cleaned for $BOOK_ID\\\"}\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -2784,
+        -592
+      ],
+      "id": "e30d8cac-2cc8-496d-8646-f30191da822e",
+      "name": "Execute Command6",
+      "executeOnce": true
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -3056,
+        -560
+      ],
+      "id": "dfedcfa0-7b77-4fbd-9a06-b8533becc54f",
+      "name": "Merge"
+    }
+  ],
+  "pinData": {
+    "Execute Command4": [
+      {
+        "json": {
+          "exitCode": 0,
+          "stderr": "/bin/sh: pdftoppm: not found",
+          "stdout": "Thumbnails generated successfully."
+        }
+      }
+    ]
+  },
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Execute Command1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command1": {
+      "main": [
+        [
+          {
+            "node": "Execute Command2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet": {
+      "main": [
+        [
+          {
+            "node": "Execute Command3",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Execute Command2": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command": {
+      "main": [
+        [
+          {
+            "node": "Execute Command4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet1": {
+      "main": [
+        [
+          {
+            "node": "Execute Command5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command4": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command3": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Execute Command6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "99eb5b11-deaf-4b3a-94a5-eca322294dc5",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "e99e8e6de866aee981c7c7a80b2b601f446cc5a08cea38a7fb17d28650d84bec"
+  },
+  "id": "cXoupDs7u6PAtJmy-LdqZ",
+  "tags": []
+}

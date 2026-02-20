@@ -1,0 +1,20 @@
+services:
+  n8n:
+    build: .
+    container_name: n8n-pro
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=localhost
+      - NODE_FUNCTION_ALLOW_BUILTIN=*
+      - NODE_FUNCTION_ALLOW_EXTERNAL=*
+      - N8N_EXECUTE_COMMAND_ENABLED=true
+      - NODES_EXCLUDE=[]
+      - N8N_BLOCK_FS_WRITE_ACCESS=false
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./output:/data/output
+
+# THIS SECTION BELOW IS WHAT WAS MISSING:
+volumes:
+  n8n_data:
