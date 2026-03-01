@@ -12,7 +12,8 @@ RUN ARCH=$(uname -m) && \
     rm apk-tools-static-*.apk
 
 # 2. Now we can use apk to install poppler-utils and xz (for ffmpeg)
-RUN apk add --no-cache poppler-utils xz
+RUN apk add --no-cache poppler-utils xz mupdf-tools ghostscript
+
 
 # 3. Install FFmpeg (Static build)
 ADD https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz /tmp/ffmpeg.tar.xz

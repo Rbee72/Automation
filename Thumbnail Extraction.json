@@ -1,0 +1,45 @@
+{
+    "name": "Thumbnail Extraction",
+    "nodes": [
+        {
+            "parameters": {},
+            "type": "n8n-nodes-base.manualTrigger",
+            "typeVersion": 1,
+            "position": [
+                0,
+                0
+            ],
+            "id": "manual-trigger-id",
+            "name": "Manual Trigger"
+        },
+        {
+            "parameters": {
+                "command": "=# Bulk Processing & Archiving Script\nBASE_DIR=\"/data/output\"\nPROCESSED_DIR=\"$BASE_DIR/processed\"\nLOGS=\"\"\n\n# Helper for logging\nlog() { LOGS=\"$LOGS$1\\n\"; }\n\n# 1. Setup processed folder\nmkdir -p \"$PROCESSED_DIR\"\nlog \"Archiving to: $PROCESSED_DIR\"\n\n# 2. Find ALL PDFs and handle spaces in filenames\nTMP_LIST=\"$BASE_DIR/pdf_list_$$.tmp\"\nfind \"$BASE_DIR\" -maxdepth 1 -type f \\( -iname \"*.pdf\" \\) > \"$TMP_LIST\"\n\nif [ ! -s \"$TMP_LIST\" ]; then\n  echo \"{\\\"status\\\": \\\"info\\\", \\\"msg\\\": \\\"No new PDFs found in $BASE_DIR to process.\\\"}\"\n  rm -f \"$TMP_LIST\"\n  exit 0\nfi\n\nlog \"Files to process:\"\nwhile IFS= read -r line; do log \"$line\"; done < \"$TMP_LIST\"\n\n# 3. Process each PDF line by line preventing space-splitting issues\nwhile IFS= read -r PDF_PATH; do\n  PDF_FILENAME=$(basename \"$PDF_PATH\")\n  FOLDER_NAME=\"${PDF_FILENAME%.*}\"\n  TARGET_DIR=\"$BASE_DIR/$FOLDER_NAME\"\n  \n  log \"--- Processing: $PDF_FILENAME ---\"\n  \n  # 4. Collision Check: Prevent mixing files if folder exists\n  if [ -d \"$TARGET_DIR\" ]; then\n    TIMESTAMP=$(date +%Y%m%d_%H%M%S)\n    log \"Warning: Folder $FOLDER_NAME already exists. Archiving to ${FOLDER_NAME}_old_$TIMESTAMP\"\n    mv \"$TARGET_DIR\" \"${TARGET_DIR}_old_$TIMESTAMP\"\n  fi\n  \n  mkdir -p \"$TARGET_DIR\"\n  \n  # 5. Extract (Standard 72 DPI via mutool for < 400KB size)\n  if ! mutool draw -r 72 -o \"$TARGET_DIR/%d.jpg\" \"$PDF_PATH\" 2>&1; then\n    log \"ERROR: mutool failed on $PDF_FILENAME. Skipping.\"\n    continue\n  fi\n  \n  # 5. Rename serially (mutool numbered output handles 1.jpg, 2.jpg...)\n  cd \"$TARGET_DIR\"\n  for thumb in page-*.jpg; do\n    [ -e \"$thumb\" ] || continue\n    num_part=$(echo \"$thumb\" | sed 's/page-//; s/\\.jpg//')\n    new_num=$(echo \"$num_part\" | sed 's/^0*//')\n    [ -z \"$new_num\" ] && new_num=\"0\"\n    [ \"$thumb\" != \"$new_num.jpg\" ] && mv \"$thumb\" \"$new_num.jpg\"\n  done\n  \n  # 6. Archive processed PDF\n  mv \"$PDF_PATH\" \"$PROCESSED_DIR/\"\n  log \"Completed and moved to processed/\"\ndone < \"$TMP_LIST\"\n\n# 7. Final Response\nprocessed_count=$(wc -l < \"$TMP_LIST\" | awk '{print $1}')\nrm -f \"$TMP_LIST\"\necho \"{\\\"status\\\": \\\"success\\\", \\\"processed_count\\\": \\\"$processed_count\\\", \\\"logs\\\": \\\"$LOGS\\\"}\""
+            },
+            "type": "n8n-nodes-base.executeCommand",
+            "typeVersion": 1,
+            "position": [
+                250,
+                0
+            ],
+            "id": "execute-command-id",
+            "name": "Extract & Rename"
+        }
+    ],
+    "connections": {
+        "Manual Trigger": {
+            "main": [
+                [
+                    {
+                        "node": "Extract & Rename",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        }
+    },
+    "settings": {
+        "executionOrder": "v1"
+    }
+}

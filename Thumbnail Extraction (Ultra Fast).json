@@ -1,0 +1,48 @@
+{
+    "nodes": [
+        {
+            "parameters": {},
+            "id": "76ec2f4d-b9e7-47b1-9f93-4903a9366e9c",
+            "name": "When clicking \"Execute Workflow\"",
+            "type": "n8n-nodes-base.manualTrigger",
+            "typeVersion": 1,
+            "position": [
+                820,
+                380
+            ]
+        },
+        {
+            "parameters": {
+                "command": "=# Ultra-Fast Bulk Processing (MuPDF + Multithreading)\nBASE_DIR=\"/data/output\"\nPROCESSED_DIR=\"$BASE_DIR/processed\"\nLOGS=\"\"\n\n# Helper for logging\nlog() { LOGS=\"$LOGS$1\\n\"; }\n\n# 1. Setup folders\nmkdir -p \"$PROCESSED_DIR\"\nlog \"Archiving to: $PROCESSED_DIR\"\n\n# 2. Find ALL PDFs and handle spaces in filenames\nTMP_LIST=\"$BASE_DIR/pdf_list_$$.tmp\"\nfind \"$BASE_DIR\" -maxdepth 1 -type f \\( -iname \"*.pdf\" \\) > \"$TMP_LIST\"\n\nif [ ! -s \"$TMP_LIST\" ]; then\n  echo \"{\\\"status\\\": \\\"info\\\", \\\"msg\\\": \\\"No new PDFs found.\\\"}\"\n  rm -f \"$TMP_LIST\"\n  exit 0\nfi\n\n# 3. Process each PDF line by line to avoid space-splitting issues\nwhile IFS= read -r PDF_PATH; do\n  PDF_FILENAME=$(basename \"$PDF_PATH\")\n  FOLDER_NAME=\"${PDF_FILENAME%.*}\"\n  TARGET_DIR=\"$BASE_DIR/$FOLDER_NAME\"\n  \n  log \"--- Ultra-Fast Processing: $PDF_FILENAME ---\"\n  \n  # Guard against \"processed\" directory name conflicts\n  if [ \"$FOLDER_NAME\" = \"processed\" ]; then\n    log \"Warning: PDF conflicts with processed directory. Skipping.\"\n    continue\n  fi\n\n  # 4. Collision Check\n  if [ -d \"$TARGET_DIR\" ]; then\n    TIMESTAMP=$(date +%Y%m%d_%H%M%S)\n    mv \"$TARGET_DIR\" \"${TARGET_DIR}_old_$TIMESTAMP\"\n  fi\n  \n  mkdir -p \"$TARGET_DIR\"\n  \n  # 5. Extract using mutool (Extremely fast, renders directly to numbered files)\n  # -r 72: 72 DPI (Standard resolution, ensures under 400KB for heavy graphics)\n  # -o: output pattern (%d is page number)\n  if mutool draw -r 72 -o \"$TARGET_DIR/%d.jpg\" \"$PDF_PATH\" 2>&1; then\n     log \"mutool extraction successful.\"\n  else\n     log \"ERROR: mutool failed for $PDF_FILENAME. Skipping.\"\n     continue\n  fi\n  \n  # 6. Archive (safely overwrite if exists)\n  mv -f \"$PDF_PATH\" \"$PROCESSED_DIR/\"\n  log \"Completed: $PDF_FILENAME\"\ndone < \"$TMP_LIST\"\n\nrm -f \"$TMP_LIST\"\n\necho \"{\\\"status\\\": \\\"success\\\", \\\"logs\\\": \\\"$LOGS\\\"}\""
+            },
+            "id": "e4b9e2c7-1c4c-5c2b-ac2b-2b3c4d5e6f7b",
+            "name": "Ultra Fast Extraction",
+            "type": "n8n-nodes-base.executeCommand",
+            "typeVersion": 1,
+            "position": [
+                1040,
+                380
+            ]
+        }
+    ],
+    "connections": {
+        "When clicking \"Execute Workflow\"": {
+            "main": [
+                [
+                    {
+                        "node": "Ultra Fast Extraction",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        }
+    },
+    "active": false,
+    "settings": {
+        "executionOrder": "v1"
+    },
+    "meta": {
+        "templateId": "modified_thumbnail_extraction_fast"
+    }
+}

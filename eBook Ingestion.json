@@ -1,0 +1,220 @@
+{
+  "name": "eBook Ingestion",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## eBook Ingestion Overall steps:\n1. Download the book\n2. Convert the PDF to HTML (IDR)\n2.1\n3. Generate Thumbs (Acrobat 300px)\n4. Extract the compressed file.\n6. Cleanup \n6.1 Delete files:\n- search\n- index\n- config\n- annotations\n- thumbnails\n\n1-many folder is the asset folder\n1-many HTML is the HTML page\nFont\n\nB. Book to thumbnails \n- All pages image extraction (300px per page)\n- All extracted images naming - From ascending order 1-All [000-000] (All)\n\nHTML, 1-many asset folder renaming (000-000)\n\nC. Classification\n- How to extract Chapter information from the PDF?\n- Create Chapter folder - Eg. Chapter 1 Basic of Sciences (1-25) Maybe Extract from Sheets?\n- Page 1-25 asset folder, HTML, Thumbnails & Font folder.\n\nD. Preprocessing the book\n\nE. Content upload (Seeding) After filling in the details\n\nF. Asset upload using book ID from publishing.\n\nG. Cleanup at publishing after assets have been uploaded.\n- Update chapter name\n- Skip page number\n- Update page numbers according to the book\n- First chapter feature by looking at the book/ page numbers at the footer (Left right alignment)\n- Cover page upload (600px)\n- QC from publishing \n\nH. Pull book to BO and link to platform. Update sheet!",
+        "height": 976,
+        "width": 528
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -3120,
+        -2496
+      ],
+      "typeVersion": 1,
+      "id": "b385755e-86f8-45f7-8d33-ad823a8fda88",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## Starting steps:\n1. Download the book\n2. Convert the PDF to HTML (IDR)\n2.1\n3. Generate Thumbs (Acrobat 300px)\n4. Extract the compressed file.\n6. Cleanup \n6.1 Delete files:\n- search\n- index\n- config\n- annotations\n- thumbnails\n\n1-many folder is the asset folder\n1-many HTML is the HTML page\nFont\n\nB. Book to thumbnails \n- All pages image extraction (300px per page)\n- All extracted images naming - From ascending order 1-All [000-000] (All)\n\nHTML, 1-many asset folder renaming (000-000)\n\nC. Classification\n- How to extract Chapter information from the PDF?\n- Create Chapter folder - Eg. Chapter 1 Basic of Sciences (1-25) Maybe Extract from Sheets?\n- Page 1-25 asset folder, HTML, Thumbnails & Font folder.\n",
+        "height": 608,
+        "width": 1264
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -3872,
+        -1312
+      ],
+      "typeVersion": 1,
+      "id": "4eee8c13-8aed-4fd6-98dd-9874ca8c611f",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -4336,
+        -592
+      ],
+      "id": "aa1d0ac8-393b-4a08-b728-33a96b795720",
+      "name": "When clicking \u201cExecute workflow\u201d"
+    },
+    {
+      "parameters": {
+        "executeOnce": "={{ true }}",
+        "command": "=# 1. Setup paths\nBASE_DIR=\"/data/output\"\nARCHIVE_DIR=\"$BASE_DIR/archive\"\nTIMESTAMP=$(date +%Y-%m-%d_%H-%M)\n\nmkdir -p \"$ARCHIVE_DIR\" 2>/dev/null\n\n# 2. Find newest zip\nif [ ! -d \"$BASE_DIR\" ]; then echo \"{\\\"error\\\": \\\"Base directory $BASE_DIR not found\\\"}\"; exit 1; fi\ncd \"$BASE_DIR\" || exit 1\n\nLATEST_ZIP=$(ls -t *.zip 2>/dev/null | head -1)\n\nif [ -z \"$LATEST_ZIP\" ]; then\n  echo \"{\\\"error\\\": \\\"No zip file found in $BASE_DIR. Please ensure the book zip is uploaded.\\\"}\"\n  exit 1\nfi\n\nFOLDER_NAME=\"${LATEST_ZIP%.*}\"\nCLEAN_NAME=$(echo \"$FOLDER_NAME\" | sed 's/_/ /g' | xargs)\nTARGET_DIR=\"$BASE_DIR/$FOLDER_NAME\"\n\n# 3. Prevent collisions\nif [ -d \"$TARGET_DIR\" ]; then\n  TARGET_DIR=\"${TARGET_DIR}_$TIMESTAMP\"\nfi\nmkdir -p \"$TARGET_DIR\"\n\n# 4. Unzip\nif ! unzip -qo \"$LATEST_ZIP\" -d \"$TARGET_DIR\"; then\n  echo \"{\\\"error\\\": \\\"Failed to unzip $LATEST_ZIP. File might be corrupted.\\\"}\"\n  exit 1\nfi\n\n# 5. Cleanup and Rename\ncd \"$TARGET_DIR\" || exit 1\nrm -rf search* index* config* annotations* thumbnails* 2>/dev/null\n\n# Rename numeric folders/files (e.g., 001 -> 1)\nfor f in [0-9]*; do\n  [ -e \"$f\" ] || continue\n  if [ -d \"$f\" ]; then\n    new_d=$(echo \"$f\" | sed 's/^0*//')\n    [ -z \"$new_d\" ] && new_d=\"0\"\n    [ \"$f\" != \"$new_d\" ] && mv \"$f\" \"$new_d\" 2>/dev/null\n  fi\n  case \"$f\" in\n    *.html)\n      base=$(echo \"$f\" | sed 's/\\.html$//')\n      new_b=$(echo \"$base\" | sed 's/^0*//')\n      [ -z \"$new_b\" ] && new_b=\"0\"\n      [ \"$base\" != \"$new_b\" ] && mv \"$f\" \"$new_b.html\" 2>/dev/null\n      ;;\n  esac\ndone\n\n# 6. Handle PDF (Move to central PDF folder)\nPDF_MATCH=\"$BASE_DIR/$FOLDER_NAME.pdf\"\n[ ! -f \"$PDF_MATCH\" ] && PDF_MATCH=\"$BASE_DIR/$FOLDER_NAME.PDF\"\nPDF_OUTPUT=\"$BASE_DIR/PDFs\"\nmkdir -p \"$PDF_OUTPUT\"\n\nFINAL_PDF_PATH=\"\"\nif [ -f \"$PDF_MATCH\" ]; then\n  mv \"$PDF_MATCH\" \"$PDF_OUTPUT/\"\n  FINAL_PDF_PATH=\"$PDF_OUTPUT/$(basename \"$PDF_MATCH\")\"\nfi\n\n# 7. Archive Zip\nmv \"$BASE_DIR/$LATEST_ZIP\" \"$ARCHIVE_DIR/\" 2>/dev/null\n\n# 8. Return JSON\nprintf '{\"folderName\":\"%s\", \"cleanFolderName\":\"%s\", \"targetDir\":\"%s\", \"pdfPath\":\"%s\"}' \"$FOLDER_NAME\" \"$CLEAN_NAME\" \"$TARGET_DIR\" \"$FINAL_PDF_PATH\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -4032,
+        -592
+      ],
+      "id": "a52fdef3-1b51-4889-8dc3-d68d2ba34ca4",
+      "name": "Execute Command1"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1wGwlYuG4gzmG2BpI3lK-CINW2tVLKfay6ndNQvTaPh8",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Sheet1",
+          "mode": "name"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "BookName",
+              "lookupValue": "={{ JSON.parse($node[\"Execute Command1\"].json.stdout).folderName.trim() }}"
+            }
+          ]
+        },
+        "options": {
+          "returnAll": true
+        }
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -3568,
+        -592
+      ],
+      "id": "f0883335-0776-44eb-a56c-5d52713d1fa8",
+      "name": "Get row(s) in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "nLICTtXf6UpwL0qu",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "command": "=# 1. Grab directory & PDF path\nTARGET_DIR=\"{{ JSON.parse($node[\"Execute Command1\"].json.stdout).targetDir }}\"\nPDF_FILE=\"{{ JSON.parse($node[\"Execute Command1\"].json.stdout).pdfPath }}\"\n\n# 2. Fallback if PDF path is missing\nif [ ! -f \"$PDF_FILE\" ]; then\n  PDF_FILE=$(find \"$TARGET_DIR\" -maxdepth 1 -name \"*.pdf\" -o -name \"*.PDF\" | head -1)\nfi\n\nif [ -z \"$PDF_FILE\" ] || [ ! -f \"$PDF_FILE\" ]; then\n  echo \"{\\\"status\\\": \\\"error\\\", \\\"msg\\\": \\\"No PDF found for extraction in $TARGET_DIR or central folder.\\\"}\"\n  exit 1\nfi\n\n# 3. Extract using mutool exclusively\nif mutool draw -r 72 -o \"$TARGET_DIR/%d.jpg\" \"$PDF_FILE\"; then\n  echo \"{\\\"status\\\": \\\"success\\\", \\\"msg\\\": \\\"Thumbnails generated via mutool\\\"}\"\nelse\n  echo \"{\\\"status\\\": \\\"error\\\", \\\"msg\\\": \\\"mutool failed to extract thumbnails. Check if mutool is installed in the container.\\\"}\"\n  exit 1\nfi"
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -3824,
+        -592
+      ],
+      "id": "231a8d74-bc93-4c05-8056-addb8756628d",
+      "name": "Extract Thumbnails"
+    },
+    {
+      "parameters": {
+        "command": "=# 1. Variables\nT_DIR=\"{{ JSON.parse($node[\"Execute Command1\"].json.stdout).targetDir }}\"\nRAW_TITLE=\"{{ $json[\"ChapterTitle\"] }}\"\nSTART=\"{{ $json[\"StartPage\"] }}\"\nEND=\"{{ $json[\"EndPage\"] }}\"\n\n# 1.1 Sanitize Title\nTITLE=$(echo \"$RAW_TITLE\" | sed 's/[^a-zA-Z0-9 _-]//g' | xargs)\n\n# Log attempt to a persistent log file in the book dir\nLOG_FILE=\"$T_DIR/classification_log.txt\"\ndate >> \"$LOG_FILE\"\necho \"Processing Chapter: '$RAW_TITLE' -> '$TITLE' (Pages $START to $END)\" >> \"$LOG_FILE\"\n\n# Clean inputs\nSTART=$(echo \"$START\" | grep -oE '[0-9]+' | head -1)\nEND=$(echo \"$END\" | grep -oE '[0-9]+' | head -1)\n\nif [ -z \"$TITLE\" ] || [ -z \"$START\" ] || [ -z \"$END\" ]; then\n  echo \"Error: Missing data for $RAW_TITLE (Start: $START, End: $END)\" >> \"$LOG_FILE\"\n  exit 0\nfi\n\nBOOK_PATH=\"$T_DIR\"\nCHAPTER_PATH=\"$BOOK_PATH/$TITLE\"\n\n# 2. Create Chapter Folder\nmkdir -p \"$CHAPTER_PATH\"\n\n# 3. Move unique assets (HTML, JPG, Asset Folders)\nMOVED_COUNT=0\nfor i in $(seq \"$START\" \"$END\"); do\n  [ -f \"$BOOK_PATH/$i.html\" ] && mv \"$BOOK_PATH/$i.html\" \"$CHAPTER_PATH/\" && MOVED_COUNT=$((MOVED_COUNT+1))\n  [ -f \"$BOOK_PATH/$i.jpg\" ] && mv \"$BOOK_PATH/$i.jpg\" \"$CHAPTER_PATH/\"\n  [ -d \"$BOOK_PATH/$i\" ] && mv \"$BOOK_PATH/$i\" \"$CHAPTER_PATH/\"\ndone\n\necho \"Successfully moved $MOVED_COUNT items for $TITLE\" >> \"$LOG_FILE\"\necho \"{\\\"status\\\": \\\"success\\\", \\\"chapter\\\": \\\"$TITLE\\\", \\\"moved\\\": $MOVED_COUNT}\" "
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -3312,
+        -592
+      ],
+      "id": "c9de988f-f79d-489b-9c43-f6b52ffcdfce",
+      "name": "Execute Command3",
+      "executeOnce": false
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -3440,
+        -592
+      ],
+      "id": "split_in_batches_node_id",
+      "name": "Split In Batches"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking \u201cExecute workflow\u201d": {
+      "main": [
+        [
+          {
+            "node": "Execute Command1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command1": {
+      "main": [
+        [
+          {
+            "node": "Extract Thumbnails",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Thumbnails": {
+      "main": [
+        [
+          {
+            "node": "Get row(s) in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet": {
+      "main": [
+        [
+          {
+            "node": "Split In Batches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split In Batches": {
+      "main": [
+        [
+          {
+            "node": "Execute Command3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command3": {
+      "main": [
+        [
+          {
+            "node": "Split In Batches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "id": "cXoupDs7u6PAtJmy-LdqZ",
+  "tags": []
+}
