@@ -14,6 +14,8 @@ Working_Exports/
 Sumary Input/
 Summary Input/
 Summary Output/
+summarizer-input/
+summarizer-output/
 n8n_data/
 
 # Environment and Logs

@@ -29,7 +29,7 @@ const watcher = chokidar.watch(WATCH_DIR, {
     }
 });
 
-const CACHE_FILE = path.resolve('/home/rajat/Automation/LO_Ingestion_Engine/processed_cache.json');
+const CACHE_FILE = path.resolve('/home/rajat/Automation/In_Book_Conversion_Engine/processed_cache.json');
 let cache = {};
 if (fs.existsSync(CACHE_FILE)) {
     try { cache = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8')); } catch (e) {}

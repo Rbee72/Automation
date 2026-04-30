@@ -1,0 +1,49 @@
+{
+  "name": "Batch Audio Merger Workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "e67e35b7-750d-4c37-83d8-7b9c97b5e828",
+      "name": "When clicking ‘Execute Workflow’",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "language": "javaScript",
+        "jsCode": "const fs = require('fs');\nconst path = require('path');\nconst { exec } = require('child_process');\n\n// Configure your paths here. \nconst inputDir = '/data/Automation/summarizer-input';\nconst outputDir = '/data/Automation/summarizer-output';\nconst introPath = '/data/Automation/intro.mp3';\nconst outroPath = '/data/Automation/outro.mp3';\n\n// Wrap exec in a promise for async execution\nconst execAsync = (command) => new Promise((resolve, reject) => {\n    exec(command, (error, stdout, stderr) => {\n        if (error) {\n            reject(error);\n            return;\n        }\n        resolve(stdout || stderr);\n    });\n});\n\nfunction walkSync(dir, filelist = []) {\n    if (!fs.existsSync(dir)) return filelist;\n    const files = fs.readdirSync(dir);\n    for (const file of files) {\n        const filepath = path.join(dir, file);\n        if (fs.statSync(filepath).isDirectory()) {\n            walkSync(filepath, filelist);\n        } else {\n            filelist.push(filepath);\n        }\n    }\n    return filelist;\n}\n\nconst allFiles = walkSync(inputDir).filter(f => f.toLowerCase().endsWith('.mp3'));\nconst hasIntro = fs.existsSync(introPath);\nconst hasOutro = fs.existsSync(outroPath);\n\nconst results = [];\n\n// Helper to process a single file asynchronously\nasync function processFile(inputFile) {\n    const relPath = path.relative(inputDir, inputFile);\n    const outputFile = path.join(outputDir, relPath);\n    const outputDirPath = path.dirname(outputFile);\n    \n    if (!fs.existsSync(outputDirPath)) {\n        fs.mkdirSync(outputDirPath, { recursive: true });\n    }\n    \n    let cmd = 'ffmpeg -y ';\n    let filter = [];\n    let inputs = [];\n    let idx = 0;\n\n    if (hasIntro) {\n       inputs.push(`-i \"${introPath}\"`);\n       filter.push(`[${idx}:a]`);\n       idx++;\n    }\n\n    inputs.push(`-i \"${inputFile}\"`);\n    filter.push(`[${idx}:a]`);\n    idx++;\n\n    if (hasOutro) {\n       inputs.push(`-i \"${outroPath}\"`);\n       filter.push(`[${idx}:a]`);\n       idx++;\n    }\n    \n    try {\n        if (idx === 1) {\n            // Just copy the file\n            fs.copyFileSync(inputFile, outputFile);\n            results.push({ file: relPath, status: 'copied' });\n        } else {\n            const filterStr = filter.join('') + `concat=n=${idx}:v=0:a=1[out]`;\n            cmd += inputs.join(' ') + ` -filter_complex \"${filterStr}\" -map \"[out]\" \"${outputFile}\"`;\n            await execAsync(cmd);\n            results.push({ file: relPath, status: 'merged' });\n        }\n    } catch(err) {\n        results.push({ file: relPath, status: 'error', error: err.message, cmd: cmd });\n    }\n}\n\n// Verify ffmpeg exists in the environment\ntry {\n    await execAsync('ffmpeg -version');\n} catch(err) {\n    return [{ json: { error: 'CRITICAL ERROR: ffmpeg is not installed inside the n8n docker container', details: err.message } }];\n}\n\n// Process files concurrently in chunks of 5\nconst concurrencyLimit = 5;\nfor (let i = 0; i < allFiles.length; i += concurrencyLimit) {\n    const batch = allFiles.slice(i, i + concurrencyLimit);\n    await Promise.all(batch.map(f => processFile(f)));\n}\n\nreturn [{ json: { processedCount: results.length, introFound: hasIntro, outroFound: hasOutro, details: results } }];"
+      },
+      "id": "e2baeb8b-9602-4fd3-ac65-f855bc905221",
+      "name": "Async FFmpeg Merger",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        200,
+        0
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute Workflow’": {
+      "main": [
+        [
+          {
+            "node": "Async FFmpeg Merger",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "async-batch-merger-version-1"
+}
