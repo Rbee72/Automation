@@ -1,0 +1,842 @@
+LO1
+
+Learning Objective 1: Explain the concept of compound interest and total amount
+
+Section: Introduction to Compound Interest
+
+Number of questions: 10
+
+
+
+Questions
+
+1. What is compound interest?
+
+a) Interest calculated only on the original principal each year (FMV)
+
+b) Interest calculated on both the principal and the previously earned interest (Z)
+
+c) Interest that remains fixed throughout the loan period (FMV)
+
+d) Interest paid only at the end of a loan period without compounding (FMV)
+
+2. In compound interest, what happens to the principal at the start of each new compounding period?
+
+a) It decreases by the interest earned (CMP)
+
+b) It remains the same as the original amount (CMP)
+
+c) It increases by the interest added from the previous period (Z)
+
+d) It is halved each period (CMP)
+
+3. What is the formula for the compound amount (CA) when the principal (P), rate (R), and time in years (T) are given?
+
+a)  (GRW)
+
+b)  (Z)
+
+c)  (GRW)
+
+d)  (GRW)
+
+4. Sukhiram deposits Rs. 1,00,000 at 10% per annum for 3 years. Under compound interest (without withdrawing), what is the total interest he earns over three years?
+
+a) Rs. 30,000 (DIF)
+
+b) Rs. 33,100 (Z)
+
+c) Rs. 31,000 (DIF)
+
+d) Rs. 10,000 (DIF)
+
+5. Which of the following best explains why compound interest results in a higher total return than simple interest over the same period?
+
+a) The rate of interest is always higher in compound interest (ADV)
+
+b) The time period is longer in compound interest (ADV)
+
+c) Interest is earned on previously accumulated interest, making the effective base grow each period (Z)
+
+d) The principal is increased manually at the end of each year (ADV)
+
+
+
+6. If a principal of Rs. 5,000 is invested at 5% per annum, what happens to the amount of interest earned in the second year compared to the first year under compound interest? 
+
+a) It is higher because the first year's interest is added to the principal (Z) 
+
+b) It decreases slightly (CPN) 
+
+c) It remains exactly the same (CPN)
+
+d) It is lower because the rate drops (CPN)
+
+
+
+7. The difference between simple interest and compound interest for the first compounding period (assuming the same rate and principal) is: 
+
+a) Always positive (ZRZ) 	
+
+b) Always negative (ZRZ) 
+
+c) Zero (Z) 
+
+d) Equal to the rate divided by 100 (ZRZ)
+
+
+
+8. Which variable is NOT explicitly required in the standard formula to find the Compound Amount? 
+
+a) The initial principal P (MTH) 
+
+b) The annual interest rate R (MTH) 
+
+c) The time period T (MTH)
+
+d) The simple interest earned in the first year (Z)
+
+
+
+9. If you leave money in a compound interest account for 10 years without withdrawing any interest, the growth curve of your money will be: 
+
+a) A straight flat line (EXP) 
+
+b) A linear upward slope (EXP) 
+
+c) A downward curve (EXP)
+
+d) An exponential upward curve (Z)
+
+
+
+10. A sum of Rs. 1,000 is invested at 10% p.a. compound interest. What is the principal for the third year? 	
+
+a) Rs. 1,210 (Z)
+
+b) Rs. 1,100 (YRY) 
+
+c) Rs. 1,000 (YRY) 
+
+d) Rs. 1,331 (YRY)
+
+
+
+Diagnostic Feedback
+
+Z = 10
+
+🏆COMPLETE MASTERY!
+
+Excellent! You have a thorough understanding of compound interest and total amount. You clearly understand how compound interest differs from simple interest and how the compounding effect causes money to grow faster. You are ready to move to calculating compound interest annually.
+
+
+
+Further learning
+
+Now that you have a strong understanding of the concept of compound interest, take the next step to see its impact in real life.
+
+Connect concepts to real life: Identify examples from your daily life where compounding occurs, such as savings accounts or inflation making goods more expensive over time.
+
+Think like a financial advisor: Look at a standard credit card bill warning and analyze how unpaid balances grow rapidly due to compounding "interest on interest."
+
+
+
+
+
+5 <= Z <= 9
+
+⚠ ADEQUATE MASTERY 
+
+Good job! You understand most core concepts of compound interest but need to revise one or two areas before moving forward.
+
+
+
+Z <= 4
+
+🚨INADEQUATE MASTERY
+
+It seems you are having difficulty understanding compound interest and total amount. Please carefully review the Introduction and Section 1.1 before moving forward.
+
+Recommended Action Plan
+
+• Read the introduction to compound interest carefully and note how the principal changes each year when interest is not withdrawn. (refer to Section 1.1)
+
+• Study the comparison between simple interest and compound interest using the worked activity with Sukhiram's example. (refer to Section 1.1)
+
+• Memorise the formula  and understand what each variable represents. (refer to Section 1.1.1)
+
+
+
+Targeted Feedbacks
+
+FMV >= 1 and Z > 4: Review the definition of compound interest. Unlike simple interest, compound interest is calculated on the growing amount — not just the original principal. (refer to Section 1.1) Refer to Video 2.1 to understand this concept better.
+
+CMP >= 1 and Z > 4: Revisit how the principal changes with each compounding period. The amount at the end of each period becomes the new principal for the next. (refer to Section 1.1) Refer to Video 2.1 to understand this concept better.
+
+GRW >= 1 and Z > 4: Review the formula for compound amount:  . Be careful not to confuse it with the simple interest formula. (refer to Section 1.1.1) Refer to Video 2.1 to understand this concept better.
+
+DIF >= 1 and Z > 4: Practise computing compound interest step-by-step using the year-by-year method and then compare your answer with the formula result. (refer to Worked Example 1 and Section 1.1) Refer to Video 2.1 to understand this concept better.
+
+ADV >= 1 and Z > 4: Review the advantages of compound interest and why it grows faster than simple interest. Focus on the concept of 'interest on interest'. (refer to Section 1.1) Refer to Video 2.1 to understand this concept better.
+
+CPN >= 1 and Z > 4: Review how compound interest behaves in the second year. Because interest is added to the principal, the second year's interest is always higher than the first year's. (refer to Section 1.1) Refer to Video 2.1 to understand this concept better.
+
+ZRZ >= 1 and Z > 4: Note that for the first compounding period, simple and compound interest are identical because no previous interest has been accumulated yet. (refer to Section 1.1) Refer to Video 2.1 to understand this concept better.
+
+MTH >= 1 and Z > 4: Remember that the Simple Interest earned in the first year is not a required variable in the standard Compound Amount formula. (refer to Section 1.1.1) Refer to Video 2.1 to understand this concept better.
+
+EXP >= 1 and Z > 4: Understand that compound interest creates an exponential growth curve because the base amount grows continuously over time. (refer to Section 1.1) Refer to Video 2.1 to understand this concept better.
+
+YRY >= 1 and Z > 4: Calculate the principal for the third year by finding the compound amount at the end of the second year. (refer to Section 1.1) Refer to Video 2.1 to understand this concept better.
+
+
+
+
+
+LO2
+
+Learning Objective 2: Calculate interest and amount compounded annually
+
+Section: Annual Compound Interest
+
+Number of questions: 10
+
+
+
+Questions
+
+1. Which formula is used to calculate the compound interest (CI) compounded annually?
+
+a)  (ANN)
+
+b)  (ANN)
+
+c)  (Z)
+
+d)  (ANN)
+
+2. Pemba takes a loan of Rs. 48,000 at 4.5% per annum for 3 years, compounded annually. What is the compound amount?
+
+a) Rs. 48,000 (WKE)
+
+b) Rs. 6,768 (WKE)
+
+c) Rs. 54,768 (Z)
+
+d) Rs. 50,160 (WKE)
+
+3. When computing compound interest without using the formula, what is used as the principal for the second year?
+
+a) The original principal only (STW)
+
+b) The interest earned in the first year only (STW)
+
+c) The compound amount at the end of the first year (Z)
+
+d) Half of the original principal (STW)
+
+4. Roshani lends money at 2% per annum compounded annually. If she receives Rs. 7,800 as compound interest at the end of 3 years, which approach is used to find the principal?
+
+a) Divide the compound interest by the rate and time directly (BCK)
+
+b) Substitute CI, R, and T into  and solve for P (Z)
+
+c) Multiply the compound interest by the time period (BCK)
+
+d) Use the simple interest formula with adjusted values (BCK)
+
+5. Sanya paid Rs. 85,675 as compound amount after 3 years at 7.5% per annum. What formula correctly gives the principal (P)?
+
+a)  (PFD)
+
+b)  (Z)
+
+c)  (PFD)
+
+d)  (PFD)
+
+
+
+6. If a bank offers 5% annual compound interest on a fixed deposit of Rs. 10,000 for 2 years, what is the total interest earned?	a) Rs. 1,000 (TIE)	b) Rs. 1,050 (TIE)	c) Rs. 1,025 (Z)	d) Rs. 11,025 (TIE)
+
+
+
+7. A sum doubles itself in a certain number of years under annual compound interest. What equation represents this scenario where P is the principal?	a) 2P = P(1 + R/100)T (Z)
+
+b) 2P = P[(1 + R/100)T - 1] (DBL)	c) P = 2P(1 + R/100)T (DBL)	d) 2P = PRT/100 (DBL)
+
+
+
+8. Why do we subtract 1 inside the brackets of the compound interest formula CI=P[(1 + R/100)T -1]?	a) To account for depreciation (SBO)	b) To adjust the formula for one year (SBO)	c) To convert the percentage into a decimal (SBO)
+
+d) To subtract the original principal from the compound amount, leaving only the interest (Z)
+
+
+
+9. If CI is Rs. 1,655, T = 3 years, and R = 10%, which equation correctly sets up the problem to find P?	a) 1655 = P[(1 + 10/100)3 - 1]  (Z)
+
+b) 1655 = P(1 + 10/100)3 (SFP)	c) P = 1655 / (10 x 3) (SFP)	d) 1655 = P[(1+0.01)3 - 1] (SFP)
+
+
+
+10. What is the amount of Rs. 8,000 for 2 years at 5% p.a. compounded annually calculated step-by-step?	a) Year 1 Amount: 8,400; Year 2 Amount: 8,800 (SBY)	b) Year 1 Amount: 8,400; Year 2 Amount: 8,420 (SBY)	c) Year 1 Amount: 8,000; Year 2 Amount: 8,400 (SBY)
+
+d) Year 1 Amount: 8,400; Year 2 Amount: 8,820 (Z)
+
+
+
+Diagnostic Feedback
+
+Z = 10
+
+🏆COMPLETE MASTERY!
+
+Excellent! You can confidently apply the annual compounding formula to find compound interest, compound amount, principal, rate, and time. You are ready to move on to semi-annual and quarterly compounding.
+
+
+
+Further learning
+
+Now that you have mastered calculating annual compound interest, put your mathematical problem-solving skills to work.
+
+Connect concepts to real life: Calculate how much a Rs. 10,000 investment would be worth by the time you graduate from university if deposited today at current local bank rates.
+
+Challenge assumptions: Does earning 5% a year mean you get rich quickly? Use the annual formula to see how long it actually takes a standard deposit to grow significantly.
+
+
+
+5 <= Z <= 9
+
+⚠ ADEQUATE MASTERY 
+
+ Good job! You have a solid understanding of annual compounding but need to revisit one or two steps in applying the formula.
+
+
+
+Z <= 4
+
+🚨INADEQUATE MASTERY
+
+It seems you need more practice with annual compound interest. Please revisit Section 1.1.1 and all related Worked Examples before moving on.
+
+
+
+Recommended Action Plan
+
+• Memorise the formula  and practise applying it with different values of P, R, and T. (refer to Section 1.1.1)
+
+• Practise computing compound interest year-by-year without the formula, then verify using the formula. (refer to Worked Example 2)
+
+• Attempt problems where you need to find the principal or rate, working backwards from the compound interest formula. (refer to Worked Examples 4, 5, and 6)
+
+Targeted Feedbacks
+
+ANN >= 1 and Z > 4: Review the annual compounding formula . Make sure you are not confusing it with the semi-annual or quarterly formula. (refer to Section 1.1.1) Refer to Video 2.2 to understand this concept better.
+
+WKE >= 1 and Z > 4: Practise applying the annual compounding formula step by step as shown in Worked Example 1. Remember: Compound Amount = Compound Interest + Principal. (refer to Worked Example 1) Refer to Video 2.2 to understand this concept better.
+
+STW >= 1 and Z > 4: Revisit how compound interest works year-by-year. The amount at the end of each year becomes the principal for the next year. (refer to Worked Example 2) Refer to Video 2.2 to understand this concept better.
+
+BCK >= 1 and Z > 4: Practise rearranging the compound interest formula to solve for the principal when CI, R, and T are known. (refer to Worked Example 4) Refer to Video 2.2 to understand this concept better.
+
+PFD >= 1 and Z > 4: Review the derivation of the compound amount formula and how to rearrange CA = P(1 + R/100)T to find P. (refer to Worked Example 6) Refer to Video 2.2 to understand this concept better.
+
+TIE >= 1 and Z > 4: Ensure you subtract the principal from the total Compound Amount to find just the Compound Interest earned. (refer to Section 1.1.1) Refer to Video 2.2 to understand this concept better.
+
+DBL >= 1 and Z > 4: When a sum doubles, the Compound Amount (CA) becomes 2P. Substitute this into the formula CA = P(1 + R/100)T. (refer to Section 1.1.1) Refer to Video 2.2 to understand this concept better.
+
+SBO >= 1 and Z > 4: The -1 inside the bracket of the CI formula is used to subtract the initial principal (P) from the total amount factor, leaving only the interest portion. (refer to Section 1.1.1) Refer to Video 2.2 to understand this concept better.
+
+SFP >= 1 and Z > 4: Practice setting up the equation to solve for principal when given the CI, substituting the given values directly into the CI formula. (refer to Worked Example 4) Refer to Video 2.2 to understand this concept better.
+
+SBY >= 1 and Z > 4: When doing step-by-step annual calculations, calculate for Year 1, then use that  as the new principal for Year 2. (refer to Worked Example 2) Refer to Video 2.2 to understand this concept better.
+
+LO3
+
+Learning Objective 3: Determine interest and amount compounded semi-annually
+
+Section: Semi-Annual Compound Interest
+
+Number of questions: 9
+
+
+
+Questions
+
+1. In semi-annual compounding, how is the annual interest rate adjusted in the formula?
+
+a) The rate is multiplied by 2 (SEM)
+
+b) The rate is divided by 2 (Z)
+
+c) The rate remains unchanged (SEM)
+
+d) The rate is divided by 4 (SEM)
+
+2. Which formula correctly gives the compound interest compounded semi-annually?
+
+a)  (SFM)
+
+b)  (SFM)
+
+c)  (Z)
+
+d)  (SFM)
+
+3. Saraswati deposits Rs. 20,000 at 8% per annum, compounded semi-annually, for 2 years. What is the compound interest?
+
+a) Rs. 3,200 (SAW)
+
+b) Rs. 3,400 (Z)
+
+c) Rs. 3,600 (SAW)
+
+d) Rs. 4,000 (SAW)
+
+4. In the semi-annual compounding formula , why is T multiplied by 2?
+
+a) Because interest is compounded twice a year, so the number of compounding periods is 2T (Z)
+
+b) Because the rate is halved, so the time must be doubled to compensate (WHY)
+
+c) Because the formula requires an even number for T (WHY)
+
+d) Because 2 years is always the minimum for semi-annual compounding (WHY)
+
+5. Prakash deposits Rs. 15,000 for 2 years, compounded semi-annually, and receives a compound amount of Rs. 18,150. What is the annual rate of interest?
+
+a) 8% (RAT)
+
+b) 10% (RAT)
+
+c) 5% (RAT)
+
+d) 9.76% (Z)
+
+
+
+6. If a principal P is invested at an annual rate R compounded semi-annually for 3 years, how many total compounding periods are there?	a) 3 (TCP)	b) 6 (Z)	c) 1.5 (TCP)	d) 12 (TCP)
+
+ 
+
+7. To calculate the semi-annual Compound Amount (CA) without subtracting the principal at the end, which formula is used?	a) CA = P(1 + R/100)2T (NCA)	b) CA = P(1 + R/200)T (NCA)	c) CA = P[(1 + R/200)2T - 1] (NCA)
+
+d) CA = P(1 + R/200)2T (Z)
+
+
+
+8. A man borrows Rs. 10,000 at 10% per annum compounded semi-annually. What is the amount he needs to pay back after 1 year?	a) Rs. 11,000 (PBO)	b) Rs. 10,500 (PBO)	c) Rs. 11,025 (Z)	d) Rs. 12,100 (PBO)
+
+
+
+9. Why does semi-annual compounding yield slightly more interest than annual compounding for the same rate and time?	a) Interest is added to the principal midway through the year, so the second half earns "interest on interest" (Z)	b) The bank accidentally pays double the annual rate (IOP)	c) The principal is artificially inflated twice a year (IOP)
+
+d) The time period is doubled in real life (IOP)
+
+
+
+
+
+
+
+Diagnostic Feedback
+
+Z = 9
+
+🏆COMPLETE MASTERY!
+
+Excellent! You fully understand semi-annual compounding. You can correctly apply the formula, adjust the rate and time for semi-annual periods, and solve for any unknown variable. You are ready to learn about quarterly compounding.
+
+
+
+Further learning
+
+Now that you have mastered semi-annual compound interest, take the next step to deepen your practical financial knowledge.
+
+Connect concepts to real life: Many government bonds and corporate dividends pay out semi-annually. Research a local bond and calculate what your actual yield would be after 5 years.
+
+Think like an investor: Compare an investment offering 6% compounded annually versus one offering 5.8% compounded semi-annually. Use the formulas to discover which actually pays more.
+
+
+
+5 <= Z <= 8
+
+⚠ ADEQUATE MASTERY 
+
+Good job! You understand semi-annual compounding but need to strengthen your understanding of how the rate and time are adjusted in the formula.
+
+
+
+Z <= 4
+
+🚨INADEQUATE MASTERY
+
+ It seems you are struggling with semi-annual compound interest. Please carefully review Section 2.3 and all related Worked Examples.
+
+Recommended Action Plan
+
+• Study Section 2.3 carefully. Focus on why the rate is divided by 2 and the time is multiplied by 2 in the semi-annual formula. 
+
+• Practise applying the formula CI = P[(1 + R/200)2T − 1] with different values, starting with the examples in the chapter. (refer to Worked Examples 13, 14, and 15)
+
+• Attempt problems where you must find the principal or rate when the compound interest or amount is known. (refer to Worked Examples 14 and 15)
+
+
+
+
+
+Targeted Feedbacks
+
+SEM >= 1 and Z > 4: Review how the annual rate is adjusted for semi-annual compounding. The rate is divided by 2 (written as R/200 in the formula) because interest is charged every six months. (refer to Section 2.3) Refer to Video 2.2 to understand this concept better.
+
+SFM >= 1 and Z > 4: Make sure you are using the correct formula for semi-annual compounding: CI = P[(1 + R/200)2T − 1]. Do not confuse it with annual or quarterly formulas. (refer to Section 2.3) Refer to Video 2.2 to understand this concept better.
+
+SAW >= 1 and Z > 4: Practise substituting values into the semi-annual formula carefully. Check your calculations step by step, especially when computing the power. (refer to Worked Example 13) Refer to Video 2.2 to understand this concept better.
+
+WHY >= 1 and Z > 4: Revisit the derivation of the semi-annual formula. T is multiplied by 2 because the interest is compounded twice a year, creating 2T compounding periods in total. (refer to Section 2.3) Refer to Video 2.2 to understand this concept better.
+
+RAT >= 1 and Z > 4: Practise rearranging the semi-annual formula to find the rate. First find the compound interest from the compound amount, then substitute into the formula and solve for R. (refer to Worked Example 15) Refer to Video 2.2 to understand this concept better.
+
+TCP >= 1 and Z > 4: Remember that the total number of compounding periods is found by multiplying the number of years by 2 (since it compounds twice a year). (refer to Section 2.3) Refer to Video 2.2 to understand this concept better.
+
+NCA >= 1 and Z > 4: Review the Compound Amount formula for semi-annual intervals: CA = P(1 + R/200)2T. Do not use the CI formula if the total amount is required. (refer to Section 2.3) Refer to Video 2.2 to understand this concept better.
+
+PBO >= 1 and Z > 4: Practice calculating the amount after a single year of semi-annual compounding. The power will be 2 x 1 = 2. (refer to Worked Example 13) Refer to Video 2.2 to understand this concept better.
+
+IOP >= 1 and Z > 4: Understand that semi-annual compounding yields more than annual compounding because you earn "interest on interest" midway through the year. (refer to Section 2.3) Refer to Video 2.2 to understand this concept better.
+
+
+
+
+
+LO4
+
+Learning Objective 4: Estimate interest and amount compounded quarterly
+
+Section: Quarterly Compound Interest
+
+Number of questions: 10
+
+
+
+Questions
+
+1. In quarterly compounding, interest is calculated how many times per year?
+
+a) 2 (QFR)
+
+b) 12 (QFR)
+
+c) 4 (Z)
+
+d) 6 (QFR)
+
+2. Which formula is used to calculate compound interest compounded quarterly?
+
+a) CI = P[(1 + R/200)2T − 1] (QFM)
+
+b) CI = P[(1 + R/100)T − 1] (QFM)
+
+c) CI = P[(1 + R/400)4T − 1] (Z)
+
+d) CI = P[(1 + R/300)3T − 1] (QFM)
+
+3. Ayan deposits Rs. 12,000 at 12% per annum, compounded quarterly, for 2 years. What is the compound interest?
+
+a) Rs. 2,880 (QWE)
+
+b) Rs. 3,204 (Z)
+
+c) Rs. 3,600 (QWE)
+
+d) Rs. 2,400 (QWE)
+
+4. In the quarterly compounding formula CI = P[(1 + R/400)4T − 1], why is R divided by 400?
+
+a) Because the rate is expressed as a decimal (QDR)
+
+b) Because interest is compounded 4 times per year, so the annual rate is split into 4 equal parts (R/4), and then divided by 100 to convert to a decimal — giving R/400 (Z)
+
+c) Because 400 is the standard denominator for all compound interest formulas (QDR)
+
+d) Because quarterly means the rate applies every 400 days (QDR)
+
+5. A borrower paid Rs. 14,715 to clear a loan after 2 years at 15% per annum, compounded quarterly. What is the principal?
+
+a) Rs. 12,000 (QPR)
+
+b) Rs. 10,916.17 (Z)
+
+c) Rs. 13,500 (QPR)
+
+d) Rs. 11,250 (QPR)
+
+
+
+6. If an investment is compounded quarterly for 5 years, what is the value of the exponent (4T) in the formula?a) 20 (Z)
+
+b) 5 (PWE)c) 10 (PWE)d) 4 (PWE)
+
+
+
+7. What is the formula for calculating the Compound Amount (CA) under quarterly compounding?a) CA = P[(1 + R/400)4T - 1] (QCA)b) CA = P(1 + R/4)T (QCA)c) CA = P(1 + R/100)4T (QCA)
+
+d) CA = P(1 + R/400)4T (Z)
+
+
+
+8. What is the quarterly compound interest on Rs. 5,000 at 8% p.a. for 9 months? (Hint: 9 months = 3 quarters)a) Rs. 300 (MQI)b) Rs. 306.04 (Z)c) Rs. 400 (MQI)d) Rs. 320 (MQI)
+
+
+
+9. Why does the quarterly compounding formula use 4T as the power?a) Because compounding occurs 4 times a year, meaning there are 4 times as many compounding periods over T years (Z)
+
+b) To multiply the total interest by four (FPY)c) Because it applies to a 4-year financial cycle (FPY)d) To cancel out the 400 in the denominator (FPY)
+
+
+
+10. If the quarterly compound amount after 1 year is Rs. 10,406.04 at an 8% annual rate, which equation helps find the principal P?a) 10406.04 = P(1 + 8/100)4 (FPA)b) 10406.04 = P(1 + 2/100)1 (FPA)c) 10406.04 = P[(1 + 8/400)4 - 1] (FPA)
+
+d) 10406.04 = P(1 + 8/400)4 (Z)
+
+Diagnostic Feedback
+
+Z = 10
+
+🏆COMPLETE MASTERY!
+
+Excellent! You fully understand quarterly compounding and can correctly apply the formula to calculate compound interest, compound amount, principal, and rate. You are ready for the next section on different rates and intervals.
+
+
+
+Further learning
+
+Now that you have mastered quarterly compound interest, take the next step to analyze high-frequency financial structures.
+
+Connect concepts to real life: Many major corporations release their earnings and pay out dividends to shareholders on a quarterly basis. Identify a company and track its quarterly financial cycle.
+
+Think like a corporate accountant: Calculate how a business's short-term quarterly loans grow over just 18 months compared to standard annual loans.
+
+Challenge assumptions: Does quarterly compounding yield drastically more money than semi-annual compounding, or does the difference shrink as intervals get smaller? Calculate both on a Rs. 10,000 base to see the mathematical limits of compounding.
+
+Explore further applications: Learn about how income taxes are often estimated and paid in quarterly installments by freelancers and business owners.
+
+
+
+3 <= Z <= 4
+
+⚠ ADEQUATE MASTERY 
+
+Good job! You understand most aspects of quarterly compounding but need to review the formula or its derivation in more detail.
+
+
+
+Z <= 2
+
+🚨INADEQUATE MASTERY
+
+It seems you are struggling with quarterly compound interest. Please carefully review Section 2.4 and all related Worked Examples.
+
+Recommended Action Plan
+
+• Study Section 2.4 and focus on why the rate is divided by 4 and the time is multiplied by 4 in the quarterly formula 
+
+• Apply the formula CI = P[(1 + R/400)4T − 1] step-by-step using the examples given in the chapter. (refer to Worked Examples 16, 17, and 18)
+
+• Practise finding the principal or rate from the quarterly formula when the compound interest or amount is known. (refer to Worked Examples 17 and 18)
+
+
+
+
+
+Targeted Feedbacks
+
+QFR >= 1 and Z > 2: Revisit the concept of quarterly compounding. 'Quarterly' means four times a year — once every three months. (refer to Section 2.4) Refer to Video 2.2 to understand this concept better.
+
+QFM >= 1 and Z > 2: Make sure you are using the correct formula for quarterly compounding: CI = P[(1 + R/400)4T − 1]. Do not confuse it with the semi-annual or annual formula. (refer to Section 2.4) Refer to Video 2.2 to understand this concept better.
+
+QWE >= 1 and Z > 2: Practice substituting values carefully into the quarterly formula and computing each step, especially the power 4T. (refer to Worked Example 16) Refer to Video 2.2 to understand this concept better.
+
+QDR >= 1 and Z > 2: Review the derivation of the quarterly formula. The rate R is divided by 4 (for four compounding periods) and by 100 (to convert percentage to decimal), giving R/400. (refer to Section 2.4) Refer to Video 2.2 to understand this concept better.
+
+QPR >= 1 and Z > 2: Practice finding the principal from the compound amount formula CA = P(1 + R/400)4T by dividing both sides by (1 + R/400)4T. (refer to Worked Example 18) Refer to Video 2.2 to understand this concept better.
+
+PWE >= 1 and Z > 2: For the exponent 4T, multiply the number of years by 4 to get the total number of quarters. (refer to Section 2.4) Refer to Video 2.2 to understand this concept better.
+
+QCA >= 1 and Z > 2: Ensure you are using the Compound Amount formula CA = P(1 + R/400)4T without subtracting 1 when you need the final total value. (refer to Section 2.4) Refer to Video 2.2 to understand this concept better.
+
+MQI >= 1 and Z > 2: Convert months to quarters. 9 months equals 3 quarters, so the power in your calculation should be 3. (refer to Worked Example 17) Refer to Video 2.2 to understand this concept better.
+
+FPY >= 1 and Z > 2: The formula uses 4T as the power because compounding happens 4 times every year, resulting in 4T total periods. (refer to Section 2.4) Refer to Video 2.2 to understand this concept better.
+
+FPA >= 1 and Z > 2: To find the principal given a quarterly compound amount, substitute the values into CA = P(1 + R/400)4T and divide. (refer to Worked Example 18) Refer to Video 2.2 to understand this concept better.
+
+
+
+LO5
+
+Learning Objective 5: Solve problems related to interest and amount compounded for different rates and intervals
+
+Section: Compound Interest at Different Rates and Intervals
+
+Number of questions: 10
+
+
+
+Questions
+
+1. When interest rates differ each year, which formula is used to calculate compound interest over three years?
+
+a) CI = P[(1 + R/100)3 − 1] (DRT)
+
+b) CI = P[(1 + R1/100) (1 + R2/100) (1 + R3/100) − 1] (Z)
+
+c) CI = P[(1 + R/200)6 − 1] (DRT)
+
+d) CI = P[(R1 + R2 + R3)/300]3 (DRT)
+
+2. Ravi borrows Rs. 75,000 for 3 years at rates of 5%, 3%, and 6% respectively. What is the compound amount?
+
+a) Rs. 82,500 (DRW)
+
+b) Rs. 75,000 (DRW)
+
+c) Rs. 85,950 (Z)
+
+d) Rs. 84,000 (DRW)
+
+3. A school teacher takes a loan of Rs. 65,000 at 2.1% per annum for 2 years and 3 months. Which formula applies?
+
+a) CI = P[(1 + R/100)T − 1] (YRM)
+
+b) CI = P[(1 + R/200)2T − 1] (YRM)
+
+c) CI = P[(1 + R/100)T (1 + MR/1200) − 1] (Z)
+
+d) CI = P[(1 + R/400)4T − 1] (YRM)
+
+4. In the formula CI = P[(1 + R/100)T (1 + MR/1200) − 1], why is 1200 used as the denominator in the second bracket?
+
+a) Because 1200 represents the total number of days in a compounding period (DEN)
+
+b) Because the monthly rate is R/12 as a percentage, and dividing by 100 gives R/1200 as a decimal (Z)
+
+c) Because 1200 is the standard denominator for all time-based formulas (DEN)
+
+d) Because M is always 12 in this formula (DEN)
+
+5. Rakshya lends Rs. 2,15,000 at 3.5% per annum for 3 years, and her friend pays Rs. 15,500 as compound interest after some extra months. Which variable are we solving for, and in which formula?
+
+a) Solving for T in CI = P[(1 + R/100)T − 1] (SOL)
+
+b) Solving for M in CI = P[(1 + R/100)T (1 + MR/1200) − 1] (Z)
+
+c) Solving for R in CI = P[(1 + R/200)2T − 1] (SOL)
+
+d) Solving for P in CI = P[(1 + R/400)4T − 1] (SOL)
+
+
+
+6. If an investment grows at 4% in the first year and 5% in the second year, the Compound Amount is calculated by:a) CA = P(1 + 4/100)(1 + 5/100) (Z)
+
+b) CA = P(1 + 9/100)2 (VRT)c) CA = P(1 + 4.5/100)2 (VRT)d) CA = P(1 + 4/100) + P(1 + 5/100) (VRT)
+
+
+
+7. Hari invests Rs. 10,000. It earns 10% in the first year and 20% in the second year. What is the total compound interest earned?a) Rs. 3,000 (VCI)b) Rs. 3,500 (VCI)c) Rs. 2,000 (VCI)
+
+d) Rs. 3,200 (Z)
+
+
+
+8. If time is given as T = 1 year and 6 months, what are the values of T and M for the mixed interval formula?a) T = 1.5, M = 0 (MXV)b) T = 1, M = 0.5 (MXV)c) T = 6, M = 1 (MXV)
+
+d) T = 1, M = 6 (Z)
+
+
+
+9. Where does the (1 + MR/1200) term come from in the mixed interval formula?a) It calculates the simple interest fraction for the remaining M months on the newly compounded principal (Z)
+
+b) It represents compounding quarterly (SIF)c) It is a tax deduction applied by banks (SIF)d) It converts years into days (SIF)
+
+
+
+10. A bank gives Rs. 2,522 as compound interest on Rs. 16,000 at 5% p.a. How would you solve for the time if the time is expected to be in years and exact months?a) Use the standard annual formula, round the decimal year, and guess the months (TXT)b) Set up CA = P(1 + R/100)T (1 + MR/1200), find the integer year T first, then solve for remaining months M (Z)c) Solve for T using the simple interest formula only (TXT)d) Divide 2522 by 12 and multiply by 16000 (TXT)
+
+
+
+Diagnostic Feedback
+
+Z = 10
+
+🏆COMPLETE MASTERY!
+
+Excellent! You can confidently select and apply the correct compound interest formula for any situation; whether rates differ by year, or time is given in years and months. You are fully prepared for advanced problems in this chapter.
+
+
+
+Further learning
+
+Now that you have mastered complex compound interest calculations involving mixed variables, it is time to apply this to dynamic financial planning.
+
+Connect concepts to real life: Most variable-rate mortgages (home loans) change interest rates from year to year. Look up historical mortgage rates and calculate how a loan's cost would shift over a 3-year period of changing rates.
+
+Think like a loan manager: Set up a payment structure for a friend borrowing money for "2 years and 5 months," ensuring you calculate the exact partial-year interest accurately using the months formula.
+
+
+
+5 <= Z <= 9
+
+⚠ ADEQUATE MASTERY 
+
+Good job! You understand most scenarios but need to review when to use each formula and how to correctly apply it for mixed time periods.
+
+
+
+Z <= 4
+
+🚨INADEQUATE MASTERY
+
+It seems you are struggling with compound interest problems across different rates and intervals. Please carefully review Sections 2.1 and 2.2 and all related Worked Examples before attempting problems.
+
+Recommended Action Plan
+
+• Review the table of formulas for different compounding intervals and practise identifying which formula to use for a given problem. (refer to Sections 2.1 and 2.2)
+
+• Practice Worked Examples 7, 8, and 9 for problems involving different annual rates. Pay attention to how each year's rate is substituted separately. (refer to Worked Examples 7–9)
+
+• Practice Worked Examples 10, 11, and 12 for problems involving years and months. Focus on the role of M and the 1200 denominator. (refer to Worked Examples 10–12)
+
+
+
+
+
+Targeted Feedbacks
+
+DRT >= 1 and Z > 4: Review the formula for different annual rates: CI = P[(1 + R1/100)(1 + R2/100)(1 + R3/100) − 1]. Each year's rate is substituted separately as a multiplying factor. (refer to Section 2.1)
+
+DRW >= 1 and Z > 4: Practice substituting three different annual rates into the formula and computing the product of the three brackets step by step. (refer to Worked Example 7)
+
+YRM >= 1 and Z > 4: Review when to use the years-and-months formula. It applies when the time period includes both whole years and additional months. (refer to Section 2.2)
+
+DEN >= 1 and Z > 4: Review the derivation of the years-and-months formula. (refer to Section 2.2)
+
+SOL >= 1 and Z > 4: Practice identifying the unknown variable in a word problem before choosing the formula. When extra months are given, substitute into the years-and-months formula and solve for M. (refer to Worked Example 11)
+
+VRT >= 1 and Z > 4: For varying rates, apply each rate as a separate multiplier in the Compound Amount formula: CA = P(1 + R1/100) (1 + R2/100). (refer to Section 2.1)
+
+VCI >= 1 and Z > 4: First find the Compound Amount using the varying rates formula, then subtract the initial principal to find the Compound Interest. (refer to Worked Example 7)
+
+MXV >= 1 and Z > 4: In the mixed interval formula, T is the whole number of years and M is the remaining number of months. (refer to Section 2.2)
+
+SIF >= 1 and Z > 4: The term (1 + MR/1200) acts as a simple interest calculation applied to the newly compounded principal for the remaining fractional year. (refer to Section 2.2)
+
+TXT >= 1 and Z > 4: When solving for exact time (years and months), use the mixed interval formula, solve for the whole year T first, then determine the remaining months M. (refer to Worked Example 11)
+
+
+
+
+
+
+

@@ -1,0 +1,1450 @@
+LO1
+
+
+
+Learning Objective 1: Define the meaning, purpose, and importance of telecommunication and describe how telecommunication systems have evolved and are used in Nepal today
+
+Section: Concept of Telecommunication, Historical Context in Nepal, Emerging Technologies, and Important Networking Terms (Pg 2–26)
+
+Number of Questions: 12
+
+
+
+Questions
+
+What does the term ‘telecommunication’ refer to?
+
+Printing documents and storing files on a computer (TEL)
+
+Writing letters and sending them by post (TEL)
+
+The science and technology of sending information across a distance using tools like the telephone, television, radio, and internet (Z)
+
+Connecting two computers using a USB cable (TEL)
+
+
+
+In which year was the first telephone exchange established in Nepal?
+
+1913 (Z)
+
+1935 (HIS)
+
+1959 (HIS)
+
+1962 (HIS)
+
+
+
+Which organisation was established in 1975 under the Communications Corporation Act to manage and expand telecommunication services in Nepal?
+
+Department of Telecommunications (ORG)
+
+Nepal Telecom Department (ORG)
+
+Ministry of Communication (ORG)
+
+Nepal Telecommunications Corporation (NTC) (Z)
+
+
+
+In which year did Nepal Telecom launch GSM mobile services for the first time?
+
+2003 (MOB)
+
+1999 (Z)
+
+2005 (MOB)
+
+2007 (MOB)
+
+
+
+Which company entered Nepal’s mobile market in 2005 as the first private operator, increasing competition?
+
+WorldLink (ORG)
+
+Spice Nepal (later known as Ncell) (Z)
+
+Vianet (ORG)
+
+Subisu (ORG)
+
+
+
+What mobile technology was launched by Nepal Telecom in May 2007 in the Kathmandu Valley?
+
+4G LTE (MOB)
+
+GSM prepaid service (MOB)
+
+Fibre-optic broadband (MOB)
+
+3G (WCDMA) (Z)
+
+
+
+Nepal Telecom became the first operator to launch 4G LTE services in which two cities in 2017?
+
+Kathmandu and Pokhara (Z)
+
+Biratnagar and Pokhara (HIS)
+
+Lalitpur and Bhaktapur (HIS)
+
+Kathmandu and Biratnagar (HIS)
+
+What was the major impact of the introduction of prepaid mobile services in Nepal in 2003?
+
+Landline usage increased significantly across the country (MOB)
+
+Mobile phones became accessible to a wider range of people, including students, shopkeepers, and families (Z)
+
+Only government officials could use mobile phones (MOB)
+
+International calling became the primary use of mobile phones (MOB)
+
+
+
+What does LTE stand for in the context of 4G technology?
+
+Long Telephone Extension (TRM)
+
+Light Transmission Equipment (TRM)
+
+Long-Term Evolution (Z)
+
+Local Transfer Encryption (TRM)
+
+
+
+Which emerging technology uses satellites orbiting close to Earth to provide internet in remote and mountainous areas where mobile towers or fibre lines cannot reach?
+
+5G (EMR)
+
+Cloud computing (EMR)
+
+Starlink (Z)
+
+IoT (EMR)
+
+
+
+What is the difference between bandwidth and throughput?
+
+Bandwidth is the maximum amount of data that can be sent; throughput is the actual amount of data that passes through the network in practice (Z)
+
+Bandwidth is the actual data transferred; throughput is the maximum capacity (TRM)
+
+Both terms mean exactly the same thing (TRM)
+
+Bandwidth measures signal strength; throughput measures signal speed (TRM)
+
+
+
+What is latency in the context of telecommunication?
+
+The number of devices connected to a network at one time (TRM)
+
+The maximum speed of an internet connection (TRM)
+
+The amount of data a network can carry per second (TRM)
+
+The time it takes for data to travel from one point to another (Z)
+
+
+
+
+
+Diagnostic Feedback
+
+Z = 12
+
+Complete Mastery: Excellent! You have a strong understanding of the meaning and importance of telecommunication, its historical development in Nepal, emerging technologies, and key networking terms.
+
+Further learning
+
+Investigate how the Digital Nepal Framework (2019) connects to the Information Highway project. Consider how telemedicine, e-learning, digital governance, and e-commerce depend on the telecommunication infrastructure that Nepal has built over the decades.
+
+Research the current status of 5G testing in Nepal. Find out what advantages 5G would bring to sectors like healthcare (remote surgery), education (virtual classrooms), and smart city development.
+
+Compare Nepal’s telecommunication journey with that of a neighbouring country such as India or Bangladesh. What similarities and differences do you notice in their timelines and adoption patterns?
+
+
+
+6 <= Z <= 11
+
+Adequate Mastery: Good effort! You understand most of the content but have a few gaps. Review the areas specified below.
+
+
+
+Z <= 5
+
+Inadequate Mastery: You need to carefully review the full section on the concept, history, and importance of telecommunication before moving on.
+
+Recommended Action Plan
+
+Start with the definition: Read the opening section on telecommunication (Pg 2–3). Write the definition in your own words. Make sure it includes the idea of sending information across a distance using electronic tools.
+
+Study the Nepal timeline in order: Read through the historical milestones from 1913 to 2017 (Pg 4–16). Create a personal timeline listing each year, what happened, and why it mattered. Pay special attention to the years 1913, 1975, 1999, 2003, 2005, 2007, and 2017.
+
+Distinguish organisations: Make a list of the key organisations mentioned (NTC, Department of Telecommunications, Spice Nepal/Ncell) and note when each was established and what role it played. Do not confuse the Department of Telecommunications (1959) with NTC (1975).
+
+Study emerging technologies: Read the section on 5G, Starlink, AI, IoT, and cloud computing (Pg 17–18). For each, note what it does and one example of how it could benefit Nepal.
+
+Review networking terms: Study the definitions of broadband, bandwidth, throughput, data packets, frequency, latency, and jitter (Pg 19–26). A useful approach is to create a two-column table matching each term to its meaning and a simple analogy.
+
+
+
+Targeted Feedback
+
+TEL >= 1 and Z > 5
+
+Re-read the opening paragraphs on what telecommunication means (Pg 2–3). Focus on the full scope of the definition. Note that it is not limited to computers or the internet. It also includes telephones, television, radio, and other systems. Make sure your understanding covers the idea of distance and the use of electronic tools.
+
+HIS >= 1 and Z > 5
+
+Revisit the historical timeline of telecommunication in Nepal (Pg 6–16). Focus on the sequence of events and the specific year each milestone occurred. A helpful strategy is to write the years in order on a piece of paper and fill in what happened next to each. Be careful not to confuse events that are close in time, such as the 1935 palace exchange and the 1959 Department of Telecommunications.
+
+
+
+ORG >= 1 and Z > 5
+
+Review the organisations involved in Nepal’s telecommunication history (Pg 8–12). Note the difference between government bodies and private operators. Identify when each was established and what its specific contribution was. Do not confuse NTC with the Department of Telecommunications or with private companies like Ncell.
+
+
+
+MOB >= 1 and Z > 5
+
+Revise the section on the mobile revolution in Nepal (Pg 9–14). Pay careful attention to the sequence: GSM launch, prepaid service, market competition, 3G, and 4G. Note the specific year for each event and what each technology enabled that the previous one could not. A common mistake is confusing the launch dates of different services.
+
+
+
+EMR >= 1 and Z > 5
+
+Revisit the section on emerging technologies (Pg 17–18). Study each technology individually: 5G, Starlink, cloud computing, AI, and IoT. For each one, note what it does and how it could benefit Nepal. Be careful not to mix up their functions — for example, Starlink provides satellite internet while 5G provides ultra-fast mobile network speed.
+
+
+
+TRM >= 1 and Z > 5
+
+Review the section on important networking terms (Pg 19–26). Focus on the precise meaning of each term. A common confusion is between bandwidth (maximum capacity) and throughput (actual data transferred). Another common confusion is between latency (delay) and jitter (uneven arrival). Try to think of each term using the textbook’s analogies, such as bandwidth as a highway width.
+
+
+
+Diagnostic Code Guide
+
+TEL → Tests understanding of the definition, purpose, and scope of telecommunication
+
+HIS → Tests recall of specific historical milestones and dates in Nepal’s telecommunication development
+
+ORG → Tests knowledge of the organisations involved in Nepal’s telecommunication history and their roles
+
+MOB → Tests understanding of the mobile revolution in Nepal, including GSM, prepaid, 3G, and 4G milestones
+
+EMR → Tests knowledge of emerging technologies (5G, Starlink, AI, IoT, cloud computing) and their relevance to Nepal
+
+TRM → Tests understanding of important networking terms such as bandwidth, throughput, latency, and jitter
+
+
+
+
+
+LO2
+
+Learning Objective 2: Describe the main types of communication channels (wired and wireless), their advantages, disadvantages, and applications
+
+Section: Communication Channels and Media (Pg 27–50)
+
+Number of Questions: 12
+
+
+
+
+
+Questions
+
+Which of the following is a wired (guided) communication channel?
+
+Wi-Fi (MED)
+
+Bluetooth (MED)
+
+Satellite (MED)
+
+CAT6 cable (Z)
+
+
+
+What is the maximum effective distance over which a CAT6 cable can transmit data without losing signal quality?
+
+100 metres (Z)
+
+40 kilometres (CAT)
+
+500 metres (CAT)
+
+10 metres (CAT)
+
+
+
+What type of cable transmits data using light signals rather than electrical signals?
+
+Coaxial cable (MED)
+
+CAT6 twisted pair (MED)
+
+Copper wire (MED)
+
+Optical fibre (Z)
+
+
+
+Which type of fibre-optic cable is best suited for long-distance communication because it allows light to travel in a single path with very little signal loss?
+
+Multi-mode fibre (MMF) (FIB)
+
+Coaxial fibre (FIB)
+
+Single-mode fibre (SMF) (Z)
+
+Twisted-pair fibre (FIB)
+
+
+
+What is a key advantage of optical fibre over CAT6 copper cables?
+
+It is cheaper and easier to install (ADV)
+
+It transmits data as light signals, allowing much higher speeds and longer distances without electromagnetic interference (Z)
+
+It does not require any connectors (ADV)
+
+It can only be used for short distances inside buildings (ADV)
+
+
+
+What is the typical range of a Bluetooth connection?
+
+About 10 metres (approximately 33 feet) (Z)
+
+Up to 100 metres (WIR)
+
+Up to 1 kilometre (WIR)
+
+Up to 500 metres (WIR)
+
+
+
+Which wireless technology uses radio waves to track and identify objects, animals, or people through embedded tags?
+
+Wi-Fi (WIR)
+
+Bluetooth (WIR)
+
+RFID (Z)
+
+Li-Fi (WIR)
+
+
+
+Which wireless technology is best suited for connecting two nearby personal devices, such as a phone and wireless headphones?
+
+Satellite (WIR)
+
+Radio waves (WIR)
+
+Wi-Fi (WIR)
+
+Bluetooth (Z)
+
+
+
+What is a limitation of satellite communication?
+
+It cannot reach remote or mountainous regions (ADV)
+
+Signals experience delays because they travel long distances between Earth and space (Z)
+
+It only works indoors (ADV)
+
+It requires physical cables to function (ADV)
+
+
+
+How does Li-Fi transmit data differently from Wi-Fi?
+
+Li-Fi uses radio waves at a higher frequency than Wi-Fi (LIF)
+
+Li-Fi uses light from LED bulbs to send data instead of radio waves (Z)
+
+Li-Fi uses satellite signals to send data indoors (LIF)
+
+Li-Fi sends data through copper cables at the speed of light (LIF)
+
+
+
+Why can lower-frequency radio waves reach farther than higher-frequency radio waves?
+
+Lower frequencies travel farther and can pass through walls and buildings more easily (Z)
+
+Lower frequencies carry more data, which pushes them further (FRQ)
+
+Lower frequencies are used only by satellites, which are closer to the ground (FRQ)
+
+Lower frequencies require less bandwidth and therefore move faster (FRQ)
+
+
+
+Which Nepali television channels rely on satellite broadcasting to reach audiences in both cities and remote mountain villages?
+
+WorldLink and Vianet (APP)
+
+Ncell and NTC (APP)
+
+Nepal Television (NTV) and Kantipur TV (Z)
+
+Kantipur FM and Radio Nepal (APP)
+
+
+
+
+
+Diagnostic Feedback
+
+Z = 12
+
+Complete Mastery: Excellent! You clearly understand both wired and wireless communication channels, their characteristics, advantages, disadvantages, and real-world applications in Nepal.
+
+Further Learning
+
+Investigate the concept of the ‘digital gap’ in Nepal. Consider why cities like Kathmandu use fibre-optic connections while remote areas rely on satellite and mobile networks. What factors determine which communication channel is used in a particular location?
+
+Compare the two Wi-Fi frequency bands (2.4 GHz and 5 GHz). Research why a device might connect better on one band than the other and what Wi-Fi 6 improves.
+
+Find out how Bhat-Bhateni supermarket uses RFID for inventory management. Think about other places in Nepal where RFID could be useful, such as public transport or libraries.
+
+
+
+6 <= Z <= 11
+
+Adequate Mastery: Good job! You understand most communication channels but have a few gaps. 
+
+
+
+5 <= Z
+
+Inadequate Mastery: You need to carefully review the entire section on communication channels and media.
+
+Recommended Action Plan
+
+Start with the overview: Read the introduction to communication channels (Pg 27–29). Understand the difference between wired (guided) and wireless (unguided) media and why the choice depends on environment, cost, reliability, and speed.
+
+Study wired media in detail: Read about CAT6 cables and optical fibre (Pg 30–38). For each, note the material, speed, maximum distance, and key advantages and disadvantages. Create a comparison table.
+
+Understand fibre types: Pay special attention to the difference between single-mode fibre (SMF) and multi-mode fibre (MMF). Note which is used for long distances and which for short distances (Pg 35).
+
+Study wireless media: Read about Wi-Fi, Bluetooth, radio waves, RFID, and satellites (Pg 40–50). For each, note the range, how it works, and its advantages and disadvantages.
+
+Learn about Li-Fi: Read the Li-Fi section (Pg 39) and note how it differs from Wi-Fi in terms of the medium used and its security implications.
+
+Connect to Nepal: For each channel type, identify at least one real-world application in Nepal mentioned in the textbook. This will help you remember the practical context.
+
+
+
+Targeted Feedback
+
+MED >= 1 and Z > 5
+
+Revisit the sections on wired and wireless media (Pg 27–50). Focus on identifying which channels use physical cables and which use electromagnetic waves. A common mistake is confusing the medium used by each technology. Try categorising each channel into ‘wired’ or ‘wireless’ as you read.
+
+
+
+CAT >= 1 and Z > 5
+
+Re-read the section on CAT6 cables (Pg 30–33). Focus on the specific performance figures: speed, operating frequency, and maximum effective distance. Note how these compare with optical fibre. Do not confuse CAT6’s distance limit with the much longer range of fibre-optic cables.
+
+
+
+FIB >= 1 and Z > 5
+
+Revisit the section on optical fibre (Pg 34–38). Study the two types of fibre: single-mode fibre (SMF) and multi-mode fibre (MMF). Focus on which one is used for long distances and which for shorter distances. Note what makes them different in terms of how light travels inside them.
+
+
+
+ADV >= 1 and Z > 5
+
+Review the advantages and disadvantages listed for each communication channel (Pg 30–50). Focus on reading each channel’s specific strengths and limitations. A useful approach is to read one channel at a time and note its advantages and disadvantages before moving to the next. Do not mix up the strengths of one channel with those of another.
+
+
+
+WIR >= 1 and Z > 5
+
+Revisit the section on wireless technologies (Pg 40–50). Study each wireless technology individually: Wi-Fi, Bluetooth, radio waves, RFID, and satellites. Focus on what makes each one unique: its range, its purpose, and the type of signal it uses. A common mistake is confusing short-range technologies (like Bluetooth) with wide-area technologies (like satellites).
+
+
+
+LIF >= 1 and Z > 5
+
+Re-read the section on Li-Fi (Pg 39). Focus on how Li-Fi transmits data and how this is fundamentally different from Wi-Fi. Note what medium Li-Fi uses and why this makes it more secure but also more limited in certain ways.
+
+
+
+FRQ >= 1 and Z > 5
+
+Revisit the section on frequency and radio waves (Pg 23–25 and Pg 44–45). Focus on the relationship between frequency and range. Note what the textbook says about lower versus higher frequencies. Think about why FM radio (lower frequency) can reach further than Wi-Fi (higher frequency).
+
+
+
+APP >= 1 and Z > 5
+
+Revise the real-world applications of communication channels in Nepal mentioned throughout the Communication Channels and Media section (Pg 27–50). Focus on which organisations use which technologies. Do not confuse television broadcasters with internet service providers or mobile operators.
+
+
+
+
+
+Diagnostic Code Guide
+
+MED → Tests ability to correctly classify communication channels as wired or wireless
+
+CAT → Tests knowledge of CAT6 cable specifications including speed, distance, and features
+
+FIB → Tests understanding of optical fibre types (SMF vs MMF) and their applications
+
+ADV → Tests knowledge of the specific advantages and disadvantages of each communication channel
+
+WIR → Tests ability to distinguish between different wireless technologies and their characteristics
+
+LIF → Tests understanding of Li-Fi technology and how it differs from Wi-Fi
+
+FRQ → Tests understanding of frequency and its effect on range and data capacity
+
+APP → Tests knowledge of real-world applications of communication channels in Nepal
+
+
+
+
+
+LO3
+
+Learning Objective 3: Recognise the functions of key networking devices such as routers, switches, modems, and repeaters, and explain how they manage and direct network traffic
+
+Section: Networking Devices (Pg 69–86)
+
+Number of Questions: 10
+
+
+
+Questions
+
+What is the primary function of a router in a network?
+
+Connect different networks and decide the best path for data packets to travel (Z)
+
+Amplify weak signals to extend coverage (FNC)
+
+Convert fibre-optic signals to Ethernet signals (FNC)
+
+Send data to all devices connected on a network (FNC)
+
+
+
+How does a switch differ from a hub in handling data?
+
+A switch sends data to all connected devices; a hub sends it only to the correct device (FNC)
+
+A switch sends data only to the intended device; a hub broadcasts data to all connected devices (Z)
+
+A hub is faster and more secure than a switch (FNC)
+
+A switch and a hub work in exactly the same way (FNC)
+
+
+
+What does a modem do in a network?
+
+Connects devices within a LAN and directs data to the correct device (FNC)
+
+Monitors all network traffic for security threats (FNC)
+
+Converts digital data into analogue signals for transmission over telephone or cable lines, and vice versa (Z)
+
+Automatically assigns IP addresses to devices on the network (FNC)
+
+
+
+What is the role of a repeater in a network?
+
+It strengthens weak signals and retransmits them to extend the network range (Z)
+
+It filters harmful data packets from entering the network (FNC)
+
+It connects two different types of networks so they can share data (FNC)
+
+It converts digital signals to analogue signals (FNC)
+
+
+
+Which networking device provides wireless connectivity by creating a Wi-Fi signal that nearby devices can join?
+
+Modem (DEV)
+
+Switch (DEV)
+
+Access Point (AP) (Z)
+
+Media Converter (DEV)
+
+
+
+A firewall is primarily used to:
+
+Boost the Wi-Fi signal strength in large buildings (FNC)
+
+Connect a home network to the internet via the ISP (FNC)
+
+Convert signals between copper and fibre-optic cables (FNC)
+
+Watch and control network traffic, allowing safe data to pass while blocking harmful content (Z)
+
+
+
+What is the full form of NIC, and what does it do?
+
+Network Information Centre — it manages IP address allocation (DEF)
+
+Network Interface Card — it is a hardware component that enables a computer to connect to a network (Z)
+
+Node Identification Code — it assigns unique codes to each device on a network (DEF)
+
+Network Internet Controller — it controls the speed of the internet connection (DEF)
+
+
+
+Which device is used to convert fibre-optic signals to Ethernet (copper) signals so that both cable types can work together in the same network?
+
+Media Converter (Z)
+
+Router (DEV)
+
+Repeater (DEV)
+
+Firewall (DEV)
+
+
+
+A bridge in networking is used to:
+
+Amplify signals so they can travel longer distances (FNC)
+
+Assign wireless channels to devices automatically (FNC)
+
+Provide wireless internet access in public areas (FNC)
+
+Connect two or more networks so they can work together as one, reducing congestion (Z)
+
+
+
+A school connects its server room to the internet with a fibre-optic line from an ISP, but the classroom computers use Ethernet (RJ45) cables. Which device would the school need to allow these two cable types to work together?
+
+Repeater (DEV)
+
+Hub (DEV)
+
+Media Converter (Z)
+
+Access Point (DEV)
+
+
+
+Diagnostic Feedback
+
+Z = 10
+
+Complete Mastery: Excellent! You have a strong understanding of the functions of key networking devices and can distinguish between their roles in managing network traffic.
+
+Further Learning
+
+Visit your school’s computer lab or home network setup and try to identify each networking device you can see (modem, router, switch, access point). Note what each one does and how they connect.
+
+Research next-generation firewalls (NGFWs) and how they use artificial intelligence and machine learning to detect threats in real time. How do they differ from traditional firewalls?
+
+Think about the role of mesh routers. How do they solve the problem of Wi-Fi dead zones in large buildings compared to using a single router with repeaters?
+
+
+
+7  <= Z  <= 9
+
+Adequate Mastery: Good job! You understand most networking devices but have a few gaps. Review the targeted feedback below and focus on the specific devices or functions you confused.
+
+
+
+Z  <= 6
+
+Inadequate Mastery: You need to carefully review the full section on networking devices before moving on.
+
+Recommended action plan
+
+Read the overview of networking devices and note that each device has a distinct function (Pg 69–70).
+
+Study each device one at a time: repeater, hub, switch, access point, firewall, bridge, router, modem, NIC, and media converter. For each, write a one-sentence summary of its specific function (Pg 71–84).
+
+Focus on commonly confused pairs: switch vs hub (how they handle data), router vs modem (what each connects), and repeater vs bridge (their different purposes). Create a comparison for each pair.
+
+Learn the media converter’s role: Understand why it is needed when a network uses both fibre-optic and copper cables (Pg 83–84).
+
+Create a summary table: List each device, its function, and one real-world example from Nepal mentioned in the textbook. This will help consolidate your understanding.
+
+
+
+Targeted Feedback
+
+FNC >= 1 and Z > 6
+
+Revisit the networking devices section (Pg 71–84) and study the specific function of each device individually. A common mistake is mixing up what different devices do. Read the function paragraph for each device carefully and note what makes it unique. For example, a router connects different networks, while a switch connects devices within the same network. Try to state each device’s function in one sentence without looking at the book.
+
+
+
+DEV >= 1 and Z > 6
+
+Re-read the section on networking devices (Pg 71–84) and focus on matching each described function to the correct device name. A useful approach is to cover the device name, read the function description, and try to identify the device. Then check your answer.
+
+
+
+DEF >= 1 and Z > 6
+
+Revisit the full forms and definitions of networking terms in this section (Pg 69–84). Pay particular attention to acronyms like NIC. Make sure you can state the full form and the purpose of each device accurately.
+
+
+
+Diagnostic code guide
+
+FNC → Tests understanding of the specific function of each networking device and the ability to distinguish between their roles
+
+DEV → Tests ability to correctly match a described function or scenario to the right networking device
+
+DEF → Tests knowledge of full forms, definitions, and factual details of networking devices
+
+
+
+
+
+LO4
+
+Learning Objective 4: Define network topology and describe how its different types, such as bus, star, ring, and hybrid, affect network performance and reliability
+
+Section: Overview of Network Topologies, including Components of Communication, Modes of Data Transmission, and Types of Message Transmission (Pg 88–101)
+
+Number of Questions: 12
+
+
+
+Questions
+
+What is a network topology?
+
+The speed of data transfer in a network (DEF)
+
+The physical or logical arrangement of devices and cables in a network (Z)
+
+The number of devices connected to a network (DEF)
+
+The type of protocol used to send data (DEF)
+
+
+
+In a bus topology, all devices share:
+
+A central hub or switch (TOP)
+
+A circular loop of cable (TOP)
+
+Individual direct links to every other device (TOP)
+
+A single main cable called the backbone (Z)
+
+
+
+Which topology connects all devices to a central hub or switch, giving each device its own dedicated cable?
+
+Bus (TOP)
+
+Ring (TOP)
+
+Hybrid (TOP)
+
+Star (Z)
+
+
+
+What is a major disadvantage of ring topology?
+
+It is the most expensive topology to set up (ADV)
+
+If one device or cable fails, the entire network stops working (Z)
+
+It requires the most cables of any topology (ADV)
+
+Data can only travel in one direction and cannot be rerouted (ADV)
+
+
+
+Which topology combines two or more different topology designs to create a custom network?
+
+Star (TOP)
+
+Bus (TOP)
+
+Hybrid (Z)
+
+Ring (TOP)
+
+
+
+What is a key advantage of star topology over bus topology?
+
+If one device fails in a star topology, the rest of the network continues working (Z)
+
+Star topology uses fewer cables than bus topology (ADV)
+
+Star topology does not require any central device (ADV)
+
+Star topology is always cheaper to set up than bus topology (ADV)
+
+
+
+In a dual-ring topology, what specific advantage does having two rings provide?
+
+It doubles the network speed (TOP)
+
+It allows wireless and wired devices to connect simultaneously (TOP)
+
+It removes the need for any networking devices (TOP)
+
+Data can travel in both directions, so if one ring fails the other can take over (Z)
+
+
+
+Which of the following is one of the five key components of network communication?
+
+Topology (COM)
+
+Bandwidth (COM)
+
+Protocol (Z)
+
+Firewall (COM)
+
+
+
+In which data transmission mode can data flow in both directions at the same time?
+
+Full-duplex (Z)
+
+Simplex (MOD)
+
+Half-duplex (MOD)
+
+Broadcast (MOD)
+
+
+
+A walkie-talkie allows both people to talk, but only one person can speak at a time while the other listens. This is an example of which transmission mode?
+
+Half-duplex (Z)
+
+Full-duplex (MOD)
+
+Simplex (MOD)
+
+Multicast (MOD)
+
+
+
+A teacher streams an online lesson only to registered students in her class, not to everyone on the network. This is an example of which type of message transmission?
+
+Broadcast (MSG)
+
+Unicast (MSG)
+
+Multicast (Z)
+
+Simplex (MSG)
+
+
+
+Which topology is most commonly used in modern schools and offices because it provides fast, stable connections and easy troubleshooting?
+
+Bus (TOP)
+
+Ring (TOP)
+
+Hybrid (TOP)
+
+Star (Z)
+
+
+
+
+
+
+
+Diagnostic Feedback
+
+Z = 12
+
+Complete Mastery: Excellent! You have a strong understanding of network topologies, their advantages and disadvantages, components of communication, data transmission modes, and message transmission types.
+
+Further Learning
+
+Think about why Wi-Fi looks like a star topology (everyone connects to a router) but actually behaves like a bus topology (the airwaves are shared and only one device can transmit at a time). What implications does this have for network performance?
+
+Research SD-WAN (Software-Defined WAN) and how it improves hybrid networks. Consider how software-based control changes the way organisations manage their network topology.
+
+Design a network layout for your school on paper. Decide which topology or combination would work best for connecting computer labs, classrooms, and the server room. Justify your choice.
+
+
+
+6 <=  Z <=  11
+
+Adequate Mastery: Good job! You understand most topology concepts but have a few gaps. Review the following
+
+
+
+Z <= 5
+
+Inadequate Mastery: You need to carefully review the full section on network topologies and transmission modes before moving on.
+
+Recommended action plan
+
+Start with the definition: Read the opening of the network topologies section (Pg 88). Confirm that topology refers to the arrangement of devices and cables in a network.
+
+Study the five components of communication: sender, receiver, medium, message, and protocol (Pg 88). Write each in your own words.
+
+Study each topology individually: bus, star, ring, and hybrid (Pg 91–97). For each, sketch the layout, note the key structural feature, and list its main advantages and disadvantages.
+
+Learn the dual-ring concept: Note how it improves on the standard ring by providing a backup path for data (Pg 96).
+
+Study the three data transmission modes: simplex, half-duplex, and full-duplex (Pg 89). Match each to its real-world example. Be careful not to confuse transmission modes with message transmission types.
+
+Study the three message transmission types: broadcast, multicast, and unicast (Pg 89–90). Note who receives the message in each case.
+
+Self-test: Draw each topology from memory. Then try to name the transmission mode from a scenario description without looking at the book.
+
+
+
+Targeted Feedback
+
+DEF >= 1 and Z > 5
+
+Revisit the opening definition of network topology (Pg 88). Focus on the precise meaning of the term. It describes the arrangement of devices and connections, not the speed, number of devices, or protocol used.
+
+
+
+TOP >= 1 and Z > 5
+
+Revisit each topology type (Pg 91–97) and focus on its defining structural feature. For example, a bus has a single backbone cable, a star has a central hub/switch, a ring forms a loop, and a hybrid combines multiple designs. Try drawing each from memory and labelling the key feature.
+
+
+
+ADV >= 1 and Z > 5
+
+Review the advantages and disadvantages of each topology (Pg 91–97). A common mistake is attributing an advantage of one topology to another. Read each topology’s advantages and disadvantages separately before comparing them.
+
+
+
+COM >= 1 and Z > 5
+
+Revisit the five key components of communication (Pg 88). Make sure you can name all five: sender, receiver, medium, message, and protocol. Do not confuse these components with networking devices or topology types.
+
+
+
+MOD >= 1 and Z > 5
+
+Re-read the section on data transmission modes (Pg 89). Study each mode’s definition and real-world example carefully. Note that broadcast and multicast are message delivery types, not transmission modes — this is a common source of confusion.
+
+
+
+MSG >= 1 and Z > 5
+
+Go through the section on message transmission types (Pg 89–90). Focus on who receives the message in each type: broadcast (everyone), multicast (a selected group), and unicast (one specific recipient). Do not confuse these with data transmission modes like simplex or full-duplex.
+
+
+
+Diagnostic Code Guide
+
+DEF → Tests understanding of the definition of network topology
+
+TOP → Tests knowledge of the defining structural features of each topology type
+
+ADV → Tests knowledge of the specific advantages and disadvantages of each topology
+
+COM → Tests knowledge of the five key components of network communication
+
+MOD → Tests understanding of data transmission modes (simplex, half-duplex, full-duplex)
+
+MSG → Tests understanding of message transmission types (broadcast, multicast, unicast)
+
+
+
+
+
+LO5
+
+Learning Objective 5: Differentiate network types (PAN, LAN, MAN, WAN), architectures (client-server, peer-to-peer, hybrid), and provide examples
+
+Section: Network Types Based on Coverage and Network Architecture (Pg 102–123)
+
+Number of Questions: 11
+
+Questions
+
+What does PAN stand for?
+
+Public Access Network (ABB)
+
+Personal Area Network (Z)
+
+Private Application Node (ABB)
+
+Portable Area Network (ABB)
+
+
+
+Which network type connects devices within a single building or campus?
+
+WAN (NET)
+
+MAN (NET)
+
+PAN (NET)
+
+LAN (Z)
+
+
+
+A Metropolitan Area Network (MAN) typically covers:
+
+A single room or workstation (NET)
+
+A city or metropolitan region (Z)
+
+A worldwide global area (NET)
+
+A personal device range of a few metres (NET)
+
+
+
+The internet is technically an example of which network type?
+
+LAN (NET)
+
+PAN (NET)
+
+WAN (Z)
+
+MAN (NET)
+
+
+
+In a client-server architecture, what is the role of the server?
+
+It only receives requests but does not store or manage any data (ARC)
+
+It acts as both a client and server at the same time, sharing resources equally (ARC)
+
+It stores data, manages files, runs applications, and delivers resources or services to clients (Z)
+
+It connects directly to the internet without any routing or security (ARC)
+
+
+
+Which network architecture allows every device to act as both a client and a server, with no central controller?
+
+Peer-to-peer (P2P) (Z)
+
+Client-server (ARC)
+
+Hybrid only (ARC)
+
+Star topology (ARC)
+
+
+
+A student transferring files from a smartphone to a laptop using Bluetooth is using which type of network?
+
+LAN (NET)
+
+MAN (NET)
+
+WAN (NET)
+
+PAN (Z)
+
+
+
+What is a major disadvantage of client-server architecture?
+
+It has weaker security than peer-to-peer networks (ADV)
+
+It is not suitable for large organisations (ADV)
+
+Each device must manage its own data independently without backup (ADV)
+
+If the server fails, clients cannot access files or services until it is fixed (Z)
+
+
+
+Which network architecture is described as simple, cheap, and easy to set up, but has weak data security because files are shared without strong control?
+
+Peer-to-peer (Z)
+
+Client-server (ARC)
+
+Hybrid (ARC)
+
+Cloud-based (ARC)
+
+
+
+A school uses a central server for student logins and data backup, while students also share project files directly between their computers. This is an example of:
+
+Peer-to-peer architecture (ARC)
+
+Hybrid network architecture (Z)
+
+Client-server architecture (ARC)
+
+Bus topology (ARC)
+
+
+
+Which network type is typically not owned by the organisation using it, but leased from telecommunications service providers?
+
+LAN (NET)
+
+PAN (NET)
+
+MAN (NET)
+
+WAN (Z)
+
+
+
+Diagnostic Feedback
+
+Z = 11
+
+Complete Mastery: Excellent! You clearly understand the different network types, their coverage areas, and network architectures including their advantages, disadvantages, and real-world applications.
+
+Further Learning
+
+Find out how your school uses its LAN to connect administrative buildings, staff quarters, and student hostels (if any). Think about why a LAN is sufficient for a single campus but a MAN or WAN would be needed to connect multiple campuses across a city or country.
+
+Consider the trade-offs between client-server and peer-to-peer architectures for a small team project. In what situations might a peer-to-peer approach be more practical than setting up a central server?
+
+Investigate NB-IoT (Narrowband IoT). How might this low-power network technology work within personal area networks for small devices?
+
+
+
+5  <= Z  <= 10
+
+Adequate Mastery: Good job! You understand most of the content but have a few gaps. Review the areas specified below.
+
+
+
+Z <= 4
+
+Inadequate Mastery: You need to carefully review the full sections on network types and network architectures before moving on.
+
+Recommended action plan
+
+Learn the four network types: PAN, LAN, MAN, and WAN. For each, memorise the full form, coverage area, and one example from the textbook (Pg 103–113).
+
+Note the ownership distinction: LAN is usually owned by the organisation; WAN is typically leased from service providers (Pg 107–109).
+
+Study each architecture in turn: client-server, peer-to-peer, and hybrid (Pg 114–123). For each, note how data is managed, who controls the network, and the key advantages and disadvantages.
+
+Practise with scenarios: Read a description of a network setup and try to identify both the network type and the architecture before checking your answer.
+
+Create a comparison table: Make one table comparing PAN, LAN, MAN, and WAN, and another comparing the three architectures. Include coverage, ownership, advantages, and disadvantages.
+
+
+
+Targeted Feedback
+
+ABB >= 1 and Z > 4
+
+Revisit the definitions of network type abbreviations (Pg 103–104). Memorise each full form precisely. A common mistake is confusing similar-sounding words. Focus on the first word of each abbreviation: Personal, Local, Metropolitan, Wide.
+
+
+
+NET >= 1 and Z > 4
+
+Re-read the section comparing the four network types (Pg 103–113). Focus on the coverage area of each one and note how they form a progression from smallest to largest: PAN (a few metres), LAN (a building/campus), MAN (a city), WAN (countries/continents). Try to recall a real-world example for each.
+
+
+
+ARC >= 1 and Z > 4
+
+Revisit the section on network architectures (Pg 114–123). Study the defining characteristic of each: client-server has a central server managing everything, peer-to-peer gives equal roles to all devices, and hybrid combines both. A common mistake is confusing a topology (like star) with an architecture (like client-server). Focus on how data control and sharing work in each architecture.
+
+
+
+ADV >= 1 and Z > 4
+
+Review the advantages and disadvantages of client-server and peer-to-peer architectures (Pg 116–119). Focus on matching each advantage or disadvantage to the correct architecture. For example, the risk of total failure when a central point goes down relates to one specific architecture.
+
+
+
+
+
+Diagnostic code guide
+
+ABB → Tests knowledge of the correct full forms of network type abbreviations
+
+NET → Tests understanding of the coverage area and characteristics that distinguish PAN, LAN, MAN, and WAN
+
+ARC → Tests understanding of the defining features of client-server, peer-to-peer, and hybrid network architectures
+
+ADV → Tests knowledge of the specific advantages and disadvantages of each network architecture
+
+
+
+
+
+LO6
+
+Learning Objective 6: Understand internet, intranet, extranet, key protocols (TCP/IP, IPv4, IPv6, DHCP), and common troubleshooting commands (ping, tracert, nslookup)
+
+Section: The Internet, Intranet, and Extranet; Network Protocols; and Troubleshooting Commands (Pg 124–145)
+
+Number of Questions: 12
+
+Questions
+
+Which of the following best describes the internet?
+
+A global network connecting millions of private, public, and government networks worldwide (Z)
+
+A private network used only within a single company (NET)
+
+A network that allows only authorised business partners to access certain internal resources (NET)
+
+A network limited to a single city managed by an ISP (NET)
+
+
+
+An intranet is best described as:
+
+A private network used within an organisation for internal communication and data sharing (Z)
+
+A global open network accessible to everyone with an internet connection (NET)
+
+A network that extends access to external suppliers, partners, and clients (NET)
+
+A type of wireless network used in public spaces (NET)
+
+
+
+What is an extranet?
+
+Another name for the public internet (NET)
+
+A private internal network for employees only (NET)
+
+An extension of an intranet that allows authorised external users such as suppliers, partners, or clients to access specific resources (Z)
+
+A satellite-based communication system used in remote areas (NET)
+
+
+
+What does TCP stand for in TCP/IP?
+
+Transfer Control Program (PRO)
+
+Transmission Control Protocol (Z)
+
+Technical Computer Process (PRO)
+
+Terminal Connection Point (PRO)
+
+
+
+IPv4 addresses use which address format?
+
+64-bit (PRO)
+
+128-bit (PRO)
+
+16-bit (PRO)
+
+32-bit (Z)
+
+
+
+Why was IPv6 developed to eventually replace IPv4?
+
+IPv4 was too fast for most networks to handle (PRO)
+
+The number of possible IPv4 addresses became limited as the number of internet-connected devices grew (Z)
+
+IPv6 uses less memory and processing power than IPv4 (PRO)
+
+IPv4 could not support wireless networks (PRO)
+
+
+
+What is the main function of DHCP in a network?
+
+It encrypts all network traffic to prevent hacking (PRO)
+
+It traces the path data takes across the internet (CMD)
+
+It automatically assigns IP addresses to devices when they connect to a network (Z)
+
+It converts domain names to IP addresses (CMD)
+
+
+
+Which network troubleshooting command is used to test whether another computer or website is reachable on a network?
+
+tracert (CMD)
+
+nslookup (CMD)
+
+ipconfig (CMD)
+
+ping (Z)
+
+
+
+What does the tracert command do?
+
+Displays your computer’s IP address and network configuration (CMD)
+
+Shows the route data takes from your computer to a destination, listing every router it passes through (Z)
+
+Tests basic connectivity to a remote host by sending a small signal (CMD)
+
+Finds the IP address associated with a website name (CMD)
+
+
+
+Which command would you use to find the IP address of a website like google.com?
+
+ping (CMD)
+
+ipconfig (CMD)
+
+tracert (CMD)
+
+nslookup (Z)
+
+
+
+Which layer of the TCP/IP model is responsible for routing data between devices using IP addresses?
+
+Application Layer (LYR)
+
+Transport Layer (LYR)
+
+Internet Layer (Z)
+
+Physical Layer (LYR)
+
+
+
+Nepal Rastra Bank uses which type of network system for its internal data and communications?
+
+Intranet (Z)
+
+Internet (NET)
+
+Extranet (NET)
+
+WAN (NET)
+
+
+
+Diagnostic Feedback
+
+Z = 12
+
+Complete mastery: Excellent! You have a strong understanding of internet, intranet, and extranet systems, key network protocols, TCP/IP layers, and common troubleshooting commands.
+
+Further learning
+
+Practise using the four troubleshooting commands (ipconfig, ping, tracert, nslookup) on your school or home computer. Compare the results when connected to Wi-Fi versus mobile data. What differences do you notice in latency and routing?
+
+Research VPN (Virtual Private Network) technology. How does a VPN protect your data on public Wi-Fi? How does it relate to the concepts of internet, intranet, and extranet?
+
+Investigate the concept of zero trust protocols. How does the principle of ‘never trust, always verify’ differ from traditional network security that trusts users inside the network?
+
+
+
+6 <= Z <= 11
+
+Adequate mastery: Good job! You understand most of the content but have a few gaps. Review the targeted feedback below.
+
+
+
+Z <= 5
+
+Inadequate mastery: You need to carefully review the full sections on internet types, protocols, and troubleshooting commands.
+
+
+
+Recommended action plan
+
+Start with the three network systems: Read the definitions of internet, intranet, and extranet (Pg 124–130). Focus on the key difference: who can access each system. Create a three-column comparison.
+
+Study TCP/IP: Confirm the correct full form (Transmission Control Protocol / Internet Protocol) and learn the five layers of the TCP/IP model (Pg 131–132). For each layer, note its function and one example.
+
+Compare IPv4 and IPv6: Note the address format (32-bit vs 128-bit), why IPv6 was needed, and what improvements it provides (Pg 133–136).
+
+Understand DHCP: Confirm its single specific function — it automatically assigns IP addresses to devices (Pg 137). Note the difference between DHCP (automatic) and static IP assignment (manual).
+
+Master the four commands: For each command (ipconfig, ping, tracert, nslookup), write its exact function in one sentence (Pg 139–143). Do not confuse them since each has a unique purpose.
+
+
+
+Targeted feedback
+
+NET >= 1 and Z > 5
+
+Revisit the section defining internet, intranet, and extranet (Pg 124–130). Focus on the key characteristic that distinguishes each: the internet is public and open to all; the intranet is private and restricted to an organisation’s members; the extranet extends the intranet to authorised external users. A useful approach is to think about who can access each system. Do not confuse intranet with extranet. Note which one is purely internal and which allows limited outside access.
+
+
+
+PRO >= 1 and Z > 5
+
+Revisit the section on network protocols and IP addressing (Pg 131–137). Focus on the precise facts: the full form of TCP, the bit-length of IPv4 vs IPv6, and the specific function of DHCP. A common mistake is confusing the functions of different protocols. Study each one individually and note what makes it unique before comparing them.
+
+
+
+CMD >= 1 and Z > 5
+
+Re-read the section on troubleshooting commands (Pg 139–143). Each command has one specific function. A helpful strategy is to write each command name on one side of a card and its function on the other, then test yourself. Pay attention to the difference between ping (tests if a destination is reachable), tracert (shows the route data takes), nslookup (finds a website’s IP address), and ipconfig (shows your own network details).
+
+
+
+LYR >= 1 and Z > 5
+
+Revisit the TCP/IP model and its five layers (Pg 131–132). Study the specific responsibility of each layer. Focus on which layer handles addressing and routing (sending data to the right destination) versus which layer handles reliable delivery (checking that data arrives correctly). Note the order of the layers from top to bottom.
+
+
+
+Diagnostic code guide
+
+NET → Tests understanding of the differences between internet, intranet, and extranet in terms of access and purpose
+
+PRO → Tests knowledge of network protocols including TCP/IP full forms, IPv4/IPv6 addressing, and DHCP function
+
+CMD → Tests ability to match each troubleshooting command (ping, tracert, nslookup, ipconfig) to its specific function
+
+LYR → Tests understanding of the TCP/IP model layers and their individual responsibilities
+
+
+

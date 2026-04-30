@@ -1,7 +1,33 @@
+# Dependency directories
 node_modules/
+**/node_modules/
+
+# Temporary and Output directories
 output/
+**/output/
+exports/
+**/exports/
+scratch/
+**/scratch/
+Working_Exports/
+**/Working_Exports/
+Sumary Input/
+Summary Input/
+Summary Output/
+n8n_data/
+
+# Environment and Logs
 .env
 .DS_Store
 *.log
-n8n_data/
+processed_cache.json
+**/processed_cache.json
+
+# Tooling
 .gemini/
+.idea/
+.vscode/
+
+# Binaries / Large Data
+*.mp3
+*.xlsx

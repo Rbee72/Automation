@@ -1,0 +1,876 @@
+
+Learning Objective 1
+
+Grade 8 | Chapter 2 | Number Systems
+
+Learning Objective 1: Explain the decimal number system
+
+____________________________________________________________________________
+
+Sections covered:
+
+1.1 Meaning of decimal number system 
+
+1.2 How the decimal system works
+
+
+Number of questions: 7
+
+
+____________________________________________________________________________
+
+Questions
+
+1. Which of the following best describes the decimal number system?
+
+a) A system that uses only two digits: 0 and 1 (DEC)
+
+b) A system based on powers of 10, using digits 0 through 9 (Z)
+
+c) A system based on powers of 5, used in ancient cultures (DEC)
+
+d) A system that uses letters and numbers to represent values (DEC)
+
+2. In the decimal number 362, what does the digit 6 represent?
+
+a) 6 × 10² = 600 (PLV)
+
+b) 6 × 10⁰ = 6 (PLV)
+
+c) 6 × 10¹ = 60 (Z)
+
+d) 6 × 10³ = 6000 (PLV)
+
+3. Which of the following is the correct expanded form of the number 1024 using powers of 10?
+
+a) 1×10³ + 2×10² + 4×10¹ (EXP)
+
+b) 1×10³ + 0×10² + 2×10¹ + 4×10⁰ (Z)
+
+c) 1×10⁴ + 0×10³ + 2×10² + 4×10¹ (EXP)
+
+d) 1×10³ + 2×10¹ + 4×10⁰ (EXP)
+
+4. What is the decimal value of the expression 3×10² + 6×10¹ + 4×10⁰?
+
+a) 3,064 (CMP)
+
+b) 364 (Z)
+
+c) 306 (CMP)
+
+d) 3,640 (CMP)
+
+5. In the expanded form 5×10⁵ + 3×10⁴ + 4×10³ + 0×10² + 9×10¹ + 5×10⁰, what is the short form of this number?
+
+a) 53,495 (SHT)
+
+b) 534,905 (SHT)
+
+c) 534,095 (Z)
+
+d) 53,4095 (SHT)
+
+6. What is the place value of the digit 5 in the number 75,024?
+
+    a) 5 × 10¹ = 50 (PPV)
+
+    b) 5 × 10² = 500 (PPV)
+
+    c) 5 × 10³ = 5,000 (Z)
+
+    d) 5 × 10⁴ = 50,000 (PPV)
+
+7. A shopkeeper records a sale of Rs. 3,04,506. Which of the following correctly expresses this in expanded form?
+
+    a) 3×10⁵ + 4×10³ + 5×10² + 6×10⁰ (EXV)
+
+    b) 3×10⁵ + 0×10⁴ + 4×10³ + 5×10² + 0×10¹ + 6×10⁰ (Z)
+
+    c) 3×10⁶ + 4×10³ + 5×10² + 6×10⁰ (EXV)
+
+    d) 3×10⁵ + 4×10⁴ + 5×10³ + 6×10⁰ (EXV)
+
+Diagnostic Feedback:
+
+Z = 7
+
+Complete mastery: 
+
+Excellent! You have a strong understanding of the decimal number system, including place values, powers of 10, and converting between expanded form and short form.
+
+Further Learning:
+
+
+Explore other base systems: 
+
+
+Investigate the octal (base-8) and hexadecimal (base-16) number systems that are widely used in computing. Build a positional value table for each and convert a few small decimal numbers into each system. Compare how many digits are needed across decimal, binary, quinary, octal, and hexadecimal to represent the same value.
+
+
+Connect place value to large real-world numbers: 
+
+
+Find a large number relevant to Nepal, such as the national population, the altitude of Mount Everest in metres, or the distance from Kathmandu to a major city in kilometres. Write it in full expanded form using powers of 10 and identify the place value of each digit.
+
+
+Investigate why we use base 10: 
+
+
+Research the historical and anthropological reasons why humans settled on a base-10 system. Consider the role of ten fingers in counting, and look into ancient civilisations that used different bases (such as the Babylonians who used base-60). 
+
+4 <= Z <= 6
+
+Adequate mastery: Good work! You understand most aspects of the decimal number system but need to review one specific area before moving on.
+
+Z <= 3
+
+Inadequate mastery: It seems you are having difficulty with the decimal number system. Please re-read Section 1 carefully (pages 2–8) and go through worked examples 1 (pages 5–6) and 2 (pages 7–8) before proceeding.
+
+Recommended action plan:
+
+
+Review the concept of the decimal number system:
+
+
+Understand the meaning and application of the decimal number system.
+
+
+Study place values: 
+
+
+Review the concept of place values in section 
+
+
+Practice converting numbers to expanded form (e.g., 362 = 3×10² + 6×10¹ + 2×10⁰) and back to short form using Worked Examples 1 and 2.
+
+
+Targeted feedback:
+
+DEC >= 1 and Z > 3: 
+
+Review the concept of the decimal (denary) number system, 
+
+PLV >= 1 and Z > 3: 
+
+Revisit place values. Go to page 4 and look at the diagram outlining place values. You should be able to identify the place values of the digits in a given number.
+
+EXP >= 1 and Z > 3: 
+
+Practice writing expanded form: every digit must be accounted for, including zeros (e.g., 0×10² must be written in full).
+
+CMP >= 1 and Z > 3: 
+
+Practice computing expanded forms: multiply each digit by its power of 10, then add all the results to get the decimal value.
+
+SHT >= 1 and Z > 3: 
+
+Review converting expanded form to short form: write the coefficient of each power in order from highest to lowest, including zeros (e.g., 0×10² → write 0 in that position).
+
+PPV >= 1 and Z > 3: 
+
+Practise converting expanded form to short form: write the coefficient of each power in order from highest to lowest, including zeros (e.g., 0×10² → write 0 in that position).
+
+EXV >= 1 and Z > 3: 
+
+Review conversion of numbers to their expanded forms: 
+
+Practise the coefficient of each power in order from highest to lowest, including zeros (e.g., 0×10² → write 0 in that position).
+
+Diagnostic code guide:
+
+
+DEC: Tests the ability to identify the correct definition of the decimal number system and distinguish it from other bases
+
+PLV: Tests knowledge of the place value of a specific digit within a decimal number using powers of 10
+
+EXP: Tests the ability to write a decimal number correctly in expanded form using powers of 10, including zeros
+
+CMP: Tests the ability to compute the decimal value of an expression written in expanded form by evaluating and summing each term
+
+SHT: Tests the ability to convert an expanded form expression back into its standard short-form decimal number
+
+PPV: Tests the application of place values in real life situations
+
+EXV: Tests the practical application of expansion of numbers
+
+
+Learning Objective 2
+
+Grade 8 | Chapter 2 | Number Systems
+
+Learning Objective 2: Explain the binary number system
+
+____________________________________________________________________________
+
+Sections covered:
+
+2.1 Meaning of binary number system
+
+
+Number of questions: 5
+
+
+____________________________________________________________________________
+
+1. Which of the following best describes the binary number system?
+
+a) A number system that uses digits 0 through 9, based on powers of 10 (BNY)
+
+b) A number system that uses only two digits (0 and 1), based on powers of 2 (Z)
+
+c) A number system that uses five digits (0 to 4), based on powers of 5 (BNY)
+
+d) A number system invented by George Cantor for use in set theory (BNY)
+
+2. Why is the binary number system used in computers and digital devices?
+
+a) Because binary numbers are smaller and easier for humans to read (WHY)
+
+b) Because all calculations in binary are faster than in decimal (WHY)
+
+c) Because electronic circuits can represent two states: on (1) and off (0) (Z)
+
+d) Because binary was the first number system ever invented (WHY)
+
+3. What is the positional value of the digit '1' at the rightmost position in a binary number?
+
+a) 2¹ = 2 (POS)
+
+b) 2² = 4 (POS)
+
+c) 2⁰ = 1 (Z)
+
+d) 2³ = 8 (POS)
+
+4. What is the correct expanded form of the binary number 11011₂?
+
+a) 1×2⁴ + 1×2³ + 0×2² + 1×2¹ + 1×2⁰ (Z)
+
+b) 1×2⁵ + 1×2⁴ + 0×2³ + 1×2² + 1×2¹ (BEX)
+
+c) 1×2³ + 1×2² + 0×2¹ + 1×2⁰ (BEX)
+
+d) 1×10⁴ + 1×10³ + 0×10² + 1×10¹ + 1×10⁰ (BEX)
+
+5. A file in a computer is represented by the binary number 101101₂. What is its decimal equivalent?
+
+a) 35 (BDC)
+
+b) 53 (BDC)
+
+c) 45 (Z)
+
+d) 37 (BDC)
+
+Diagnostic Feedback:
+
+Z = 7
+
+Complete mastery: 
+
+Excellent! You have a strong understanding of the binary number system, including why it is used in computers, the concept of positional values (powers of 2), and how to write and evaluate binary expanded form.
+
+Further Learning:
+
+
+Explore the binary number system: 
+
+
+Learn the concept of the binary number system. Explore how and why it is used. You may also research how computers and electronic devices apply the binary system. 
+
+
+Explore the conversion between different number systems: 
+
+
+You may learn how one type of number system can be converted to another, and why we need to do so. Practise converting binary numbers into other systems.
+
+
+Explore the limits of binary representation: 
+
+
+Think about why very large or very small numbers become very long strings of 1s and 0s in binary. Find the binary equivalent of 1000 and count its digits. Then research the concept of a 'byte' (8 bits) and find out the largest decimal number that can be stored in one byte.
+
+4 <= Z <= 6
+
+Adequate mastery: Good work! You understand most aspects of the binary number system but need to review one specific area before proceeding to conversions.
+
+Z <= 3
+
+Inadequate mastery: You appear to be struggling with the binary number system. Please re-read Section 2.1 and study the introductory example on grouping 13 coins in powers of 2.
+
+Recommended Action Plan:
+
+•         Review the definition of the binary number system: it uses only two digits (0 and 1), and each position represents a power of 2 (2⁰, 2¹, 2², 2³…).
+
+•         Understand why computers use binary: electronic circuits have two states — on (1) and off (0) — which map directly to binary digits.
+
+•         Practice writing the expanded form of binary numbers and computing the value of each term (e.g., 1×2³ = 8, 0×2² = 0, 1×2¹ = 2, 1×2⁰ = 1).
+
+Targeted feedback:
+
+BNY >= 1: Review the definition: the binary number system uses only digits 0 and 1, and is based on powers of 2 — not 10 or 5.
+
+WHY >= 1: Review why computers use binary: circuits can only be in two states — on (1) or off (0) — making binary the natural choice for digital systems.
+
+POS >= 1: Review binary positional values: the rightmost position is 2⁰ = 1, then 2¹ = 2, 2² = 4, 2³ = 8 as you move left. Always start counting from 0 on the right.
+
+BEX >= 1: Practice writing binary expanded form: assign positions starting from 0 at the rightmost digit, and write each digit × 2^position.
+
+BDC >= 1: Practice computing binary to decimal: expand the binary number, calculate each 2^position term, and add all the values together.
+
+ 
+
+Diagnostic code guide:
+
+BNY: Tests the ability to identify the correct definition of the binary number system and distinguish it from the decimal and quinary systems
+
+WHY: Tests understanding of why electronic computers use the binary system, linking binary digits to the two physical states of a circuit
+
+POS: Tests knowledge of the positional values (powers of 2) at each digit position in a binary number, starting from 2⁰ at the rightmost position
+
+BEX: Tests the ability to write the correct expanded form of a binary number by assigning the right power of 2 to each digit position
+
+BDC: Tests the ability to compute the decimal equivalent of a binary number by evaluating and summing the positional value terms
+
+Learning Objective 3
+
+Grade 8 | Chapter 2 | Number Systems
+
+Learning Objective 3: Convert between decimal and binary systems
+
+Section: 
+
+2.2 Conversion of decimal numbers to binary numbers
+
+2.3 Conversion of binary numbers to decimal numbers
+
+Number of questions: 5
+
+1. To convert a decimal number to binary, which method is used?
+
+a) Repeatedly multiply the number by 2 and record the products (MTH)
+
+b) Repeatedly divide the number by 2 and read remainders from bottom to top (Z)
+
+c) Repeatedly divide the number by 10 and read remainders from top to bottom (MTH)
+
+d) Add powers of 2 until the sum equals the decimal number (MTH)
+
+2. What is the binary equivalent of the decimal number 19?
+
+a) 10011₂ (Z)
+
+b) 10110₂ (D2B)
+
+c) 11001₂ (D2B)
+
+d) 10101₂ (D2B)
+
+3. What is the decimal equivalent of the binary number 111111₂?
+
+a) 32 (B2D)
+
+b) 48 (B2D)
+
+c) 63 (Z)
+
+d) 31 (B2D)
+
+4. A digital clock displays the hour as 1100₂. What is this time in decimal?
+
+a) 10 (APP)
+
+b) 14 (APP)
+
+c) 12 (Z)
+
+d) 6 (APP)
+
+5. A robot's control system receives the command 1010011₂. What is its decimal value?
+
+a) 75 (APB)
+
+b) 83 (Z)
+
+c) 67 (APB)
+
+d) 91 (APB)
+
+6. What is the binary equivalent of the decimal number 45?
+
+    a) 100101₂ (D2B)
+
+    b) 101011₂ (D2B)
+
+    c) 101101₂ (Z)
+
+    d) 110101₂ (D2B)
+
+7. What is the decimal equivalent of the binary number 1001101₂?
+
+    a) 69 (B2D)
+
+    b) 73 (B2D)
+
+    c) 77 (Z)
+
+    d) 85 (B2D)
+
+8. A school computer stores a student ID as the binary number 1001011₂. What is this ID in decimal?
+
+    a) 71 (APB)
+
+    b) 75 (Z)
+
+    c) 77 (APB)
+
+    d) 91 (APB)
+
+Diagnostic Feedback:
+
+Z=8
+
+Complete mastery: Excellent! You can confidently convert numbers between the decimal and binary systems in both directions — decimal to binary (repeated division by 2) and binary to decimal (positional value method).
+
+Further Learning:
+
+Verify conversions using the reverse method: After converting any decimal number to binary, always convert your binary answer back to decimal to confirm it matches the original. Make this a habit. Apply this self-checking technique to at least five practice problems from Worked Examples 3 (pages 15–16), 5 (pages 20–21), and 6 (page 22).
+
+Explore binary addition: Investigate how binary addition works: 0+0=0, 0+1=1, 1+1=10 (carry 1). Try adding two small binary numbers (e.g. 1011₂ + 0110₂) and verify by converting both to decimal, adding in decimal, and converting back. Extend this to think about how a computer’s adder circuit works.
+
+Connect binary conversions to data storage: Research what a ‘bit’, ‘byte’, ‘kilobyte’, and ‘megabyte’ mean in terms of binary. Find out how many binary digits are needed to represent the numbers 0 through 255, and explain why 8 bits (one byte) became the standard unit for storing a single character.
+
+4 <= Z <= 7
+
+Adequate mastery: Good job! You understand most conversion techniques between decimal and binary but should review one area before attempting more complex problems.
+
+Z <= 3
+
+Inadequate mastery: You need more practice with decimal–binary conversions. Please re-read Sections 2.2 (page 13) and 2.3 (page 17) and work through Worked Examples 3 (pages 15–16), 5 (pages 20–21), and 6 (page 22) step by step.
+
+Recommended Action Plan:
+
+
+Review decimal to binary conversion: divide the decimal number by 2 repeatedly, record each remainder, and read the remainders from bottom to top.
+
+Practice binary to decimal conversion: assign positional values starting from 2⁰ at the rightmost bit, multiply each digit by its power of 2, and sum all the results.
+
+Work through Worked Examples 3, 5, and 6 step by step, and check your answers using the reverse conversion to verify correctness.
+
+
+Targeted Feedback:
+
+
+MTH>=1: 
+
+
+Review the decimal to binary conversion method; refer to worked examples 3 and 5.
+
+
+D2B>=1: 
+
+
+Practice decimal to binary conversion. Review section 2.2 (page 13) and work through the division table step by step in Worked Example 3 (pages 15–16): divide by 2, record the remainder, use the quotient in the next step, and continue until the quotient reaches 0. Then read the remainders from bottom to top. Practise with at least three different decimal numbers.
+
+
+B2D>=1: 
+
+
+Practice binary to decimal conversion. Review section 2.3 (page 17) and the positional value table — see Worked Examples 4 (pages 18–19) and 5 (pages 20–21). For each bit that is 1, identify its position (starting from 0 at the right), calculate 2 raised to that power, and add all such terms together. Work through at least two examples from Worked Example 5 before trying again.
+
+
+APP>=1: 
+
+
+Review real-life binary conversion applications. Go to section 2.3 (page 17) and apply the positional value method: write out each digit with its positional value from right to left starting at 2⁰, then multiply and sum. Check your working against Worked Example 5 (pages 20–21).
+
+
+APB>=1: 
+
+
+Practice multi-bit binary to decimal. Review section 2.3 (page 17). For a longer binary number, write out a position table starting from 0 at the rightmost bit. Carefully assign each digit its correct position, calculate 2 raised to that position only for digits that are 1, and sum all the results. Verify your answer by converting back to binary. See Worked Example 6 (page 22).
+
+Diagnostic code guide:
+
+MTH: Tests knowledge of the correct method for decimal to binary conversion (repeated division by 2, reading remainders from bottom to top)
+
+D2B: Tests the ability to correctly carry out the decimal to binary conversion and arrive at the right binary result
+
+B2D: Tests the ability to apply the positional value method to convert a binary number to its decimal equivalent
+
+APP: Tests the ability to apply binary to decimal conversion in a real-world context (digital clock display)
+
+D2B: Tests the ability to convert a decimal number to binary using repeated division by 2
+
+B2D: Tests the ability to convert a binary number to decimal using the positional value (powers of 2) method
+
+APB: Tests the ability to apply binary-to-decimal conversion to a multi-bit number in a real-life context
+
+APB: Tests the ability to convert a longer multi-bit binary number to decimal, requiring careful assignment of positional values
+
+Learning Objective 4
+
+Grade 8 Mathematics — Chapter 2
+
+Number Systems
+
+Diagnostic MCQ Assessment
+
+ 
+
+Learning Objective 4: Explore the quinary number system
+
+Section:
+
+ 3.1 Meaning of quinary number system
+
+
+Number of questions: 8
+
+
+1. Which of the following best describes the quinary number system?
+
+a) A number system that uses only two digits (0 and 1), based on powers of 2 (QND)
+
+b) A number system that uses ten digits (0–9), based on powers of 10 (QND)
+
+c) A number system that uses five digits (0–4), based on powers of 5 (Z)
+
+d) A number system that uses digits 0–5, based on powers of 6 (QND)
+
+2. In the quinary number system, the subscript ₅ after a number indicates what?
+
+a) The number is written in the decimal system (SUB)
+
+b) The number is written in base 5 (quinary system) (Z)
+
+c) The number has five digits (SUB)
+
+d) The number must be divided by 5 (SUB)
+
+3. Imagine you have 17 candies and group them in sets of 5. You get 3 full groups and 2 remaining. How is 17 expressed in quinary?
+
+a) 17₅ (QRE)
+
+b) 23₅ (QRE)
+
+c) 32₅ (Z)
+
+d) 35₅ (QRE)
+
+4. In a quinary number, what does the digit in the second position from the right (position 1) represent?
+
+a) 5⁰ = 1 (QPV)
+
+b) 5¹ = 5 (Z)
+
+c) 5² = 25 (QPV)
+
+d) 5³ = 125 (QPV)
+
+5. Which of the following is a valid quinary number?
+
+a) 395₅ (VLD)
+
+b) 142₅ (Z)
+
+c) 507₅ (VLD)
+
+d) 68₅ (VLD)
+
+6. In which ancient culture was the quinary (base-5) system historically used?
+
+a) Ancient China (HST)
+
+b) Ancient Rome (HST)
+
+c) The Maya civilisation (Z)
+
+d) Ancient India (HST)
+
+7. What is the positional value of the leftmost digit in the quinary number 234₅?
+
+    a) 2 (QPV)
+
+    b) 25 (QPV)
+
+    c) 50 (Z)
+
+    d) 10 (QPV)
+
+8. What is the decimal value of the quinary number 32₅?
+
+    a) 32 (QCN)
+
+    b) 5 (QCN)
+
+    c) 17 (Z)
+
+    d) 10 (QCN)
+
+Diagnostic Feedback:
+
+Z = 8
+
+Complete mastery: Excellent! You have a strong understanding of the quinary number system, including its base-5 structure, valid digits (0–4), positional values (powers of 5), and how quinary numbers are represented using the subscript 5.
+
+Further Learning:
+
+Investigate counting systems across cultures: Research how the quinary system connects to human hand-counting — five fingers on one hand. Explore other base systems used historically, such as base-20 (vigesimal) by the Maya, and consider why base-10 became the global standard.
+
+Explore higher positional values in quinary: Extend the positional value table beyond 5³. Work out 5⁴ and 5⁵ and think about what quinary numbers with 5 or 6 digits represent in decimal. Compare the ‘size’ of quinary vs binary vs decimal for representing the same large number.
+
+Connect quinary to tally marks: Notice that tally marks (four strokes + one cross = five) are effectively a unary–quinary hybrid. Research how different cultures use grouping in fives for counting and recording, and write a short paragraph explaining the connection to the quinary system.
+
+4 <= Z <= 7
+
+Adequate mastery: Good work! You understand the core concept of the quinary system but should review the meaning of the subscript notation, the valid digits allowed, and the positional values of each place. Revisit section 3.1 (page 25)3.1 Meaning of quinary number system.
+
+Z <= 4
+
+Inadequate mastery: You need to carefully review section 3.1 (page 25)3.1 Meaning of quinary number system. Focus on understanding what base 5 means, which digits are allowed (only 0–4), how each position represents a power of 5, and how to read and write quinary numbers using the subscript 5 notation.
+
+Recommended Action Plan:
+
+•  Read section 3.1 Meaning of quinary number system (page 25) carefully and note the definition: the quinary system uses five digits (0, 1, 2, 3, 4) and each position represents a power of 5 (5⁰, 5¹, 5², …).
+
+•  Study the candy grouping example from the textbook (page 25). Practise grouping different quantities into sets of 5 and writing the result in quinary. Check that every digit in your answer is between 0 and 4 — if any digit is 5 or higher, you have made an error.
+
+•  Practise identifying valid quinary numbers (section 3.1, page 25): Any number containing the digits 5, 6, 7, 8, or 9 is NOT a valid quinary number. Build a short checklist and apply it to five examples before moving on.
+
+Targeted Feedback:
+
+
+QND>=1: 
+
+
+Review the definition of the quinary number system in section 3.1 (page 25). Pay close attention to the base (5), the number of distinct digits allowed, and how this differs from the binary system (base 2) and the decimal system (base 10). Make a comparison table of the three systems.
+
+
+SUB>=1: 
+
+
+Review the notation for quinary numbers in section 3.1 (page 25). The subscript 5 written after a number (e.g. 32₅) signals that the number is in base 5 — it does not describe how many digits the number has or indicate an operation. Compare this to the subscript 2 used for binary numbers.
+
+
+QRE>=1: 
+
+
+Study the candy grouping example in section 3.1 (page 25). When expressing a number in quinary, the leftmost digit counts the groups of the highest power of 5 that fits, and the rightmost digit counts what remains after all groups are formed. Pay attention to the order of the digits.
+
+
+QPV>=1: 
+
+
+Review the positional values in section 3.1 (page 25). In any base-5 number, the rightmost position has value 5⁰ = 1, the second position from the right has value 5¹ = 5, the third position has value 5² = 25, and so on. Write out this table and memorise it before attempting conversions.
+
+
+VLD>=1: 
+
+
+Review section 3.1 (page 25) and note that the quinary system only uses the digits 0, 1, 2, 3, and 4. Any number containing a digit of 5 or higher is invalid in quinary. Check each digit individually when asked to identify a valid quinary number.
+
+
+HST>=1: 
+
+
+Review the note in section 3.1 (page 25) about cultures that used the quinary system. Revisit the textbook to confirm which civilisation is mentioned, and note why grouping in fives is a natural counting behaviour linked to the human hand.
+
+
+QPV >= 1: 
+
+
+Review section 3.1 Meaning of quinary number system (page 25) and the positional value table. The leftmost digit in a quinary number has the highest positional value. In 234₅, the digit 2 is at position 2 (counting from 0 at the right), so its positional value is 2×5² = 2×25 = 50.
+
+
+VLD >= 1: 
+
+
+Review section 3.1 (page 25). The quinary system uses only the digits 0, 1, 2, 3, and 4. Any number containing a digit of 5 or above is invalid in base 5. Check each option by scanning for any digit >= 5.
+
+Diagnostic code guide:
+
+QND: Tests the ability to identify the correct definition of the quinary number system and distinguish it from the binary and decimal systems
+
+SUB: Tests understanding of what the subscript 5 notation indicates about a number
+
+QRE: Tests the ability to correctly express a grouped quantity in quinary notation
+
+QPV: Tests knowledge of the positional values (powers of 5) at each digit position in a quinary number
+
+VLD: Tests the ability to identify whether a given number is a valid quinary number based on its digits
+
+HST: Tests recall of the historical context of the quinary system as presented in section 3.1 (page 25)
+
+QPV: Tests the ability to calculate the positional value of a specific digit in a quinary number
+
+VLD: Tests the ability to identify invalid quinary numbers by recognising digits outside the valid range 0–4
+
+Learning Objective 5
+
+Grade 8 Mathematics — Chapter 2
+
+Number Systems
+
+Diagnostic MCQ Assessment
+
+ 
+
+Learning Objective 5: Convert between decimal and quinary systems
+
+Section: 3.2 Conversion of decimal numbers to quinary numbers | 3.3 Conversion of quinary numbers to decimal numbers
+
+Number of questions: 9
+
+1. To convert a decimal number to quinary, which method is used?
+
+a) Repeatedly multiply the number by 5 and record the products (D2Q)
+
+b) Repeatedly divide the number by 5 and read remainders from bottom to top (Z)
+
+c) Repeatedly divide the number by 5 and read remainders from top to bottom (D2Q)
+
+d) Subtract successive powers of 5 and record the coefficients (D2Q)
+
+2. What is the quinary equivalent of the decimal number 42?
+
+a) 42₅ (DQC)
+
+b) 123₅ (DQC)
+
+c) 132₅ (Z)
+
+d) 312₅ (DQC)
+
+3. What is the decimal equivalent of the quinary number 132₅?
+
+a) 32 (Q2D)
+
+b) 42 (Z)
+
+c) 52 (Q2D)
+
+d) 37 (Q2D)
+
+4. You have 183 candies and want to group them using the quinary system. What is 183 expressed in quinary?
+
+a) 1213₅ (DQC)
+
+b) 1223₅ (Z)
+
+c) 2213₅ (DQC)
+
+d) 1232₅ (DQC)
+
+5. What is the decimal value of the quinary number 2311₅?
+
+a) 321 (Q2D)
+
+b) 331 (Z)
+
+c) 311 (Q2D)
+
+d) 341 (Q2D)
+
+6. To convert the binary number 1100₂ into quinary, a student first converts it to decimal. What is the correct quinary result?
+
+a) 23₅ (BQC)
+
+b) 24₅ (Z)
+
+c) 42₅ (BQC)
+
+d) 14₅ (BQC)
+
+7. What is the quinary equivalent of the decimal number 97?
+
+    a) 341₅ (D2Q)
+
+    b) 342₅ (Z)
+
+    c) 432₅ (D2Q)
+
+    d) 332₅ (D2Q)
+
+8. What is the decimal equivalent of the quinary number 213₅?
+
+    a) 48 (Q2D)
+
+    b) 53 (Q2D)
+
+    c) 58 (Z)
+
+    d) 63 (Q2D)
+
+9. Which of the following quinary numbers has the greatest value?
+
+    a) 44₅ (QCO)
+
+    b) 100₅ (Z)
+
+    c) 34₅ (QCO)
+
+    d) 43₅ (QCO)
+
+    d) Decimal 7, quinary 12₅ (BQC)
+
+Diagnostic Feedback:
+
+Z = 9
+
+Complete mastery: 
+
+Excellent! You can confidently convert numbers between the decimal and quinary systems in both directions—decimal to quinary and quinary to decimal. You can also handle intermediate conversions through decimal when moving between binary and quinary.
+
+Further Learning:
+
+
+Practise three-way conversions: Choose a decimal number between 50 and 200 and convert it to both binary and quinary. Then convert your quinary answer back to binary (via decimal) and verify that all three forms represent the same value. Use the worked examples in sections 3.2 and 3.3 as a guide.
+
+Investigate quinary arithmetic: Try adding two quinary numbers together without converting to decimal first. What happens when a column total reaches 5 or more? Research how carrying works in base-5 addition and practise two or three examples.
+
+Apply quinary to real-world grouping problems: Many Nepali markets count items in groups. Suppose a vendor groups 246 oranges into sets of 5. Express 246 in quinary and explain what each digit of the quinary representation tells you about how many complete groups of 25, groups of 5, and individual oranges the vendor has.
+
+
+5 <= Z <= 8
+
+Adequate mastery: 
+
+Good effort! You can perform most decimal–quinary conversions but should review one specific direction or the intermediate step when converting through decimal. Revisit sections 3.2 (page 26) and 3.3 (page 32)3.2 and 3.3 and work through Worked Examples 7 (pages 27–29), 9 (pages 33–35), and 10 (pages 36–37) step by step.
+
+Z <= 4
+
+Inadequate mastery: 
+
+You need more practice with decimal–quinary conversions. Please re-read sections 3.2 Conversion of decimal numbers to quinary numbers and 3.3 Conversion of quinary numbers to decimal numbers carefully, and work through Worked Examples 7 (pages 27–29), 9 (pages 33–35), and 10 (pages 36–37) step by step before attempting more questions.
+
+Recommended Action Plan:
+
+
+Review decimal to quinary conversion (section 3.2, page 26): See Worked Example 7 (pages 27–29). Verify your answer by converting back to decimal. You may also check the video 2.1 conversion of decimal and quinary numbers.
+
+Review quinary to decimal conversion (section 3.3, page 32, Worked Example 9 pages 33–35): assign positional values starting from 5⁰ at the rightmost digit, multiply each quinary digit by its corresponding power of 5, then add all the results. Go through worked example 9.
+
+For binary–quinary conversions (section 3.2, page 26, and Worked Example 8, pages 30–31): Do not attempt to jump directly between the two bases. Check your decimal intermediate value before proceeding.
+
+
+Targeted Feedback:
+
+D2Q>=1: Review the decimal to quinary method in section 3.2 (page 26). Practise with at least two examples from the section.
+
+DQC>=1: Practise the decimal to quinary division method carefully in section 3.2 (page 26) and Worked Example 7 (pages 27–29). 
+
+Q2D>=1: Review the quinary to decimal conversion method in section 3.3 (page 32) and Worked Example 9 (pages 33–35). Refer to Worked Example 9 and follow each step precisely.
+
+BQC>=1: Review the binary to quinary conversion note in section 3.2 (page 26) and Worked Example 8 (pages 30–31). Check your decimal intermediate answer carefully before the second conversion.
+
+Diagnostic code guide:
+
+D2Q: Tests knowledge of the correct method for converting a decimal number to quinary (repeated division by 5, reading remainders from bottom to top)
+
+DQC: Tests the ability to correctly carry out the decimal to quinary conversion and arrive at the right quinary result
+
+Q2D: Tests the ability to apply the positional value method to convert a quinary number to its decimal equivalent
+
+BQC: Tests the ability to convert a binary number to quinary via the decimal intermediate step

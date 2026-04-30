@@ -6,8 +6,8 @@
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        80,
-        1280
+        -208,
+        1296
       ],
       "id": "b0ef9e04-784a-49f7-b962-d84c82eacaf3",
       "name": "When clicking ‘Execute workflow’"
@@ -23,7 +23,7 @@
           "__rl": true,
           "value": 801323258,
           "mode": "list",
-          "cachedResultName": "Grade 9 Computer",
+          "cachedResultName": "(Audio)Grade 9 Computer",
           "cachedResultUrl": "https://docs.google.com/spreadsheets/d/10GQLAP4CuBuXM2SvUBf7ULV4tVhhCXNQx4MBLivXg8s/edit#gid=801323258"
         },
         "options": {}
@@ -31,8 +31,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        304,
-        1280
+        96,
+        1296
       ],
       "id": "37b24fb3-5ff5-4d51-a9ff-376e3cebed40",
       "name": "Get row(s) in sheet",
@@ -65,20 +65,7 @@
                       "singleValue": true
                     },
                     "id": "aff25c64-f6a2-4da1-96f5-68dc44be1878"
-                  }
-                ],
-                "combinator": "and"
-              }
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "strict",
-                  "version": 3
-                },
-                "conditions": [
+                  },
                   {
                     "id": "17016061-caf6-43a7-b1b8-58739f596a89",
                     "leftValue": "={{ $json['Audio Status (EN)'] }}",
@@ -87,18 +74,9 @@
                       "type": "string",
                       "operation": "equals"
                     }
-                  },
-                  {
-                    "id": "or_condition_en",
-                    "leftValue": "={{ !!(($json['Audio Status (EN)'] == 'pending' && $json['Chapter Summary In English']) || ($json['Audio Status (NE)'] == 'pending' && $json['Chapter Summary In Nepali'])) }}",
-                    "rightValue": true,
-                    "operator": {
-                      "type": "boolean",
-                      "operation": "true"
-                    }
                   }
                 ],
-                "combinator": "or"
+                "combinator": "and"
               }
             },
             {
@@ -119,20 +97,7 @@
                       "operation": "notEmpty",
                       "singleValue": true
                     }
-                  }
-                ],
-                "combinator": "and"
-              }
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "strict",
-                  "version": 3
-                },
-                "conditions": [
+                  },
                   {
                     "id": "c4bc157f-e0fd-4c34-afcf-94d34d23624b",
                     "leftValue": "={{ $json['Audio Status (NE)'] }}",
@@ -155,8 +120,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
       "position": [
-        528,
-        1248
+        416,
+        1264
       ],
       "id": "f4173f87-ae0a-43b2-a371-5a11d2313de6",
       "name": "Switch"
@@ -247,24 +212,23 @@
         },
         "sheetName": {
           "__rl": true,
-          "value": "Grade 9 Computer",
-          "mode": "name"
+          "value": 801323258,
+          "mode": "list",
+          "cachedResultName": "(Audio)Grade 9 Computer",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/10GQLAP4CuBuXM2SvUBf7ULV4tVhhCXNQx4MBLivXg8s/edit#gid=801323258"
         },
         "columns": {
           "mappingMode": "defineBelow",
           "value": {
-            "row_number": 0,
-            "Audio Status (EN)": "failed",
-            "Topic Names": "={{ $json['Topic Names'] }}",
-            "Remarks": "={{ $json.error?.message || \"Unknown Error/Credit Limit Reached\" }}"
+            "Remarks": "Issue in audio, not uploaded."
           },
           "matchingColumns": [
             "Topic Names"
           ],
           "schema": [
             {
-              "id": "S.N.",
-              "displayName": "S.N.",
+              "id": "9",
+              "displayName": "9",
               "required": false,
               "defaultMatch": false,
               "display": true,
@@ -279,8 +243,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Topic Names",
@@ -299,8 +262,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Chapter Summary In English",
@@ -309,8 +271,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Chapter Summary In Nepali",
@@ -319,8 +280,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Audio Status (EN)",
@@ -329,8 +289,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Audio URL (EN)",
@@ -339,8 +298,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Audio Status (NE)",
@@ -349,8 +307,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Audio URL (NE)",
@@ -359,8 +316,52 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Content PoC",
+              "displayName": "Content PoC",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Audio QC",
+              "displayName": "Audio QC",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Audio Remarks",
+              "displayName": "Audio Remarks",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Audio Reference - English",
+              "displayName": "Audio Reference - English",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Audio Reference - Nepali",
+              "displayName": "Audio Reference - Nepali",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
             },
             {
               "id": "Remarks",
@@ -369,8 +370,16 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Embed Audio to eBook",
+              "displayName": "Embed Audio to eBook",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
             },
             {
               "id": "row_number",
@@ -381,7 +390,7 @@
               "type": "number",
               "canBeUsedToMatch": true,
               "readOnly": true,
-              "removed": false
+              "removed": true
             }
           ],
           "attemptToConvertTypes": false,
@@ -919,30 +928,24 @@
         },
         "sheetName": {
           "__rl": true,
-          "value": "Grade 9 Computer",
-          "mode": "name"
+          "value": 801323258,
+          "mode": "list",
+          "cachedResultName": "(Audio)Grade 9 Computer",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/10GQLAP4CuBuXM2SvUBf7ULV4tVhhCXNQx4MBLivXg8s/edit#gid=801323258"
         },
         "columns": {
           "mappingMode": "defineBelow",
-          "value": {
-            "row_number": 0,
-            "Audio Status (EN)": "failed",
-            "Topic Names": "={{ $json['Topic Names'] }}",
-            "Remarks": "={{ $json.error?.message || \"Unknown Error/Credit Limit Reached\" }}"
-          },
-          "matchingColumns": [
-            "Topic Names"
-          ],
+          "value": {},
+          "matchingColumns": [],
           "schema": [
             {
-              "id": "S.N.",
-              "displayName": "S.N.",
+              "id": "9",
+              "displayName": "9",
               "required": false,
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Book Name",
@@ -951,8 +954,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Topic Names",
@@ -961,8 +963,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Page Count",
@@ -971,8 +972,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Chapter Summary In English",
@@ -981,8 +981,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Chapter Summary In Nepali",
@@ -991,8 +990,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Audio Status (EN)",
@@ -1001,8 +999,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Audio URL (EN)",
@@ -1011,8 +1008,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Audio Status (NE)",
@@ -1021,8 +1017,7 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
             },
             {
               "id": "Audio URL (NE)",
@@ -1031,8 +1026,52 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Content PoC",
+              "displayName": "Content PoC",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Audio QC",
+              "displayName": "Audio QC",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Audio Remarks",
+              "displayName": "Audio Remarks",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Audio Reference - English",
+              "displayName": "Audio Reference - English",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Audio Reference - Nepali",
+              "displayName": "Audio Reference - Nepali",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
             },
             {
               "id": "Remarks",
@@ -1041,8 +1080,16 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Embed Audio to eBook",
+              "displayName": "Embed Audio to eBook",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
             },
             {
               "id": "row_number",
@@ -1053,7 +1100,7 @@
               "type": "number",
               "canBeUsedToMatch": true,
               "readOnly": true,
-              "removed": false
+              "removed": true
             }
           ],
           "attemptToConvertTypes": false,
@@ -1099,7 +1146,7 @@
       "type": "@elevenlabs/n8n-nodes-elevenlabs.elevenLabs",
       "typeVersion": 1,
       "position": [
-        896,
+        928,
         1152
       ],
       "id": "8b1c7c17-ac7b-42b6-9ba9-0f5b83292bdf",
@@ -1175,7 +1222,6 @@
     },
     "Switch": {
       "main": [
-        [],
         [
           {
             "node": "Wait",
@@ -1183,7 +1229,6 @@
             "index": 0
           }
         ],
-        [],
         [
           {
             "node": "Wait1",
@@ -1334,7 +1379,7 @@
     "binaryMode": "separate",
     "availableInMCP": false
   },
-  "versionId": "c05f880d-4e75-45a3-a311-ddfd4d8b7235",
+  "versionId": "3da3c3fa-5861-4cee-8558-4029675b3855",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "5c5691db65e9ceb5e66b81b7760c2eb04a60704ca9d3d255d29d2377d899af61"

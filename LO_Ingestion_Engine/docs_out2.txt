@@ -1,0 +1,1534 @@
+LO1
+
+Learning Objective: Define multimedia and describe its five key components: text, graphics, audio, video, and animation, and their roles in digital communication
+
+Section: Introduction to Multimedia (Pg 2–8)
+
+Number of Questions: 8
+
+
+
+Questions
+
+What does the word ‘multimedia’ mean?
+
+Using only one type of media to share information (DEF)
+
+Using many ways to share information, including text, sound, pictures, animation, and video (Z)
+
+Digital communication that involves only sound and pictures (DEF)
+
+A type of computer software for editing videos (DEF)
+
+
+
+Which of the following is not one of the five key components of multimedia?
+
+Text (COM)
+
+Code (Z)
+
+Audio (COM)
+
+Animation (COM)
+
+
+
+Which multimedia component is the most basic form, using letters, numbers, and symbols to communicate?
+
+Text (Z)
+
+Graphics (COM)
+
+Video (COM)
+
+Audio (COM)
+
+
+
+What is the role of audio in multimedia?
+
+It displays still visual images like photos and diagrams (COM)
+
+It creates moving images from a sequence of frames (COM)
+
+It adds sound such as music, speech, or effects to enhance emotion and clarity (Z)
+
+It organises text into pages and paragraphs (COM)
+
+
+
+Which component of multimedia involves creating the illusion of movement from drawings or digital models?
+
+Text (COM)
+
+Video (COM)
+
+Graphics (COM)
+
+Animation (Z)
+
+
+
+A school website uses headings, photos, a welcome video, background music, and a moving logo. How many of the five multimedia components are present?
+
+2 (APP)
+
+3 (APP)
+
+4 (APP)
+
+5 (Z)
+
+
+
+Which multimedia component includes visual elements such as images, icons, shapes, diagrams, and charts?
+
+Text (COM)
+
+Animation (COM)
+
+Graphics (Z)
+
+Video (COM)
+
+
+
+Which statement best defines multimedia?
+
+Combining text, audio, video, graphics, and animation to communicate and share information (Z)
+
+Using a single type of media to share information across different platforms (DEF)
+
+Sending emails and text messages online (DEF)
+
+Creating software programs for computers (DEF)
+
+
+
+Diagnostic feedback
+
+Z = 8
+
+Complete Mastery: Excellent! You have a strong understanding of multimedia and its five key components.
+
+Further learning
+
+Look at your favourite app or website. Identify which of the five multimedia components are present. How would the experience change if one component, such as audio or graphics, were removed?
+
+Research how multimedia is used in fields not covered in the textbook, such as healthcare or agriculture in Nepal. What components would be most important in each?
+
+
+
+4 <= Z <= 7
+
+Adequate Mastery: You understand most of the concepts, but there are small gaps. Review the areas specified below to strengthen your understanding.
+
+
+
+Z <= 3
+
+Inadequate Mastery: You need to carefully review the introduction to multimedia and its five components.
+
+
+
+Recommended action plan
+
+Start with the definition: Read how the word ‘multimedia’ is broken into ‘multi’ (many) and ‘media’ (ways to share information) (Pg 2).
+
+Study each component individually: Read about text, graphics, audio, video, and animation. For each, write what it is and what role it plays in communication (Pg 2–3).
+
+Practise identification: Look at a real-world example such as a YouTube video or a website and list which of the five components are present.
+
+Review the applications section to see how multimedia is used in education, entertainment, communication, and business (Pg 5–7).
+
+
+
+Targeted Feedback
+
+DEF >= 1 and Z > 3
+
+Review the definition of multimedia (Pg 2). Focus on the meaning of ‘multi’ and ‘media’. Multimedia is not limited to one type of media or one specific technology.
+
+
+
+COM >= 1 and Z > 3
+
+Go through the five key components of multimedia again (Pg 2–3). Study each one individually and note what makes it different from the others. A common mistake is confusing graphics with animation or video with animation.
+
+For a better overview of three of these components, watch Video 3.1 (Introduction to Graphics Designing), Video 3.10 (Introduction to Audio Editing), and Video 3.17 (Introduction to Video Editing), which introduce graphics, audio, and video, respectively.
+
+
+
+APP >= 1 and Z > 3
+
+Practise identifying multimedia components in real-world examples. When you see a website or video, count how many of the five components are present. This helps you recognise each component in context.
+
+
+
+Diagnostic code guide
+
+DEF → Tests understanding of the definition of multimedia
+
+COM → Tests ability to identify and distinguish the five key components of multimedia
+
+APP → Tests ability to recognise multimedia components in real-world scenarios
+
+
+
+LO2
+
+Learning Objective: Identify common multimedia file formats used for storing and sharing content and explain their basic characteristics
+
+Section: Text File Formats, Graphics File Formats, Audio File Formats, Video File Formats (Pg 14–16, 19–22, 49–50, 70–71)
+
+Number of Questions: 12
+
+
+
+Questions
+
+Which file format stores plain text with no formatting, fonts, or colours?
+
+DOCX (TXF)
+
+PDF (TXF)
+
+TXT (Z)
+
+RTF (TXF)
+
+
+
+Which image format supports transparent backgrounds, making it ideal for logos and web graphics?
+
+JPG (IMG)
+
+GIF (IMG)
+
+EPS (IMG)
+
+PNG (Z)
+
+
+
+Which audio format is uncompressed and stores sound exactly as it was recorded, resulting in the highest quality but large file sizes?
+
+MP3 (AUD)
+
+AAC (AUD)
+
+FLAC (AUD)
+
+WAV (Z)
+
+
+
+Which video format is the most commonly used today, offering small file size with good quality and compatibility across nearly all devices?
+
+AVI (VID)
+
+MP4 (Z)
+
+MOV (VID)
+
+MKV (VID)
+
+
+
+What is JPG best suited for?
+
+Photographs and social media images (Z)
+
+Audio recordings (AUD)
+
+Plain text documents (TXF)
+
+Animated stickers (IMG)
+
+
+
+Which text file format supports advanced formatting features like images, tables, headings, and bullet points?
+
+DOCX (Z)
+
+TXT (TXF)
+
+RTF (TXF)
+
+GIF (TXF)
+
+
+
+MP3 is a popular audio format because it:
+
+Stores audio in a completely uncompressed format (AUD)
+
+Only works on Apple devices (AUD)
+
+Compresses audio files to make them smaller while keeping sound clear (Z)
+
+Is the same as WAV with no difference in file size (AUD)
+
+
+
+What are GIF files mainly used for?
+
+High-quality photographs (IMG)
+
+Professional audio recordings (AUD)
+
+Video editing projects (VID)
+
+Short looping animations and animated stickers (Z)
+
+
+
+Which of the following is a vector graphics format that does not lose quality when resized?
+
+JPG (VEC)
+
+SVG (Z)
+
+PNG (VEC)
+
+GIF (VEC)
+
+
+
+AVI is a video file format that:
+
+Can store high-quality video, sometimes uncompressed, making files larger (Z)
+
+Only works on Apple devices (VID)
+
+Is designed specifically for audio recordings (VID)
+
+Cannot be used for video editing (VID)
+
+
+
+Which audio format offers better compression than MP3, producing higher sound quality at similar file sizes, and is commonly used on smartphones and streaming services?
+
+WAV (AUD)
+
+FLAC (AUD)
+
+AAC (Z)
+
+WMA (AUD)
+
+
+
+What is the key difference between raster graphics and vector graphics?
+
+Raster graphics are made of mathematical formulas; vector graphics are made of pixels (VEC)
+
+Raster graphics are only used for printing; vector graphics are only used on websites (VEC)
+
+There is no difference; both terms mean the same thing (VEC)
+
+Raster graphics are made of pixels and lose quality when resized; vector graphics are made of mathematical shapes and stay sharp at any size (Z)
+
+
+
+
+
+Diagnostic feedback
+
+Z = 12
+
+Complete Mastery: Excellent! You have a thorough understanding of multimedia file formats and their characteristics.
+
+Further Learning
+
+Next time you save a file, think about which format is most appropriate. If you are saving a photo for Instagram, would you use JPG or PNG? If you are designing a logo, would you use SVG or JPG? Consider why.
+
+Research the WEBP image format mentioned in the Pixlr X export section. How does it compare to JPG and PNG in terms of file size and quality?
+
+
+
+6 <= Z <= 11
+
+Adequate Mastery: Your understanding of file formats is largely accurate, but seem to have a few confusions. Review the following areas to refine your understanding.
+
+
+
+Z <= 5
+
+Inadequate Mastery: You need to carefully review the file formats sections more carefully.
+
+
+
+Recommended action plan
+
+Review text formats: Go back to the section on text formats and focus on how different types are used. Pay attention to how formatting capabilities vary between them (Pg 14–16).
+
+Revisit image formats: Study the image formats carefully and focus on their key characteristics. As you read, think about when each format would be more suitable (Pg 19–22).
+
+Review audio formats: Return to the audio formats section and focus on how they differ in terms of quality and file size. Consider why different formats are used in different situations (Pg 49–50).
+
+Review video formats: Go through the video formats and focus on their typical uses and differences. Pay attention to how format choice affects quality and compatibility (Pg 70–71).
+
+Understand raster vs vector graphics: Revisit this concept and focus on how each type is structured. Think about how resizing affects them and why they behave differently (Pg 19–21).
+
+
+
+Targeted feedback
+
+TXF >= 1 and Z > 5
+
+Revisit the text file formats section (Pg 14–16). Focus on the key difference between TXT, RTF, and DOCX. Each format supports a different level of formatting. Note what features each one adds.
+
+
+
+IMG >= 1 and Z > 5
+
+Review the image formats section (Pg 21–22). Focus on what makes each format unique: JPG compresses photographs, PNG supports transparency, and GIF supports animation. Do not confuse their purposes.
+
+You can also watch Video 3.8 (Exporting a Project in Pixlr X), which shows how these image formats are used in practice when saving a design.
+
+
+
+
+
+AUD >= 1 and Z > 5
+
+Review the audio formats section (Pg 49–50). Focus on the difference between compressed (MP3, AAC) and uncompressed (WAV) formats. Note which produces smaller files and which maintains the highest quality.
+
+Video 3.15 (Exporting Audio in AudioMass) demonstrates how to choose the right audio format when saving a project.
+
+
+
+VID >= 1 and Z > 5
+
+Go through the video formats section (Pg 70–71). Focus on which format is most widely used, which is associated with Microsoft, and which is associated with Apple. Also, note how file size relates to compression.
+
+Additionally, Video 3.26 (Exporting a Project in CapCut) shows how MP4 and other video formats are selected when exporting.
+
+
+
+VEC >= 1 and Z > 5
+
+Go to the raster vs vector graphics section (Pg 19–21). Focus on what each type is made of and how they behave when resized. A common mistake is swapping their characteristics.
+
+For better clarification, watch Video 3.1 (Introduction to Graphics Designing), which explains the difference between raster and vector graphics with clear visual examples.
+
+
+
+Diagnostic code guide
+
+TXF → Tests knowledge of text file formats (TXT, RTF, DOCX) and their characteristics
+
+IMG → Tests knowledge of raster image formats (JPG, PNG, GIF) and their specific uses
+
+AUD → Tests knowledge of audio formats (MP3, WAV, AAC) and compressed vs uncompressed
+
+VID → Tests knowledge of video formats (MP4, AVI, MOV) and their characteristics
+
+VEC → Tests understanding of the difference between raster and vector graphics
+
+
+
+
+
+LO3
+
+Learning Objective: Explain how multimedia is used in various fields like education, entertainment, advertising, and business to enhance communication and engagement
+
+Section: Applications of Multimedia; Advantages and Disadvantages of Multimedia (Pg 5–11)
+
+Number of Questions: 10
+
+
+
+Questions
+
+Which of the following is an example of multimedia used in education?
+
+Sending a text-only email to a colleague (APP)
+
+Printing a textbook at a publishing house (APP)
+
+Using a 3D science virtual lab for experiments (Z)
+
+Writing notes on a whiteboard with a marker (APP)
+
+
+
+How does multimedia help businesses?
+
+By replacing all employees with automated systems (BUS)
+
+Through advertisements that catch attention, employee training, and engaging presentations (Z)
+
+By reducing the internet speed across offices (BUS)
+
+By printing more paper documents for record-keeping (BUS)
+
+
+
+Memes, short videos, and emojis are multimedia tools mainly used in which application area?
+
+Education (APP)
+
+Business (APP)
+
+Healthcare (APP)
+
+Communication (Z)
+
+
+
+An e-book used in an online course is an example of multimedia in:
+
+Entertainment (APP)
+
+Business (APP)
+
+Education (Z)
+
+Advertising (APP)
+
+
+
+Which of the following best describes the word ‘interactive’ as used in the chapter?
+
+Taking part in content by clicking buttons, answering questions, or playing a game (Z)
+
+Watching a movie from start to finish without pausing (INT)
+
+Reading a printed newspaper page by page (INT)
+
+Listening to the radio passively (INT)
+
+
+
+Which of the following is an advantage of multimedia?
+
+It always requires expensive equipment to access (ADV)
+
+It makes communication more effective by combining text, images, audio, and video to explain ideas better (Z)
+
+It replaces the need for any human interaction (ADV)
+
+It can only be accessed through desktop computers (ADV)
+
+
+
+Which of the following is a disadvantage of multimedia?
+
+Creating multimedia content often requires special software and technical skills (Z)
+
+It makes learning easier and more fun (DIS)
+
+It allows personal expression through photos and videos (DIS)
+
+It helps people connect through video calls (DIS)
+
+
+
+Which of the following is an example of multimedia used in communication?
+
+A printed bus timetable (APP)
+
+A video call with friends or family using multimedia features (Z)
+
+A handwritten letter sent by post (APP)
+
+A printed newspaper article (APP)
+
+
+
+Too much time spent on multimedia for entertainment can lead to:
+
+Distraction from important work or studies, leading to loss of concentration (Z)
+
+Improved focus on studies and work (DIS)
+
+Better physical health and exercise habits (DIS)
+
+Faster internet connection speeds (DIS)
+
+
+
+The gaming industry uses virtual reality (VR) and augmented reality (AR) to create games that are:
+
+Text-only and simple (APP)
+
+Exciting, immersive, and interactive (Z)
+
+Only available on old computers (APP)
+
+Limited to audio-only experiences (APP)
+
+
+
+Diagnostic feedback
+
+Z = 10
+
+Complete Mastery: Excellent! You have a strong understanding of how multimedia is applied across different fields and its advantages and disadvantages.
+
+
+
+Further learning
+
+Think about how multimedia could be used to solve a real problem in your community. For example, how could a short video or interactive presentation help teach farmers in rural Nepal about new agricultural techniques?
+
+Research how cyberbullying, one of the disadvantages of multimedia, can be prevented. What responsible practices should users follow when creating and sharing multimedia content?
+
+
+
+5 <= Z <= 9
+
+Adequate Mastery: Good job! You understand most applications but seem to be confused regarding some areas. Review the sections specified below.
+
+
+
+Z <= 4
+
+Inadequate Mastery: You need to carefully review the applications, advantages, and disadvantages of multimedia.
+
+Recommended action plan
+
+Review the four application areas of multimedia: Go back to where these are introduced and focus on how multimedia is used in different contexts (Pg 5–7). For each, think of one specific example not in the textbook.
+
+Learn the four advantages of multimedia: Read through this section carefully and focus on how multimedia supports learning, communication, and expression. Consider why these benefits are important in real-life use (Pg 9–10).
+
+Learn the four disadvantages: Study this section with attention to the challenges and limitations. Think about how these issues might affect users in practical situations (Pg 10–11).
+
+Clarify key terms: As you come across important terms, focus on their meaning in context. Make sure you understand how these terms apply when interacting with multimedia contents.
+
+
+
+Targeted feedback
+
+APP >= 1 and Z > 4
+
+Review the four application areas of multimedia (Pg 5–7). Focus on matching each example to the correct field. Do not confuse education with communication or business with entertainment.
+
+
+
+BUS >= 1 and Z > 4 
+
+Read the business applications section again (Pg 7). Focus on how businesses specifically use multimedia: advertisements, employee training, social media engagement, and presentations.
+
+
+
+INT >= 1 and Z > 4
+
+Revisit the definition of ‘interactive’ (Pg 6). Focus on what makes content interactive versus passive. 
+
+
+
+ADV >= 1 and Z > 4
+
+Read the advantages of multimedia section (Pg 9–10). Note down on the four specific advantages listed, and explain them in your own words.
+
+DIS >= 1 and Z > 4
+
+Read the disadvantages of multimedia section (Pg 10–11). Make note of the four specific disadvantages listed, and explain them in your own words.
+
+
+
+Diagnostic code guide
+
+APP → Tests ability to match multimedia examples to the correct application field
+
+BUS → Tests knowledge of how businesses specifically use multimedia
+
+INT → Tests understanding of the term ‘interactive’ as used in the chapter
+
+ADV → Tests knowledge of the advantages of multimedia
+
+DIS → Tests knowledge of the disadvantages of multimedia
+
+
+
+
+
+LO4
+
+Learning Objective: Create a basic graphic using Pixlr X, including adding and editing text, shapes, and layers to produce a visually appealing design
+
+Section: Graphics, Raster and Vector Graphics, Working with Pixlr X (Pg 17–45)
+
+Number of Questions: 10
+
+
+
+Questions
+
+Which tool is a free online graphic design and image editing tool?
+
+Audiomass (TOL)
+
+CapCut (TOL)
+
+Pixlr X (Z)
+
+VLC Player (TOL)
+
+
+
+What is a ‘layer’ in graphic design?
+
+A separate level of content, like a sheet of paper, that can be edited independently without affecting other layers (Z)
+
+A soundtrack added to an image (LAY)
+
+A video clip imported into the editor (LAY)
+
+A type of font style applied to text (LAY)
+
+
+
+Raster images are made up of:
+
+Mathematical equations and formulas (RAS)
+
+Frames per second (RAS)
+
+Audio waveforms (RAS)
+
+Tiny square dots called pixels, each with their own colour (Z)
+
+
+
+Which type of graphic can be resized to any size without losing quality?
+
+Raster (VEC)
+
+JPG (VEC)
+
+Vector (Z)
+
+GIF (VEC)
+
+
+
+What happens when you zoom in too much on a raster image?
+
+It becomes sharper and more detailed (RAS)
+
+It becomes blurry and pixelated (Z)
+
+It automatically converts to a vector graphic (RAS)
+
+The file size decreases (RAS)
+
+
+
+In Pixlr X, the Text tool (shown as a capital ‘T’) is used to:
+
+Record audio for the project (PIX)
+
+Add and edit text on the canvas, including changing font, colour, and size (Z)
+
+Import video clips into the design (PIX)
+
+Apply audio effects to the background (PIX)
+
+
+
+In Pixlr X, which panel on the right side of the screen allows you to see and manage all separate levels of a design?
+
+Timeline panel (PIX)
+
+Audio panel (PIX)
+
+Layers panel (Z)
+
+Export panel (PIX)
+
+
+
+What is a ‘blending mode’ in Pixlr X?
+
+A tool that converts raster images to vector images (BLN)
+
+A feature that adds audio to a graphic design (BLN)
+
+A way to export files in multiple formats simultaneously (BLN)
+
+A setting that controls how one layer interacts with the layer beneath it (Z)
+
+
+
+When exporting a project from Pixlr X, which file format should you choose if you need your image to have a transparent background?
+
+PNG (Z)
+
+JPG (EXP)
+
+PXZ (EXP)
+
+PDF (EXP)
+
+
+
+What does the Cutout tool in Pixlr X allow you to do?
+
+Remove backgrounds or isolate parts of an image for editing (Z)
+
+Add new text layers to the design (PIX)
+
+Change the frame rate of an animation (PIX)
+
+Import audio files into the project (PIX)
+
+
+
+Diagnostic feedback
+
+Z = 10
+
+Complete Mastery: Excellent! You have a strong understanding of graphic types, Pixlr X tools, and how to work with layers and effects.
+
+Further Learning
+
+Experiment with different blending modes in Pixlr X. Try the Multiply, Screen, and Overlay modes on layered images and observe how each changes the visual result.
+
+Research the PXZ file format. Why might saving a project as PXZ be important if you plan to continue editing later, even though it cannot be shared as easily as JPG or PNG?
+
+
+
+5 <= Z <= 9
+
+Adequate Mastery: You have a good understanding of most concepts, but you need to review the following.
+
+
+
+Z <= 6
+
+Inadequate Mastery: You need to carefully review the graphics section and Pixlr X tools.
+
+Recommended Action Plan
+
+Review raster and vector graphics: Go back to this concept and focus on how each type of image is structured. Pay attention to how they behave when resized and why they are used in different situations (Pg 19–21).
+
+Familiarise yourself with the Pixlr X interface: Study the Pixlr X interface and focus on the role of each part, including the canvas area, tools panel, layers panel, and navigation tools (Pg 25).
+
+Practise using core tools: Revisit the sections on adding text, shapes, and working with layers. As you study, try to follow along in Pixlr X to see how each feature works in practice. You can also watch the related videos to observe how these tasks are performed step by step (Pg 29–35). You can follow along with Video 3.3 (Working with Text in Pixlr X), Video 3.4 (Working with Shapes in Pixlr X), and Video 3.5 (Working with Layers in Pixlr X) to see each task demonstrated.
+
+Understand layer interactions: Review the section “working with layers” (Pg 37–38) and focus on how layers interact with each other. Pay attention to how different settings change the final image (Pg 37–38).
+
+Revisit the Cutout tool: Study the different options and focus on how each one is used for selection. Think about when each method would be more appropriate (Pg 40–42).
+
+Review export options: Go through the export formats and focus on how they differ. Identify when each format would be most suitable based on the final use of the image (Pg 43–44).
+
+Apply your learning in practice: Open Pixlr X and explore these tools as you study. Actively using the software will help you understand the concepts more effectively than reading alone.
+
+
+
+Targeted Feedback
+
+TOL >= 1 and Z > 6
+
+Go through the multimedia tools covered in the chapter. Identify the tool that allows free online graphic design and image editing.
+
+If you need help getting familiar with the tool, watch Video 3.1 (Introduction to Graphics Designing) and Video 3.2 (Creating a New Project in Pixlr X).
+
+
+
+
+
+LAY  >= 1 and Z > 6
+
+Revisit the layers section in Pixlr X (Pg 35–37). Focus on how layers are organised and why they are useful during editing. 
+
+Watch Video 3.5 (Working with Layers in Pixlr X) for a hands-on walkthrough of it.
+
+
+
+RAS  >= 1 and Z > 6
+
+Read the raster graphics section (Pg 21). Focus on what pixels are, how they form images, and what happens when a raster image is enlarged too much.
+
+You can also watch Video 3.1 (Introduction to Graphics Designing), which covers raster images and pixels in a visual way.
+
+
+
+VEC  >= 1 and Z > 6
+
+Revise the vector graphics section (Pg 19–20). Focus on why vector graphics stay sharp at any size. Note the common vector formats: SVG and EPS.
+
+You can also watch Video 3.1 (Introduction to Graphics Designing), which explains why vector graphics behave differently from raster ones.
+
+
+
+PIX  >= 1 and Z > 6
+
+Review the Pixlr X tool sections (Pg 25–42). Focus on the Text tool, Layers panel, and Cutout tool. Know what each does and where to find it in the interface. 
+
+It is recommended to go through Video 3.2 (Creating a New Project in Pixlr X) for the interface, along with Video 3.3 (Working with Text in Pixlr X) and Video 3.7 (Using the Cutout Tool in Pixlr X) for specific tools.
+
+
+
+BLN  >= 1 and Z > 6
+
+Revisit the blending modes section (Pg 37–38). Focus on what a blending mode does: it controls how one layer’s appearance interacts with the layer below it. Do not confuse it with exporting or converting.
+
+You can also watch Video 3.5 (Working with Layers in Pixlr X), which shows how layers and their settings interact in a real project.
+
+
+
+EXP  >= 1 and Z > 6
+
+See the export section in Pixlr X again (Pg 43–44). Focus on which format supports transparency and which is best for small file sizes. Note that PXZ saves all layers for future editing.
+
+Check out Video 3.8 (Exporting a Project in Pixlr X), which walks through each export option step by stepDiagnostic code guide
+
+TOL → Tests ability to match multimedia tools to their correct purpose
+
+LAY → Tests understanding of what layers are and how they work
+
+RAS → Tests knowledge of raster graphics and pixel-based images
+
+VEC → Tests knowledge of vector graphics and their scalability
+
+PIX → Tests knowledge of specific Pixlr X tools and interface elements
+
+BLN → Tests understanding of blending modes in Pixlr X
+
+EXP → Tests knowledge of export formats and when to use each
+
+
+
+
+
+LO5
+
+Learning Objective: Record and edit an audio clip using Audiomass, applying simple effects like trimming or fade-in and fade-out to improve sound quality
+
+Section: Audio and Audiomass (Pg 47–64)
+
+Number of Questions: 9
+
+
+
+Questions
+
+Which tool is a free online tool for recording and editing audio?
+
+CapCut (TOL)
+
+Pixlr X (TOL)
+
+Audiomass (Z)
+
+Notepad (TOL)
+
+
+
+What does a ‘fade-in’ effect do to an audio clip?
+
+Suddenly cuts the audio at the beginning (EFX)
+
+Gradually increases the volume from silence at the beginning (Z)
+
+Removes all background noise from the clip (EFX)
+
+Speeds up the audio playback rate (EFX)
+
+
+
+What does ‘trimming’ or cutting an audio clip mean?
+
+Removing unwanted sections from the audio by selecting and cutting them (Z)
+
+Adding an echo effect to the sound (EFX)
+
+Increasing the pitch of the audio (EFX)
+
+Converting the file to a different format (EFX)
+
+
+
+An audio waveform visually represents:
+
+The colour of sound waves (WAV)
+
+The speed of video frames in a clip (WAV)
+
+The changes in sound volume over time, showing how loud or soft the audio is (Z)
+
+The file size of an audio recording (WAV)
+
+
+
+What does ‘amplitude’ represent in an audio waveform?
+
+The total length of the audio file (WAV)
+
+The number of audio tracks playing simultaneously (WAV)
+
+The file format used for storage (WAV)
+
+The loudness or volume of the sound, shown as the height of the wave (Z)
+
+
+
+What does a ‘fade-out’ effect do?
+
+Gradually decreases the volume to silence at the end of a clip (Z)
+
+Increases volume suddenly at the end of a clip (EFX)
+
+Removes the first five seconds of audio (EFX)
+
+Converts mono audio to stereo (EFX)
+
+
+
+When exporting audio from Audiomass, which format would you choose for a compressed, widely compatible file?
+
+WAV (FMT)
+
+MP3 (Z)
+
+FLAC (FMT)
+
+PXZ (FMT)
+
+
+
+What does ‘wavelength’ represent in an audio waveform?
+
+The distance a sound wave travels in one full vibration cycle (Z)
+
+The volume of the sound (WAV)
+
+The total size of the audio file in megabytes (WAV)
+
+The number of channels in the recording (WAV)
+
+
+
+What does the ‘gain’ effect do in Audiomass?
+
+Adds a visual filter to the audio waveform (EFX)
+
+Controls how loud or quiet the sound is (Z)
+
+Converts the audio from stereo to mono (EFX)
+
+Reverses the direction of the audio playback (EFX)
+
+
+
+Diagnostic feedback
+
+Z = 9
+
+Complete Mastery: Excellent! You have a strong understanding of audio concepts and how to use Audiomass.
+
+Further Learning
+
+Experiment with the compressor effect in Audiomass. How does it change audio by making quiet parts louder and loud parts quieter? When would this be useful, such as in a podcast recording?
+
+Research the difference between mono and stereo audio channels. Why might you choose one over the other when recording or exporting audio?
+
+
+
+5 <= Z <= 8
+
+Adequate Mastery: You have understood most audio concepts, but a few areas need further attention. Review the targeted feedback below to strengthen your understanding.
+
+
+
+Z <= 4
+
+Inadequate Mastery: You need to revisit the audio section and the Audiomass tools. Pay close attention to the purpose of each tool and how they are applied in different tasks.
+
+
+
+Recommended action plan
+
+Study the audio waveform:  Start by reviewing the audio waveform. Make sure you clearly understand amplitude and wavelength (Pg 48).
+
+Go through the Audiomass interface: Identify the function of each part, including the menu bar, control panel, and waveform display. (Pg 51–60)
+
+Practise the editing steps: Practise the essential editing steps (recording, trimming, and applying effects) to build confidence (Pg 54–60). To see these in practice, watch Video 3.11 (Recording Audio in AudioMass), Video 3.13 (Cutting Audio in AudioMass), and Video 3.14 (Applying Effects in AudioMass).
+
+Study the effects: Focus on understanding the purpose of key effects such as gain, fade-in, fade-out, delay, and compression (Pg 59).
+
+Review export options: Finally, review the export options and ensure you know when to use MP3 versus WAV based on file size and quality (Pg 61).
+
+Use Audiomass alongside your study: Don’t just read. Open Audiomass and try things out. Working directly with the tools will help you understand them much better.
+
+
+
+Targeted Feedback
+
+TOL >= 1 and Z > 4
+
+Read the multimedia tools section. Audiomass is specifically for recording and editing audio. Do not confuse it with CapCut (video) or Pixlr X (graphics) (Pg 51).
+
+For an introduction to the tool, watch Video 3.10 (Introduction to Audio Editing) and Video 3.11 (Recording Audio in AudioMass).
+
+
+
+EFX >= 1 and Z > 4
+
+Review the audio effects section (Pg 59). Study each effect individually and try them out yourself on Audiomass. Do not confuse their functions.
+
+Video 3.14 (Applying Effects in AudioMass) demonstrates each of these effects in action.
+
+
+
+WAV >= 1 and Z > 4
+
+Revisit the audio waveform section (Pg 48). A waveform shows sound changes over time. Amplitude is the height (loudness), and wavelength is the width of each cycle (distance per vibration). Do not confuse these with file size or format.
+
+You can also watch Video 3.13 (Cutting Audio in AudioMass), which shows the waveform clearly while editing and helps you visualise amplitude and wavelength.
+
+
+
+FMT >= 1 and Z > 4
+
+Revisit the audio formats (Pg 49) and export section (Pg 61). Know which format is compressed (MP3) and which is uncompressed (WAV). 
+
+To strengthen your understanding, watch Video 3.15 (Exporting Audio in AudioMass), which demonstrates the export process and format choices.
+
+
+
+Diagnostic code guide
+
+TOL → Tests ability to identify Audiomass as the correct audio editing tool
+
+EFX → Tests understanding of audio effects: fade-in, fade-out, gain, trimming
+
+WAV → Tests knowledge of audio waveform concepts: amplitude and wavelength
+
+FMT → Tests knowledge of audio export formats and when to use each
+
+
+
+
+
+LO6
+
+Learning Objective: Perform a simple video edit using CapCut, including adding clips, transitions, background music, and text overlays to create a short multimedia presentation
+
+Section: Video Concepts, Video File Formats, and CapCut (Pg 65–91)
+
+Number of Questions: 10
+
+
+
+Questions
+
+Which software is a free online video editing tool used for trimming clips, adding transitions, text, and music?
+
+Pixlr X (TOL)
+
+Audiomass (TOL)
+
+CapCut (Z)
+
+Adobe Photoshop (TOL)
+
+
+
+What does FPS stand for in video?
+
+File Processing Speed (FPS)
+
+Frames Per Second (Z)
+
+Format Pixel Scale (FPS)
+
+File Pixel Size (FPS)
+
+
+
+Which video resolution provides the sharpest and most detailed image quality?
+
+SD (720×480) (RES)
+
+HD (1280×720) (RES)
+
+FHD (1920×1080) (RES)
+
+4K (3840×2160) (Z)
+
+
+
+What is a ‘transition’ in video editing?
+
+A type of audio effect that changes the volume (TRN)
+
+A visual effect that makes moving from one video clip to the next look smooth (Z)
+
+A text overlay on the video (TRN)
+
+The frame rate setting of the video (TRN)
+
+
+
+In CapCut, text overlays are used to:
+
+Add video clips to the timeline (CAP)
+
+Change the frame rate of the video (CAP)
+
+Display written words, captions, or titles on top of the video (Z)
+
+Record audio directly into the project (CAP)
+
+
+
+A video recorded at 15 FPS compared to 60 FPS will appear:
+
+Choppier and less smooth, because fewer images are shown each second (Z)
+
+Smoother and sharper with more fluid motion (FPS)
+
+Identical in quality with no visible difference (FPS)
+
+Higher in resolution with more pixels (FPS)
+
+
+
+Which video resolution is considered Standard Definition (SD)?
+
+1920×1080 (RES)
+
+3840×2160 (RES)
+
+1280×720 (RES)
+
+720×480 (Z)
+
+
+
+What is the recommended export format for a finished video in CapCut?
+
+MP4 (Z)
+
+MP3 (FMT)
+
+JPG (FMT)
+
+TXT (FMT)
+
+In the CapCut timeline, how are video clips arranged?
+
+In the order they will appear in the final video (Z)
+
+Alphabetically by file name (CAP)
+
+By file size from largest to smallest (CAP)
+
+Randomly with no user control (CAP)
+
+
+
+What does ‘resolution’ refer to in the context of video?
+
+The speed at which the video plays (RES)
+
+The file format used to save the video (RES)
+
+The length of the video in minutes (RES)
+
+The number of pixels in each frame, determining image clarity and detail (Z)
+
+
+
+Diagnostic Feedback
+
+Z = 10
+
+Complete Mastery: Excellent! You have a strong understanding of video concepts and how to use CapCut.
+
+Further Learning
+
+Research why the first YouTube video, “Me at the zoo,” uploaded in 2005, was only 18 seconds long. Think about how video technology and internet speeds have changed since then and how that affects the videos we create today.
+
+Explore the difference between the aspect ratios 16:9 and 4:3. When would you use each, and how does the choice affect how your video looks on different devices?
+
+
+
+5 <= Z <= 9
+
+Adequate Mastery: Good job! You seem to have a solid understanding of most video concepts and using Capcut. However, there are a few areas that still need attention. Review the following to strengthen your understanding.
+
+
+
+Z <= 4
+
+Inadequate Mastery: It seems your understanding of basic video concepts and using Capcut tools is currently insufficient. Revisit the video section and CapCut tools, focusing on how each feature is used in practice before moving forward.
+
+Recommended Action Plan
+
+Study FPS: Start by understanding frame rate and how it affects video smoothness. Be clear about common values such as 24, 30, and 60 FPS (Pg 66).
+
+Study resolution: Review different resolutions—SD, HD, FHD, and 4K—and understand how increasing resolution affects image clarity and file size (Pg 68–69).
+
+Learn the CapCut interface: Familiarise yourself with the main components, including the timeline, tools panel, preview area, and export options. Make sure you know the role of each (Pg 72).
+
+Practise editing features: Build confidence by practising key tasks such as adding transitions, inserting text overlays, and working with background music (Pg 83–87).  You can follow along with Video 3.22 (Adding Transitions in CapCut), Video 3.24 (Working with Text in CapCut), and Video 3.25 (Adding Audio in CapCut) to see each task demonstrated.
+
+Review video formats: Study common formats like MP4, AVI, and MOV, and understand how they differ in terms of compression, compatibility, and usage (Pg 70–71).
+
+Apply your learning in practice: Open CapCut and try out these features as you study. Actively using the software will help you understand the concepts much more effectively than reading alone. 
+
+
+
+
+
+Targeted Feedback
+
+TOL >= 1 and Z > 4
+
+Revisit the video editing section (Pg 71). Focus on identifying the type of software used specifically for editing videos.
+
+If you need an introduction to the tool, watch Video 3.17 (Introduction to Video Editing) and Video 3.18 (Creating a New Project in CapCut). 
+
+FPS >= 1 and Z > 4
+
+Review the frame rate section (Pg 66). Pay attention to what FPS represents and how it affects the appearance of motion in a video. Do not confuse FPS with resolution.
+
+You may also find Video 3.17 (Introduction to Video Editing) helpful, as it covers the basics of frame rate and other video fundamentals.
+
+
+
+RES >= 1 and Z > 4
+
+Revise the resolution section (Pg 68). Focus on what resolution measures and how different levels are organised. Do not confuse resolution with frame rate.
+
+Be sure to check out Video 3.17 (Introduction to Video Editing) too. It explains resolution and how it differs from frame rate.
+
+
+
+TRN >= 1 and Z > 4
+
+Revise the transitions section (Pg 83). Look at how clips are connected and the types of effects used between them.
+
+Watch Video 3.22 (Adding Transitions in CapCut) to see exactly how transitions are added between clips.
+
+
+
+CAP >= 1 and Z > 4
+
+Go through the CapCut interface and editing sections (Pg 72–87). Focus on how clips are arranged in the timeline, how text overlays are added, and where to find each tool.
+
+It is recommended to go through Video 3.20 (Working in the Timeline in CapCut) and Video 3.24 (Working with Text in CapCut), which demonstrate these features in practice.
+
+
+
+FMT >= 1 and Z > 4
+
+Revisit the video export section (Pg 87). Focus on how videos are saved and what factors are considered when choosing an export format.
+
+Check out Video 3.26 (Exporting a Project in CapCut), which walks through the full export process.
+
+
+
+
+
+Diagnostic code guide
+
+TOL → Tests ability to identify CapCut as the correct video editing tool
+
+FPS → Tests understanding of frame rate and its effect on video smoothness
+
+RES → Tests knowledge of video resolution levels and their pixel dimensions
+
+TRN → Tests understanding of transitions in video editing
+
+CAP → Tests knowledge of CapCut interface elements and editing features
+
+FMT → Tests knowledge of video export formats
+
+
+
+
+
+LO7
+
+Learning Objective: Explain and compare 2D and 3D animation by identifying their differences
+
+Section: Animation: 2D and 3D (Pg 92–96)
+
+Number of Questions: 8
+
+
+
+Questions
+
+What is animation?
+
+A type of audio editing technique (DEF)
+
+The process of creating the illusion of movement from drawings or digital models (Z)
+
+A method of compressing video files (DEF)
+
+A technique for improving image resolution (DEF)
+
+
+
+2D animation creates movement using:
+
+Two dimensions: width and height only, making it look flat (Z)
+
+Three dimensions: width, height, and depth (DIM)
+
+Only one dimension: either width or height (DIM)
+
+Virtual reality environments with depth perception (DIM)
+
+
+
+3D animation adds which extra dimension compared to 2D animation?
+
+Colour (DIM)
+
+Sound (DIM)
+
+Depth (Z)
+
+Speed (DIM)
+
+
+
+In 2D animation, how do characters and objects appear?
+
+Lifelike and three-dimensional with depth (DIF)
+
+Flat, with no sense of depth (Z)
+
+As photorealistic renders indistinguishable from real footage (DIF)
+
+Only in black and white (DIF)
+
+
+
+What is 3D animation commonly used in?
+
+Simple hand-drawn flipbooks (DIF)
+
+Text-based educational documents (DIF)
+
+Audio-only podcasts and radio shows (DIF)
+
+Modern movies, video games, and architectural visualisation (Z)
+
+
+
+Walt Disney’s Snow White and the Seven Dwarfs (1937) is a famous example of:
+
+3D computer-generated animation (EXM)
+
+Virtual reality animation (EXM)
+
+2D hand-drawn animation (Z)
+
+Augmented reality animation (EXM)
+
+
+
+Compared to 2D animation, 3D animation generally requires:
+
+Less computing power and simpler tools like pencil and paper (DIF)
+
+Only a basic text editor (DIF)
+
+More computing power and specialised 3D software to create models with depth (Z)
+
+No digital tools at all (DIF)
+
+
+
+In 3D animation, how are characters and objects created?
+
+By designing and sculpting them digitally, rigging them with a skeleton-like structure, and then animating their movement (Z)
+
+By drawing them frame by frame on paper (DIM)
+
+By taking photographs of real people and objects (DIM)
+
+By recording live video and adding filters (DIM)
+
+
+
+Diagnostic Feedback
+
+Z = 8
+
+Complete Mastery: Excellent! You clearly understand the differences between 2D and 3D animation and can identify examples of each.
+
+Further Learning
+
+Find out how NASA uses 3D animation and multimedia tools to simulate space missions for astronaut training. What advantages does 3D animation offer over 2D in this context?
+
+Think about animated content you watch regularly. Can you identify whether it is 2D or 3D? What visual clues help you tell them apart?
+
+
+
+4 <= Z <= 7
+
+Adequate Mastery: You have a good understanding of most animation concepts, but a few areas still need attention. Review the following to strengthen your understanding.
+
+
+
+Z <= 3
+
+Inadequate Mastery: Your understanding of animation concepts is currently limited. You need to revise the animation section carefully.
+
+Recommended action plan
+
+Review the concept of animation: Go back to where animation is introduced. Pay attention to what animation means and note down its types. (Pg 92)
+
+Compare 2D and 3D animation: Pay close attention to the differences in dimensions, visual style, tools used, and typical applications. Avoid mixing up their characteristics. (Pg 93 - 94)
+
+Review examples: Look at the examples in the text and consider what they illustrate about each type of animation. Try to connect them to the concepts you have studied.
+
+Reinforce through observation: Watch examples of both 2D and 3D animation and try to identify their features. Observing real examples will help you better understand the differences. 
+
+
+
+Targeted Feedback
+
+DEF <= 1 and Z > 3 
+
+Read the definition of animation (Pg 92). Focus on the main idea of what animation is and what it is intended to create.
+
+
+
+DIM <= 1 and Z > 3
+
+Revisit the sections on 2D and 3D animation (Pg 93–94). Pay attention to how each type is described in terms of dimensions and structure.
+
+
+
+DIF <= 1 and Z > 3
+
+Compare 2D and 3D animation (Pg 93–94). Focus on how the two types differ in terms of appearance (flat vs realistic), tools required (simpler vs specialised software), and common uses..
+
+
+
+EXM <= 1 and Z > 3
+
+Revisit the examples of 2D and 3D animation in the chapter (Pg 93–94). Identify which examples are associated with each type.
+
+
+
+Diagnostic code guide
+
+DEF → Tests understanding of the definition of animation
+
+DIM → Tests knowledge of the dimensional differences between 2D and 3D animation
+
+DIF → Tests ability to compare 2D and 3D animation in terms of appearance, tools, and uses
+
+EXM → Tests ability to correctly match animation examples to the right type
+
+
+
+
+
