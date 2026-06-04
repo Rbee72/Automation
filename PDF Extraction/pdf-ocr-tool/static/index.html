@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF OCR Tool — Devanagari & English</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+  </div>
+
+  <div class="container">
+    <header class="header">
+      <div class="logo"><span class="logo-icon">📄</span><span class="logo-text">PDF <span class="accent">OCR</span> Tool</span></div>
+      <p class="subtitle">Extract text from Devanagari & English PDFs · Auto-sections · Word Export</p>
+    </header>
+
+    <!-- ── Step 1: Upload ───────────────────────────────────────── -->
+    <section class="card" id="step-upload">
+      <div class="step-badge">Step 1</div>
+      <h2 class="card-title">Upload PDF</h2>
+      <div class="drop-zone" id="dropZone">
+        <div class="drop-icon">📂</div>
+        <div class="drop-text">Drag & drop your PDF here</div>
+        <div class="drop-sub">or click to browse</div>
+        <input type="file" id="fileInput" accept=".pdf" hidden />
+      </div>
+      <div class="file-info" id="fileInfo" style="display:none">
+        <div class="file-details">
+          <span class="file-icon">📋</span>
+          <div>
+            <div class="file-name" id="fileName">—</div>
+            <div class="file-meta" id="fileMeta">—</div>
+          </div>
+        </div>
+        <span class="badge badge-success" id="pageCountBadge">— pages</span>
+      </div>
+    </section>
+
+    <!-- ── Step 2: Configure ────────────────────────────────────── -->
+    <section class="card" id="step-configure" style="display:none">
+      <div class="step-badge">Step 2</div>
+      <h2 class="card-title">Configure Extraction</h2>
+
+      <!-- Global options -->
+      <div class="config-grid config-grid-2">
+        <div class="form-group">
+          <label for="dpi">Resolution (DPI)</label>
+          <select id="dpi">
+            <option value="150">150 DPI — Fast</option>
+            <option value="200" selected>200 DPI — Balanced</option>
+            <option value="300">300 DPI — High Quality</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="lang">Language</label>
+          <select id="lang">
+            <option value="eng+hin+san" selected>English + Hindi + Sanskrit</option>
+            <option value="eng">English only</option>
+            <option value="hin+san">Hindi + Sanskrit only</option>
+            <option value="hin">Hindi only</option>
+            <option value="san">Sanskrit only</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- ── Auto-detect panel ──────────────────────────────────── -->
+      <div class="auto-detect-panel">
+        <div class="auto-detect-header" onclick="toggleAutoDetect()">
+          <span class="auto-detect-title">✨ Auto-detect Sections</span>
+          <span class="auto-detect-sub">from Table of Contents or repeated keyword</span>
+          <span class="collapse-icon" id="autoDetectIcon">▼</span>
+        </div>
+
+        <div class="auto-detect-body" id="autoDetectBody" style="display:none">
+
+          <!-- tabs -->
+          <div class="detect-tabs">
+            <button class="detect-tab active" data-tab="toc" onclick="setDetectTab('toc')">📋 Table of Contents</button>
+            <button class="detect-tab" data-tab="keyword" onclick="setDetectTab('keyword')">🔍 Find by Keyword</button>
+          </div>
+
+          <!-- ToC tab -->
+          <div id="detect-toc" class="detect-tab-content">
+            <p class="detect-hint">Specify the pages containing the Table of Contents. We will extract the text first so you can review and fix any OCR gibberish before parsing.</p>
+            <div class="config-grid config-grid-2">
+              <div class="form-group">
+                <label>ToC Start Page</label>
+                <input type="number" id="tocStart" value="1" min="1" />
+              </div>
+              <div class="form-group">
+                <label>ToC End Page</label>
+                <input type="number" id="tocEnd" value="5" min="1" />
+              </div>
+            </div>
+            <button class="btn btn-scan" id="tocScanBtn" onclick="scanToc()">🔍 Extract ToC Text</button>
+
+            <div id="tocRawPanel" style="display:none; margin-top: 16px;">
+              <div class="form-group">
+                <label>Raw ToC Text (Review & Edit)</label>
+                <textarea id="tocRawText" rows="10" style="background:var(--surface2); border:1px solid var(--border); color:var(--text); padding:10px; border-radius:8px; font-family:'JetBrains Mono',monospace; font-size:12px; resize:vertical;"></textarea>
+              </div>
+              <div class="config-grid config-grid-2" style="margin-top:12px;">
+                <div class="form-group">
+                  <label>
+                    Page Offset
+                    <span class="tooltip-icon" title="If Chapter 1 is PDF page 12 but ToC says 1, enter 11 here.">ⓘ</span>
+                  </label>
+                  <input type="number" id="tocOffset" value="11" />
+                </div>
+                <div class="form-group" style="justify-content: flex-end;">
+                  <button class="btn btn-apply" id="tocParseBtn" onclick="parseTocText()">⚡ Parse into Sections</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Keyword tab -->
+          <div id="detect-keyword" class="detect-tab-content" style="display:none">
+            <p class="detect-hint">Enter a word or pattern that marks the start of each chapter (e.g. "Chapter", "अध्याय"). The system scans every page header for it.</p>
+            <div class="config-grid config-grid-3">
+              <div class="form-group">
+                <label>Keyword / Pattern</label>
+                <input type="text" id="kwKeyword" value="Chapter \d+" placeholder="Chapter \d+ / अध्याय" />
+                <label style="display:flex; align-items:center; gap:6px; margin-top:6px; font-weight:normal; font-size:11px;">
+                  <input type="checkbox" id="kwRegex" checked /> Regex (e.g. <code>Chapter \d+</code>)
+                </label>
+              </div>
+              <div class="form-group">
+                <label>Scan From Page</label>
+                <input type="number" id="kwStart" value="1" min="1" />
+              </div>
+              <div class="form-group">
+                <label>Scan To Page</label>
+                <input type="number" id="kwEnd" placeholder="Last page" />
+              </div>
+            </div>
+            <div class="kw-progress-wrap" id="kwProgressWrap" style="display:none">
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" id="kwProgressFill"></div>
+              </div>
+              <div class="progress-label" id="kwProgressLabel">Scanning…</div>
+              <div class="kw-found-log" id="kwFoundLog"></div>
+            </div>
+            <button class="btn btn-scan" id="kwScanBtn" onclick="scanKeyword()">🔍 Scan Pages</button>
+          </div>
+
+          <!-- Preview of detected sections -->
+          <div id="detectPreview" style="display:none">
+            <div class="preview-header">
+              <span class="preview-title">Detected Sections</span>
+              <span class="preview-count" id="previewCount"></span>
+            </div>
+            <div id="previewList" class="preview-list"></div>
+            <div class="preview-actions">
+              <button class="btn btn-apply" onclick="applyDetectedSections()">✅ Apply to Sections</button>
+              <button class="btn btn-outline btn-sm" onclick="clearPreview()">✕ Discard</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── Sections Manager ───────────────────────────────────── -->
+      <div class="sections-header">
+        <span class="sections-title">📂 Sections</span>
+        <button class="btn btn-add" onclick="addSection()">+ Add Section</button>
+      </div>
+      <div class="sections-hint">Each section is saved as a separate file. Add as many as you need.</div>
+      <div id="sectionsList"></div>
+
+      <!-- Export format -->
+      <div class="export-format">
+        <span class="export-label">Export as:</span>
+        <div class="format-tabs">
+          <button class="format-tab active" data-fmt="docx" onclick="setFormat('docx')">📝 Word (.docx)</button>
+          <button class="format-tab" data-fmt="zip" onclick="setFormat('zip')">🗜 ZIP (per section)</button>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" id="extractBtn" onclick="startExtraction()">
+        <span class="btn-icon">⚡</span> Extract Text
+      </button>
+    </section>
+
+    <!-- ── Step 3: Results ──────────────────────────────────────── -->
+    <section class="card" id="step-results" style="display:none">
+      <div class="step-badge">Step 3</div>
+      <div class="results-header">
+        <h2 class="card-title">Extracted Text</h2>
+        <div class="results-actions">
+          <button class="btn btn-outline btn-download" id="downloadBtn" style="display:none" onclick="downloadResult()">⬇ Download</button>
+          <button class="btn btn-outline btn-sm" onclick="resetTool()">↺ New PDF</button>
+        </div>
+      </div>
+      <div class="progress-wrap" id="progressWrap">
+        <div class="progress-bar-track"><div class="progress-bar-fill" id="progressFill"></div></div>
+        <div class="progress-label" id="progressLabel">Preparing…</div>
+      </div>
+      <div id="resultsContainer"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
